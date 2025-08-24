@@ -1,0 +1,22 @@
+:root {
+    --vp-custom-block-tip-code-bg: #313244;
+}
+
+.VPSidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #bac2de #e6e9ef;
+    padding-bottom: 32px !important;
+}
+
+.dark .VPSidebar {
+    scrollbar-color: #11111b #181825;
+}
+
+.vp-doc pre {
+    scrollbar-width: thin;
+    scrollbar-color: #bac2de #e6e9ef;
+}
+
+.dark .vp-doc pre {
+    scrollbar-color: #11111b #181825;
+}
