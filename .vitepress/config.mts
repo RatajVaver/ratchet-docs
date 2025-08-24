@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Ratchet",
   description: "Conan Exiles Script Extender",
   appearance: "dark",
+  cleanUrls: true,
   markdown: {
     theme: {
       light: 'catppuccin-latte',
