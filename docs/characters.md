@@ -26,6 +26,20 @@ local player = getPlayerFromID(301)
 print(type(player))
 ```
 
+## `getPlayerFromName` <Badge type="info" text="function" />
+Find a player by their character's real name (this will ignore `/act` names and similar).
+
+Syntax:
+```lua
+Character|nil getPlayerFromName( string name )
+```
+
+Example:
+```lua
+local player = getPlayerFromName("Bob")
+print(type(player))
+```
+
 ## `getPlayersInRadius` <Badge type="info" text="function" />
 Returns a table with all players in radius of specified number of **tiles** from a vector position.
 
@@ -38,6 +52,22 @@ Example:
 ```lua
 -- all players in radius of 10 tiles from the caster
 local players = getPlayersInRadius(caster:GetPosition(), 10)
+```
+
+## `getAllPlayers` <Badge type="info" text="function" />
+Returns a table of all players online on the server.
+
+Syntax:
+```lua
+table<Character> getAllPlayers()
+```
+
+## `getPlayerCount` <Badge type="info" text="function" />
+Returns a number of online players on the server.
+
+Syntax:
+```lua
+int getPlayerCount()
 ```
 
 ## `GetName` <Badge type="info" text="function" />
