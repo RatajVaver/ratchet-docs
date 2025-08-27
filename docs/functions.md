@@ -106,3 +106,4 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.HasSpell](/redux#hasspell)
 - [RPR.LearnSpell](/redux#learnspell)
 - [RPR.ForgetSpell](/redux#forgetspell)
+- [RPR.Refresh](/redux#refresh)

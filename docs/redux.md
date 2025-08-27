@@ -214,3 +214,11 @@ Syntax:
 ```lua
 bool RPR.ForgetSpell( Character player, string spell )
 ```
+
+## `Refresh` <Badge type="info" text="function" />
+Force RPR side panel to refresh for specific player.
+
+Syntax:
+```lua
+void RPR.Refresh( Character player )
+```
