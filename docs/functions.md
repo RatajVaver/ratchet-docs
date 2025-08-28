@@ -19,9 +19,13 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [off](/events#off)
 - [once](/events#once)
 - [emit](/events#emit)
-- [base64Encode](/utils#base64Encode)
-- [base64Decode](/utils#base64Decode)
-- [friendlyTime](/utils#friendlyTime)
+- [base64Encode](/utils#base64encode)
+- [base64Decode](/utils#base64decode)
+- [friendlyTime](/utils#friendlytime)
+- [printInfo](/utils#printinfo)
+- [printSuccess](/utils#printsuccess)
+- [printWarning](/utils#printwarning)
+- [printError](/utils#printerror)
 
 ## string
 - [explode](/string#explode)

@@ -26,3 +26,39 @@ Example:
 local time = friendlyTime(3600)
 print(time) -- "1 hour"
 ```
+
+## `printInfo` <Badge type="info" text="function" />
+Same as the native `print` function, except for prepending plugin name and highlighting the message with **blue** color in the Ratchet console.
+This message will also be saved to the `ratchet.log` file located in the server's folder.
+
+Syntax:
+```lua
+void printInfo( [ string input, ... ] )
+```
+
+## `printSuccess` <Badge type="info" text="function" />
+Same as the native `print` function, except for prepending plugin name and highlighting the message with **green** color in the Ratchet console.
+This message will also be saved to the `ratchet.log` file located in the server's folder.
+
+Syntax:
+```lua
+void printSuccess( [ string input, ... ] )
+```
+
+## `printWarning` <Badge type="info" text="function" />
+Same as the native `print` function, except for prepending plugin name and highlighting the message with **gold** color in the Ratchet console.
+This message will also be saved to the `ratchet.log` file located in the server's folder.
+
+Syntax:
+```lua
+void printWarning( [ string input, ... ] )
+```
+
+## `printError` <Badge type="info" text="function" />
+Same as the native `print` function, except for prepending plugin name and highlighting the message with **red** color in the Ratchet console.
+This message will also be saved to the `ratchet.log` file located in the server's folder.
+
+Syntax:
+```lua
+void printError( [ string input, ... ] )
+```
