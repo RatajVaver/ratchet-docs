@@ -19,6 +19,40 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [off](/events#off)
 - [once](/events#once)
 - [emit](/events#emit)
+- [base64Encode](/utils#base64Encode)
+- [base64Decode](/utils#base64Decode)
+- [friendlyTime](/utils#friendlyTime)
+
+## string
+- [explode](/string#explode)
+- [split](/string#split)
+- [startsWith](/string#startsWith)
+- [endsWith](/string#endsWith)
+- [trimLeft](/string#trimLeft)
+- [trimRight](/string#trimRight)
+- [trim](/string#trim)
+- [join](/string#join)
+- [padLeft](/string#padLeft)
+- [padRight](/string#padRight)
+- [isEmpty](/string#isEmpty)
+- [isAlpha](/string#isAlpha)
+- [isNumeric](/string#isNumeric)
+- [isAlphaNumeric](/string#isAlphaNumeric)
+- [count](/string#count)
+- [capitalize](/string#capitalize)
+- [levenshtein](/string#levenshtein)
+- [removePrefix](/string#removePrefix)
+- [removeSuffix](/string#removeSuffix)
+- [random](/string#random)
+
+## math
+- [round](/math#round)
+- [clamp](/math#clamp)
+- [lerp](/math#lerp)
+
+## table
+- [copy](/table#copy)
+- [merge](/table#merge)
 
 ## Dice
 - [Dice.Roll](/dice#roll)

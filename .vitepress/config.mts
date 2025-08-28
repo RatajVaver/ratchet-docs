@@ -45,11 +45,15 @@ export default defineConfig({
           { text: 'Database', link: '/database' },
           { text: 'Vectors', link: '/vectors' },
           { text: 'Characters', link: '/characters' },
+          { text: 'Utilities', link: '/utils' },
         ]
       },
       {
         text: 'Libraries',
         items: [
+          { text: 'String', link: '/string' },
+          { text: 'Math', link: '/math' },
+          { text: 'Table', link: '/table' },
           { text: 'Dice', link: '/dice' },
           { text: 'Web', link: '/web' },
           { text: 'JSON', link: '/json' },
