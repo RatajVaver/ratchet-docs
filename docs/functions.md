@@ -104,6 +104,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.Teleport](/totadmin#teleport)
 - [TotAdmin.Warp](/totadmin#warp)
 - [TotAdmin.GiveKit](/totadmin#givekit)
+- [TotAdmin.GetPuppet](/totadmin#getpuppet)
 
 ## Tot ! Custom
 - [TotCustom.GetBody](/totcustom#getbody)

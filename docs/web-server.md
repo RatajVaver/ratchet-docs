@@ -41,6 +41,16 @@ http://localhost:5460/unload?plugin=myfirstplugin
 http://localhost:5460/watch?plugin=myfirstplugin
 ```
 
+### `/refresh-schedule` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+```
+http://localhost:5460/refresh-schedule
+```
+
+### `/refresh-plugins` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+```
+http://localhost:5460/refresh-plugins
+```
+
 ## Events
 
 ### `/event` <Badge type="tip" text="POST" /> <Badge type="info" text="API endpoint" />

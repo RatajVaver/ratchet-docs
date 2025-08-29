@@ -2,12 +2,20 @@
 Ratchet expands on the [standard string library](https://www.lua.org/manual/5.1/manual.html#5.4) to give you a few more functions for convenience.
 All standard Lua functions are available as well and not listed on this page.
 
+Just like with standard functions, you can use semicolon to call any of these functions on an existing string and use it as the input.
+
 ## `explode` <Badge type="info" text="function" />
 Splits a string up wherever it finds the given separator.
 
 Syntax:
 ```lua
 table<string> string.explode( string input, string delimiter )
+```
+
+Example:
+```lua
+local hello = "Hello world!"
+print(hello:explode(" ")[1]) -- "Hello"
 ```
 
 ## `split` <Badge type="info" text="function" />

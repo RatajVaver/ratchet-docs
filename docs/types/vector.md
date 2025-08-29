@@ -1,5 +1,5 @@
-# Vectors
-Vector object represents a three-dimensional [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector).
+# Vector
+Vector type represents a three-dimensional [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector).
 
 This is most commonly used to refer to a specific point in the game world.
 
