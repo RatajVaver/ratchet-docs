@@ -17,3 +17,23 @@ Syntax:
 ```lua
 table table.merge( [ table first, ... ] )
 ```
+
+## `swap` <Badge type="info" text="function" />
+Swaps keys with values in a table.
+
+Syntax:
+```lua
+table table.swap( table original )
+```
+
+## `reverse` <Badge type="info" text="function" />
+Syntax:
+```lua
+table table.reverse( table original )
+```
+
+## `shuffle` <Badge type="info" text="function" />
+Syntax:
+```lua
+table table.shuffle( table original )
+```

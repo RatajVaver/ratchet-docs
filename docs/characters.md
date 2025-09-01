@@ -139,3 +139,9 @@ Example:
 local position = player:GetPosition()
 print(position.x, position.y, position.z)
 ```
+
+## `GiveItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:GiveItem( int itemId [, int quantity = 1 ] )
+```

@@ -12,7 +12,9 @@ int setTimer( function callback, int milliseconds, int repeat )
 
 Example:
 ```lua
-setTimer(function() print("Hello") end, 5000, 5)
+setTimer(function()
+    print("Hello")
+end, 5000, 5)
 ```
 
 ### `killTimer` <Badge type="info" text="function" />

@@ -1,4 +1,5 @@
 # Roleplay Redux
+This library will not function if your server doesn't have the [Roleplay Redux](https://steamcommunity.com/sharedfiles/filedetails/?id=3036058836) mod installed.
 
 ## `Roll` <Badge type="info" text="function" />
 
@@ -221,4 +222,14 @@ Force RPR side panel to refresh for specific player.
 Syntax:
 ```lua
 void RPR.Refresh( Character player )
+```
+
+## `GetAbilities` <Badge type="info" text="function" />
+Retrieves a list of all abilities in the RPR system.
+
+A table is returned, keys represent ability IDs and values represent ability names.
+
+Syntax:
+```lua
+table<int,string> RPR.GetAbilities()
 ```

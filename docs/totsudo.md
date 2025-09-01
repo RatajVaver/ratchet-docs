@@ -1,4 +1,5 @@
 # Tot ! Sudo
+This library will not function if your server doesn't have the [Tot ! Sudo](https://steamcommunity.com/sharedfiles/filedetails/?id=3036057084) mod installed.
 
 ## `HasRole` <Badge type="info" text="function" />
 

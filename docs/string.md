@@ -164,6 +164,20 @@ Syntax:
 string string.removeSuffix( string input, string suffix )
 ```
 
+## `slugify` <Badge type="info" text="function" />
+Converts a string into a slug (text that can be safely used in URL or as a file name).
+
+Syntax:
+```lua
+string string.slugify( string input )
+```
+
+Example:
+```lua
+local slug = string.slugify("Hello world!")
+print(slug) -- "hello-world"
+```
+
 ## `random` <Badge type="info" text="function" />
 Generates a random string of specified length. You can also specify characters it should use.
 By default, all numbers and all lowercase and uppercase letters of English alphabet are used.

@@ -1,4 +1,5 @@
 # Tot ! Chat
+This library will not function if your server doesn't have the [Tot ! Chat](https://steamcommunity.com/sharedfiles/filedetails/?id=2847709656) mod installed.
 
 ## `Alert` <Badge type="info" text="function" />
 

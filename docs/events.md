@@ -42,6 +42,14 @@ Syntax:
 emit( string event [, arguments... ] )
 ```
 
+### `sendToClient` <Badge type="info" text="function" />
+Sends data to client listener ([see DevKit implementation](#client-side)).
+
+Syntax:
+```lua
+void sendToClient( string name [, table<string> arguments ] )
+```
+
 ## Internal events
 
 ### `server_start` <Badge type="info" text="event" />
@@ -175,6 +183,8 @@ Are you working with custom UI widgets and don't want to mess with RPCs? You can
 ![DevKit Client API](images/devkit-client.png)
 
 You can also implement `RCT_I_ClientListener` on your blueprint and register this client listener to easily receive a response from Ratchet plugins straight into your UI.
+
+To send data to this listener, use the [sendToClient](#sendtoclient) function.
 
 ::: info
 Keep in mind that there can only be one instance of a client listener with the same name at a time. Registering a new one with the same name will overwrite the previous. This is intended behavior.

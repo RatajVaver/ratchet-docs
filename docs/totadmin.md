@@ -3,6 +3,7 @@ outline: deep
 ---
 
 # Tot ! Admin
+This library will not function if your server doesn't have the [Tot ! Admin](https://steamcommunity.com/sharedfiles/filedetails/?id=2850232250) mod installed.
 
 ## General
 
@@ -54,8 +55,18 @@ Syntax:
 TotPuppet|nil TotAdmin.GetPuppet( int|string internalNameOrUID )
 ```
 
+### `GetPuppetsInRadius` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<TotPuppet> TotAdmin.GetPuppetsInRadius( Vector location, float radius )
+```
+
 ## Puppets
 Functions in this section are to be called on a [TotPuppet](/objects#totpuppet) object.
+
+Puppets inherit functions from Actors, any [Actor](/types/actor) functions can be used on Puppets as well.
+
+Appearance of Puppets can be manipulated with [Tot ! Custom](/totcustom) library.
 
 ### `Move` <Badge type="info" text="function" />
 Syntax:
@@ -107,4 +118,16 @@ Saves a serialized RPR sheet on a puppet. Use format returned from [RPR.ExportSh
 Syntax:
 ```lua
 void TotPuppet:SetSheet( string data )
+```
+
+### `GetTags` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<TotPuppetTag> TotPuppet:GetTags()
+```
+
+### `SetTags` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotPuppet:SetTags( table<TotPuppetTag> tags )
 ```

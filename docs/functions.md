@@ -12,6 +12,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [getPlayersInRadius](/characters#getplayersinradius)
 - [getAllPlayers](/characters#getallplayers)
 - [getPlayerCount](/characters#getplayercount)
+- [findActor](/types/actor#findactor)
 - [dbConnect](/database#dbconnect)
 - [setTimer](/timers#settimer)
 - [killTimer](/timers#killtimer)
@@ -19,6 +20,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [off](/events#off)
 - [once](/events#once)
 - [emit](/events#emit)
+- [sendToClient](/events#sendtoclient)
 - [base64Encode](/utils#base64encode)
 - [base64Decode](/utils#base64decode)
 - [friendlyTime](/utils#friendlytime)
@@ -47,6 +49,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [levenshtein](/string#levenshtein)
 - [removePrefix](/string#removePrefix)
 - [removeSuffix](/string#removeSuffix)
+- [slugify](/string#slugify)
 - [random](/string#random)
 
 ## math
@@ -57,6 +60,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 ## table
 - [copy](/table#copy)
 - [merge](/table#merge)
+- [swap](/table#swap)
+- [reverse](/table#reverse)
+- [shuffle](/table#shuffle)
 
 ## Dice
 - [Dice.Roll](/dice#roll)
@@ -105,6 +111,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.Warp](/totadmin#warp)
 - [TotAdmin.GiveKit](/totadmin#givekit)
 - [TotAdmin.GetPuppet](/totadmin#getpuppet)
+- [TotAdmin.GetPuppetsInRadius](/totadmin#getpuppetsinradius)
 
 ## Tot ! Custom
 - [TotCustom.GetBody](/totcustom#getbody)
@@ -146,3 +153,4 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.LearnSpell](/redux#learnspell)
 - [RPR.ForgetSpell](/redux#forgetspell)
 - [RPR.Refresh](/redux#refresh)
+- [RPR.GetAbilities](/redux#getabilities)

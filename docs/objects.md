@@ -9,6 +9,7 @@ This is a list of object structures, their member values and member functions.
 - [:GetSteamID](/characters#getsteamid)
 - [:GetGuildID](/characters#getguildid)
 - [:GetPosition](/characters#getposition)
+- [:GiveItem](/characters#giveitem)
 
 ::: warning
 This object cannot be directly constructed!
@@ -36,6 +37,18 @@ This object cannot be directly constructed!
 Use [RPR.GetSheet](/redux#getsheet) to retrieve a valid instance.
 :::
 
+## GUID
+- .A
+- .B
+- .C
+- .D
+
+## Color
+- .R
+- .G
+- .B
+- .A
+
 ## Vector
 - .x
 - .y
@@ -55,11 +68,15 @@ It can also be returned by various functions.
 - .roll
 
 ## Actor
-- :GetPosition
+- .owner
+- :GetActorName
+- :GetClassName
+- :GetLocation
 - :GetRotation
-- :SetPosition
+- :SetLocation
 - :SetRotation
-- :SetPositionAndRotation
+- :GetFeetLocation
+- :SetLocationAndRotation
 - :Teleport
 - :GetDistanceTo
 - :GetHorizontalDistanceTo
@@ -68,18 +85,6 @@ It can also be returned by various functions.
 - :GetForwardVector
 - :GetUpVector
 - :HasTag
-
-## TotAdminTool <Badge type="tip" text="Actor" />
-
-## TotPuppet <Badge type="tip" text="TotAdminTool" />
-- :Move
-- :GetPosition
-- :GetName
-- :SetName
-- :Delete
-- :SendLocal
-- :GetSheet
-- :SetSheet
 
 ## DatabaseConnection
 - [:query](/database#query)
@@ -94,17 +99,25 @@ This object cannot be directly constructed!
 Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 :::
 
-## TotPuppet
+## TotAdminTool <Badge type="tip" text="Actor" />
+
+## TotPuppet <Badge type="tip" text="TotAdminTool" />
 - [:Move](/totadmin#move)
-- [:GetPosition](/totadmin#getposition)
 - [:GetName](/totadmin#getname)
 - [:SetName](/totadmin#setname)
 - [:Delete](/totadmin#delete)
 - [:SendLocal](/totadmin#sendlocal)
 - [:GetSheet](/totadmin#getsheet)
 - [:SetSheet](/totadmin#setsheet)
+- [:GetTags](/totadmin#gettags)
+- [:SetTags](/totadmin#settags)
 
 ::: warning
 This object cannot be directly constructed!
 Use [TotAdmin.GetPuppet](/totadmin#getpuppet) to retrieve a valid instance.
 :::
+
+## TotPuppetTag
+- .guid
+- .name
+- .color
