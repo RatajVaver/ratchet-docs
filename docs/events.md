@@ -115,6 +115,21 @@ Callback:
 function( Character character, table runes )
 ```
 
+## Knight's Sanity
+
+### `KS_midnight` <Badge type="info" text="event" />
+This event is triggered whenever the in-game time reaches midnight.
+Server has to be using KS time sync functionality for this to work.
+There are no arguments being passed into a callback.
+
+Example:
+```lua {4}
+function atMidnight()
+    TotChat.Broadcast("It's midnight!")
+end
+on("KS_midnight", atMidnight)
+```
+
 ## Tot ! Admin Scripts
 Events can be called from Tot scripts using scripting nodes added by Ratchet mod.
 

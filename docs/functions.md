@@ -104,6 +104,15 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotSudo.GetCharString](/totsudo#getcharstring)
 - [TotSudo.SetCharString](/totsudo#setcharstring)
 - [TotSudo.RemoveCharString](/totsudo#removecharstring)
+- [TotSudo.HasGlobTag](/totsudo#hasglobtag)
+- [TotSudo.AddGlobTag](/totsudo#addglobtag)
+- [TotSudo.RemoveGlobTag](/totsudo#removeglobtag)
+- [TotSudo.GetGlobFloat](/totsudo#getglobfloat)
+- [TotSudo.SetGlobFloat](/totsudo#setglobfloat)
+- [TotSudo.RemoveGlobFloat](/totsudo#removeglobfloat)
+- [TotSudo.GetGlobString](/totsudo#getglobstring)
+- [TotSudo.SetGlobString](/totsudo#setglobstring)
+- [TotSudo.RemoveGlobString](/totsudo#removeglobstring)
 
 ## Tot ! Admin
 - [TotAdmin.RunScript](/totadmin#runscript)
