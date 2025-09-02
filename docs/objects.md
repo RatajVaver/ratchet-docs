@@ -10,6 +10,7 @@ This is a list of object structures, their member values and member functions.
 - [:GetGuildID](/characters#getguildid)
 - [:GetPosition](/characters#getposition)
 - [:GiveItem](/characters#giveitem)
+- [:ExecuteConsoleCommand](/characters#executeconsolecommand)
 
 ::: warning
 This object cannot be directly constructed!
@@ -56,6 +57,7 @@ Use [RPR.GetSheet](/redux#getsheet) to retrieve a valid instance.
 - [:length](/types/vector#length)
 - [:getNormalized](/types/vector#getnormalized)
 - [:getDistanceTo](/types/vector#getdistanceto)
+- [:findLookAtRotation](/types/vector#findlookatrotation)
 
 ::: tip
 This object can be directly constructed using `Vector()` for an empty vector, or `Vector(x,y,z)` for an actual representation of position in 3D space.
@@ -69,8 +71,10 @@ It can also be returned by various functions.
 
 ## Actor
 - .owner
+- :IsValid
 - :GetActorName
 - :GetClassName
+- :GetPathName
 - :GetLocation
 - :GetRotation
 - :SetLocation
@@ -85,6 +89,8 @@ It can also be returned by various functions.
 - :GetForwardVector
 - :GetUpVector
 - :HasTag
+- :IsOverlappingActor
+- :GetEyesViewPoint
 
 ## DatabaseConnection
 - [:query](/database#query)

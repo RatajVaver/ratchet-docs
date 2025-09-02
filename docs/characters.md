@@ -145,3 +145,9 @@ Syntax:
 ```lua
 bool Character:GiveItem( int itemId [, int quantity = 1 ] )
 ```
+
+## `ExecuteConsoleCommand` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Character:ExecuteConsoleCommand( string command )
+```

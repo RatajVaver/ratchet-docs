@@ -24,3 +24,9 @@ This is a heavy and potentially slow operation, it should not be used too often!
 Additionally, working with unsupported UE actors can be dangerous. Only use this function if you know what you're doing.
 There is no downcasting in Ratchet (e.g. converting Actor to Character).
 :::
+
+## `getActorsInRadius` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<Actor> getActorsInRadius( Vector location, float radius )
+```

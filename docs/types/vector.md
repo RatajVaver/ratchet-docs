@@ -76,3 +76,9 @@ local pos2 = player2:GetPosition()
 local distance = pos1:getDistanceTo(pos2) / 256
 print("Players are distanced " .. distance .. " tiles apart.")
 ```
+
+## `findLookAtRotation` <Badge type="info" text="function" />
+Syntax:
+```lua
+Rotator Vector:findLookAtRotation( Vector other )
+```
