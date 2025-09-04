@@ -10,7 +10,7 @@ Therefore you can freely convert this number to a player and a player to this ID
 And in Ratchet plugins you can also use [getPlayerFromID](#getplayerfromid) to create a character object from this ID,
 which is the only way to construct a character object without retrieving it from events or from functions like [getPlayersInRadius](#getplayersinradius).
 
-![Get Character ID](images/characterid.png)
+![Get Character ID](../images/characterid.png)
 
 ## `getPlayerFromID` <Badge type="info" text="function" />
 Create a character object from the player's database ID.
