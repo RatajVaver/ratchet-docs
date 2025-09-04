@@ -146,6 +146,49 @@ Syntax:
 bool Character:GiveItem( int itemId [, int quantity = 1 ] )
 ```
 
+## `Notify` <Badge type="info" text="function" />
+Shows a HUD notification to a player.
+
+Syntax:
+```lua
+void Character:Notify( string icon, string text [, Color iconColor ] )
+```
+
+Available icons:
+<div class="table-list">
+<div class="entry"><img class="ph-icon" alt="Asclepius" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/asclepius-fill.svg"/><span>Asclepius</span></div>
+<div class="entry"><img class="ph-icon" alt="Book" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/book-fill.svg"/><span>Book</span></div>
+<div class="entry"><img class="ph-icon" alt="Books" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/books-fill.svg"/><span>Books</span></div>
+<div class="entry"><img class="ph-icon" alt="Clock" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/clock-fill.svg"/><span>Clock</span></div>
+<div class="entry"><img class="ph-icon" alt="Coins" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/coins-fill.svg"/><span>Coins</span></div>
+<div class="entry"><img class="ph-icon" alt="Dress" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/dress-fill.svg"/><span>Dress</span></div>
+<div class="entry"><img class="ph-icon" alt="Envelope" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/envelope-simple-open-fill.svg"/><span>Envelope</span></div>
+<div class="entry"><img class="ph-icon" alt="Fist" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/hand-fist-fill.svg"/><span>Fist</span></div>
+<div class="entry"><img class="ph-icon" alt="Flag" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/flag-banner-fold-fill.svg"/><span>Flag</span></div>
+<div class="entry"><img class="ph-icon" alt="Flask" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/flask-fill.svg"/><span>Flask</span></div>
+<div class="entry"><img class="ph-icon" alt="Footprints" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/footprints-fill.svg"/><span>Footprints</span></div>
+<div class="entry"><img class="ph-icon" alt="Handshake" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/handshake-fill.svg"/><span>Handshake</span></div>
+<div class="entry"><img class="ph-icon" alt="Happy" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/smiley-fill.svg"/><span>Happy</span></div>
+<div class="entry"><img class="ph-icon" alt="Heart" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/heart-straight-fill.svg"/><span>Heart</span></div>
+<div class="entry"><img class="ph-icon" alt="House" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/house-line-fill.svg"/><span>House</span></div>
+<div class="entry"><img class="ph-icon" alt="Check" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/check-fat-fill.svg"/><span>Check</span></div>
+<div class="entry"><img class="ph-icon" alt="Info" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/info-fill.svg"/><span>Info</span></div>
+<div class="entry"><img class="ph-icon" alt="Lightbulb" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/lightbulb-fill.svg"/><span>Lightbulb</span></div>
+<div class="entry"><img class="ph-icon" alt="Moon" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/moon-fill.svg"/><span>Moon</span></div>
+<div class="entry"><img class="ph-icon" alt="Neutral" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/smiley-meh-fill.svg"/><span>Neutral</span></div>
+<div class="entry"><img class="ph-icon" alt="Package" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/package-fill.svg"/><span>Package</span></div>
+<div class="entry"><img class="ph-icon" alt="Person" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/person-fill.svg"/><span>Person</span></div>
+<div class="entry"><img class="ph-icon" alt="Plant" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/plant-fill.svg"/><span>Plant</span></div>
+<div class="entry"><img class="ph-icon" alt="Question" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/question-fill.svg"/><span>Question</span></div>
+<div class="entry"><img class="ph-icon" alt="Sad" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/smiley-sad-fill.svg"/><span>Sad</span></div>
+<div class="entry"><img class="ph-icon" alt="Shield" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/shield-fill.svg"/><span>Shield</span></div>
+<div class="entry"><img class="ph-icon" alt="Sparkle" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/sparkle-fill.svg"/><span>Sparkle</span></div>
+<div class="entry"><img class="ph-icon" alt="Star" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/star-fill.svg"/><span>Star</span></div>
+<div class="entry"><img class="ph-icon" alt="Sun" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/sun-fill.svg"/><span>Sun</span></div>
+<div class="entry"><img class="ph-icon" alt="Tower" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/castle-turret-fill.svg"/><span>Tower</span></div>
+<div class="entry"><img class="ph-icon" alt="Warning" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/warning-fill.svg"/><span>Warning</span></div>
+</div>
+
 ## `ExecuteConsoleCommand` <Badge type="info" text="function" />
 Syntax:
 ```lua

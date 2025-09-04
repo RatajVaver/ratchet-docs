@@ -58,6 +58,16 @@ This event is triggered right after the server boots up and Ratchet loads all pl
 There is no guarantee that all the mod controllers are spawned in yet unless Ratchet is on the bottom of the modlist order.
 It is however guaranteed, that this happens *after* all plugins are loaded, which happens only after Ratchet's Workshop mod is loaded.
 
+### `command_call` <Badge type="info" text="event" />
+This event is triggered whenever a player uses the `/ratchet call` command.
+
+All subsequent arguments are passed as a table.
+
+Callback:
+```lua
+function( Character player, table<string> arguments )
+```
+
 ### `player_join` <Badge type="info" text="event" />
 This event is triggered whenever a player connects to the server.
 
@@ -88,7 +98,7 @@ This can be used for example to completely replace some RPR ability logic with L
 
 Callback:
 ```lua
-function( Character player, int ability, table targets )
+function( Character player, int ability, table<Character> targets )
 ```
 
 Example:
@@ -112,7 +122,7 @@ Make sure to use conditions in your code to only run some additional code when y
 
 Callback:
 ```lua
-function( Character character, table runes )
+function( Character character, table<int> runes )
 ```
 
 ## Knight's Sanity
@@ -128,6 +138,30 @@ function atMidnight()
     TotChat.Broadcast("It's midnight!")
 end
 on("KS_midnight", atMidnight)
+```
+
+### `KS_selectedPoint` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character character, Vector location, string command )
+```
+
+### `KS_selectedMultiPoint` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character character, Vector first, Vector second, string command )
+```
+
+### `KS_selectedDirection` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character character, Rotator rotation, string command )
+```
+
+### `KS_selectedCharacters` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character character, table<Character> selectedPlayers, table<TotPuppet> selectedPuppets, string command )
 ```
 
 ## Tot ! Admin Scripts

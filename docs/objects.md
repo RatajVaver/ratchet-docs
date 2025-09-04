@@ -10,6 +10,7 @@ This is a list of object structures, their member values and member functions.
 - [:GetGuildID](/characters#getguildid)
 - [:GetPosition](/characters#getposition)
 - [:GiveItem](/characters#giveitem)
+- [:Notify](/characters#notify)
 - [:ExecuteConsoleCommand](/characters#executeconsolecommand)
 
 ::: warning
@@ -91,6 +92,26 @@ It can also be returned by various functions.
 - :HasTag
 - :IsOverlappingActor
 - :GetEyesViewPoint
+
+## Inventory
+- :GetAllItems
+- :GetItemByIndex
+- :GetItemById
+- :HasItem
+- :CountItems
+- :SpawnItem
+
+## Item
+- :GetOwner
+- :GetOwnerInventory
+- :GetId
+- :GetName
+- :GetShortDesc
+- :GetLongDesc
+- :SetStackSize
+- :CanUseItem
+- :GetIntStat
+- :SetIntStat
 
 ## DatabaseConnection
 - [:query](/database#query)

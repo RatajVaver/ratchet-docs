@@ -12,8 +12,10 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [getPlayersInRadius](/characters#getplayersinradius)
 - [getAllPlayers](/characters#getallplayers)
 - [getPlayerCount](/characters#getplayercount)
+- [spawnActor](/types/actor#spawnactor)
 - [findActor](/types/actor#findactor)
 - [getActorsInRadius](/types/actor#getactorsinradius)
+- [getInventoryByType](/types/inventory#getinventorybytype)
 - [dbConnect](/database#dbconnect)
 - [setTimer](/timers#settimer)
 - [killTimer](/timers#killtimer)
@@ -166,3 +168,15 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.ForgetSpell](/redux#forgetspell)
 - [RPR.Refresh](/redux#refresh)
 - [RPR.GetAbilities](/redux#getabilities)
+
+## Knight's Sanity
+- KS.PushCharacter
+- KS.SelectCharacters
+- KS.SelectPoint
+- KS.SelectMultiPoint
+- KS.SelectDirection
+- KS.ProcessAoE
+- KS.ProcessMultiPointAoE
+- KS.ProcessDirectionalAoE
+- KS.GetSelectedPoints
+- KS.GetSelectedCharacters

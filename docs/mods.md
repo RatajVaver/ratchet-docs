@@ -11,6 +11,7 @@ I've already implemented support for some of the most popular mods.
 - [Tot ! Admin](/totadmin)
 - [Tot ! Custom](/totcustom)
 - [Roleplay Redux](/redux)
+- [Knight's Sanity](/knights-sanity)
 
 Would you like to suggest compatibility with another popular mod? \
 Let me know about your idea on my [Discord](https://discord.gg/3WJNxCTn8m).

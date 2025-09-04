@@ -3,6 +3,16 @@ Actors represent objects that exist in the game world. Every player character, N
 
 Actor type in Ratchet is used to contain functions that are shared across all of those objects and can be used on any type that inherits from an actor.
 
+## `spawnActor` <Badge type="info" text="function" />
+Syntax:
+```lua
+Actor|nil spawnActor( string actorType, Vector location, Rotator rotation )
+```
+
+| Actor Type |
+| - |
+| [TotPuppet](/totadmin#puppets) |
+
 ## `findActor` <Badge type="info" text="function" />
 Returns an actor instance (or nil) based on their name in the game world.
 

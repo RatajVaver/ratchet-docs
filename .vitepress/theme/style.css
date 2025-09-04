@@ -20,3 +20,30 @@
 .dark .vp-doc pre {
     scrollbar-color: #11111b #181825;
 }
+
+.table-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-list .entry {
+    display: flex;
+    box-sizing: border-box;
+    width: 133px;
+    border: 1px solid var(--vp-c-border);
+    padding: 5px;
+    margin: 2px;
+}
+
+.table-list span {
+    margin-left: 5px;
+}
+
+.ph-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.dark .ph-icon {
+    filter: invert(100%);
+}

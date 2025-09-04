@@ -53,6 +53,7 @@ export default defineConfig({
           { text: 'Vector', link: '/types/vector' },
           { text: 'Rotator', link: '/types/rotator' },
           { text: 'Actor', link: '/types/actor' },
+          { text: 'Inventory', link: '/types/inventory' },
         ]
       },
       {
@@ -75,6 +76,7 @@ export default defineConfig({
           { text: 'Tot ! Admin', link: '/totadmin' },
           { text: 'Tot ! Custom', link: '/totcustom' },
           { text: 'Roleplay Redux', link: '/redux' },
+          { text: 'Knight\'s Sanity', link: '/knights-sanity' },
         ]
       }
     ],
