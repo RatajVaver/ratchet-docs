@@ -1,7 +1,7 @@
 # Tot ! Custom
 This library will not function if your server doesn't have the [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=2886779102) mod installed.
 
-All of these functions are compatible with both [player characters](/characters) and [puppets](/totadmin#puppets).
+All of these functions are compatible with both [player characters](/types/character) and [puppets](/totadmin#puppets).
 
 ## `GetBody` <Badge type="info" text="function" />
 

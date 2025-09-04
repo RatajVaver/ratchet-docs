@@ -16,7 +16,7 @@ print(vec.z)
 ```
 
 ## `Vector` <Badge type="info" text="constructor" />
-Vector can be constructed directly using a function of the same name, or it can be a result of various functions such as [GetPosition](/characters#getposition) of a player character object.
+Vector can be constructed directly using a function of the same name, or it can be a result of various functions such as [GetPosition](/types/character#getposition) of a player character object.
 
 Syntax:
 ```lua

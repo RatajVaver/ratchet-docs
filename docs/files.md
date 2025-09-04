@@ -16,6 +16,19 @@ if(fileExists("other.lua"))then
 end
 ```
 
+## `getFilePath` <Badge type="info" text="function" />
+Returns path of the current file relative to the specific plugin's folder.
+
+Syntax:
+```lua
+string getFilePath()
+```
+
+Example:
+```lua
+print(getFilePath()) -- "main.lua"
+```
+
 ## `include` <Badge type="info" text="function" />
 Loads additional Lua file by relative path.
 Table can be returned from the other script to serve as a module. Inheritance will also work.

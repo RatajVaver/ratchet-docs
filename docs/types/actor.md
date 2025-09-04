@@ -13,6 +13,10 @@ Actor|nil spawnActor( string actorType, Vector location, Rotator rotation )
 | - |
 | [TotPuppet](/totadmin#puppets) |
 
+::: danger
+This is not currently working correctly with Puppets (they will spawn but cannot be edited).
+:::
+
 ## `findActor` <Badge type="info" text="function" />
 Returns an actor instance (or nil) based on their name in the game world.
 
@@ -39,4 +43,124 @@ There is no downcasting in Ratchet (e.g. converting Actor to Character).
 Syntax:
 ```lua
 table<Actor> getActorsInRadius( Vector location, float radius )
+```
+
+## `IsValid` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:IsValid()
+```
+
+## `GetActorName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string Actor:GetActorName()
+```
+
+## `GetClassName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string Actor:GetClassName()
+```
+
+## `GetPathName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string Actor:GetPathName()
+```
+
+## `GetLocation` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Actor:GetLocation()
+```
+
+## `GetRotation` <Badge type="info" text="function" />
+Syntax:
+```lua
+Rotator Actor:GetRotation()
+```
+
+## `SetLocation` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:SetLocation( Vector location, bool sweep, bool teleport )
+```
+
+## `SetRotation` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:SetRotation( Rotator rotation )
+```
+
+## `GetFeetLocation` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Actor:GetFeetLocation()
+```
+
+## `SetLocationAndRotation` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:SetLocationAndRotation( Vector location, Rotator rotation, bool sweep, bool teleport )
+```
+
+## `Teleport` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:Teleport( Vector location [, Rotator rotation ] )
+```
+
+## `GetDistanceTo` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Actor:GetDistanceTo( Actor other )
+```
+
+## `GetHorizontalDistanceTo` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Actor:GetHorizontalDistanceTo( Actor other )
+```
+
+## `GetVerticalDistanceTo` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Actor:GetVerticalDistanceTo( Actor other )
+```
+
+## `GetVelocity` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Actor:GetVelocity()
+```
+
+## `GetForwardVector` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Actor:GetForwardVector()
+```
+
+## `GetUpVector` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Actor:GetUpVector()
+```
+
+## `HasTag` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:HasTag( string tag )
+```
+
+## `IsOverlappingActor` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Actor:IsOverlappingActor( Actor other )
+```
+
+## `GetEyesViewPoint` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector, Rotator Actor:GetEyesViewPoint()
 ```

@@ -43,17 +43,18 @@ export default defineConfig({
           { text: 'Exports', link: '/exports' },
           { text: 'Timers', link: '/timers' },
           { text: 'Database', link: '/database' },
-          { text: 'Characters', link: '/characters' },
           { text: 'Utilities', link: '/utils' },
         ]
       },
       {
         text: 'Types',
         items: [
+          { text: 'Characters', link: '/types/character' },
           { text: 'Vector', link: '/types/vector' },
           { text: 'Rotator', link: '/types/rotator' },
           { text: 'Actor', link: '/types/actor' },
           { text: 'Inventory', link: '/types/inventory' },
+          { text: 'Item', link: '/types/item' },
         ]
       },
       {

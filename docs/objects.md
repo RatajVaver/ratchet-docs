@@ -1,17 +1,17 @@
 # Objects
 
-This is a list of object structures, their member values and member functions.
+This is a list of object structures (types), their member values and member functions.
 
 ## Character
 - .ID 
-- [:GetName](/characters#getname)
-- [:GetRealName](/characters#getrealname)
-- [:GetSteamID](/characters#getsteamid)
-- [:GetGuildID](/characters#getguildid)
-- [:GetPosition](/characters#getposition)
-- [:GiveItem](/characters#giveitem)
-- [:Notify](/characters#notify)
-- [:ExecuteConsoleCommand](/characters#executeconsolecommand)
+- [:GetName](/types/character#getname)
+- [:GetRealName](/types/character#getrealname)
+- [:GetSteamID](/types/character#getsteamid)
+- [:GetGuildID](/types/character#getguildid)
+- [:GetPosition](/types/character#getposition)
+- [:GiveItem](/types/character#giveitem)
+- [:Notify](/types/character#notify)
+- [:ExecuteConsoleCommand](/types/character#executeconsolecommand)
 
 ::: warning
 This object cannot be directly constructed!
@@ -72,46 +72,46 @@ It can also be returned by various functions.
 
 ## Actor
 - .owner
-- :IsValid
-- :GetActorName
-- :GetClassName
-- :GetPathName
-- :GetLocation
-- :GetRotation
-- :SetLocation
-- :SetRotation
-- :GetFeetLocation
-- :SetLocationAndRotation
-- :Teleport
-- :GetDistanceTo
-- :GetHorizontalDistanceTo
-- :GetVerticalDistanceTo
-- :GetVelocity
-- :GetForwardVector
-- :GetUpVector
-- :HasTag
-- :IsOverlappingActor
-- :GetEyesViewPoint
+- [:IsValid](/types/actor#isvalid)
+- [:GetActorName](/types/actor#getactorname)
+- [:GetClassName](/types/actor#getclassname)
+- [:GetPathName](/types/actor#getpathname)
+- [:GetLocation](/types/actor#getlocation)
+- [:GetRotation](/types/actor#getrotation)
+- [:SetLocation](/types/actor#setlocation)
+- [:SetRotation](/types/actor#setrotation)
+- [:GetFeetLocation](/types/actor#getfeetlocation)
+- [:SetLocationAndRotation](/types/actor#setlocationandrotation)
+- [:Teleport](/types/actor#teleport)
+- [:GetDistanceTo](/types/actor#getdistanceto)
+- [:GetHorizontalDistanceTo](/types/actor#gethorizontaldistanceto)
+- [:GetVerticalDistanceTo](/types/actor#getverticaldistanceto)
+- [:GetVelocity](/types/actor#getvelocity)
+- [:GetForwardVector](/types/actor#getforwardvector)
+- [:GetUpVector](/types/actor#getupvector)
+- [:HasTag](/types/actor#hastag)
+- [:IsOverlappingActor](/types/actor#isoverlappingactor)
+- [:GetEyesViewPoint](/types/actor#geteyesviewpoint)
 
 ## Inventory
-- :GetAllItems
-- :GetItemByIndex
-- :GetItemById
-- :HasItem
-- :CountItems
-- :SpawnItem
+- [:GetAllItems](/types/inventory#getallitems)
+- [:GetItemByIndex](/types/inventory#getitembyindex)
+- [:GetItemById](/types/inventory#getitembyid)
+- [:HasItem](/types/inventory#hasitem)
+- [:CountItems](/types/inventory#countitems)
+- [:SpawnItem](/types/inventory#spawnitem)
 
 ## Item
-- :GetOwner
-- :GetOwnerInventory
-- :GetId
-- :GetName
-- :GetShortDesc
-- :GetLongDesc
-- :SetStackSize
-- :CanUseItem
-- :GetIntStat
-- :SetIntStat
+- [:GetOwner](/types/item#getowner)
+- [:GetOwnerInventory](/types/item#getownerinventory)
+- [:GetId](/types/item#getid)
+- [:GetName](/types/item#getname)
+- [:GetShortDesc](/types/item#getshortdesc)
+- [:GetLongDesc](/types/item#getlongdesc)
+- [:SetStackSize](/types/item#setstacksize)
+- [:CanUseItem](/types/item#canuseitem)
+- [:GetIntStat](/types/item#getintstat)
+- [:SetIntStat](/types/item#setintstat)
 
 ## DatabaseConnection
 - [:query](/database#query)

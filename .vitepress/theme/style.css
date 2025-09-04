@@ -35,6 +35,15 @@
     margin: 2px;
 }
 
+.table-list .entry-wide {
+    display: flex;
+    box-sizing: border-box;
+    width: 166px;
+    border: 1px solid var(--vp-c-border);
+    padding: 5px;
+    margin: 2px;
+}
+
 .table-list span {
     margin-left: 5px;
 }

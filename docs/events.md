@@ -59,9 +59,11 @@ There is no guarantee that all the mod controllers are spawned in yet unless Rat
 It is however guaranteed, that this happens *after* all plugins are loaded, which happens only after Ratchet's Workshop mod is loaded.
 
 ### `command_call` <Badge type="info" text="event" />
-This event is triggered whenever a player uses the `/ratchet call` command.
-
+This event is triggered whenever a player uses the `/ratchet call` command. \
 All subsequent arguments are passed as a table.
+
+This can be useful for quick testing. \
+For actual user commands you might want to use [Tot ! Admin Scripts](#tot-admin-scripts).
 
 Callback:
 ```lua

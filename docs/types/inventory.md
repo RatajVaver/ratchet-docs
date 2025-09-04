@@ -31,3 +31,39 @@ Inventory|nil getInventoryByType( Actor owner, int|string inventoryType )
 | 19 | GolemParts |
 | 20 | Workorders |
 | 21 | Patrons |
+
+## `GetAllItems` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<Item> Inventory:GetAllItems()
+```
+
+## `GetItemByIndex` <Badge type="info" text="function" />
+Syntax:
+```lua
+Item|nil Inventory:GetItemByIndex( int index )
+```
+
+## `GetItemById` <Badge type="info" text="function" />
+Syntax:
+```lua
+Item|nil Inventory:GetItemById( int templateId )
+```
+
+## `HasItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Inventory:HasItem( int templateId [, int quantity = 1 ] )
+```
+
+## `CountItems` <Badge type="info" text="function" />
+Syntax:
+```lua
+int Inventory:CountItems( int templateId )
+```
+
+## `SpawnItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+Item, int Inventory:SpawnItem( int templateId )
+```

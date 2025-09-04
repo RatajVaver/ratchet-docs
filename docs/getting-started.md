@@ -25,6 +25,16 @@ By default, they are located in `ConanSandbox\Binaries\Win64\plugins` but this c
 ```
 :::
 
+### Workshop Mod
+
+For Ratchet to function, you also need to add the Workshop mod to your mod list.
+
+It is recommended to put Ratchet at the very bottom of the mod order or as near to it as possible to avoid overwriting interface API and other unforeseen issues.
+
+::: warning
+Ratchet is still in development, you will not find it on the Steam Workshop just yet.
+:::
+
 ## Installing plugins
 
 Plugins are folders of Lua files. They always have to contain `main.lua` to be recognized by Ratchet as plugins. That file is also automatically executed whenever the plugin is loaded.

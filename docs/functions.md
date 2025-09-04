@@ -5,13 +5,14 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 
 ## Global
 - [fileExists](/files#fileexists)
+- [getFilePath](/files#getfilepath)
 - [include](/files#include)
 - [export](/exports#export)
-- [getPlayerFromID](/characters#getplayerfromid)
-- [getPlayerFromName](/characters#getplayerfromname)
-- [getPlayersInRadius](/characters#getplayersinradius)
-- [getAllPlayers](/characters#getallplayers)
-- [getPlayerCount](/characters#getplayercount)
+- [getPlayerFromID](/types/character#getplayerfromid)
+- [getPlayerFromName](/types/character#getplayerfromname)
+- [getPlayersInRadius](/types/character#getplayersinradius)
+- [getAllPlayers](/types/character#getallplayers)
+- [getPlayerCount](/types/character#getplayercount)
 - [spawnActor](/types/actor#spawnactor)
 - [findActor](/types/actor#findactor)
 - [getActorsInRadius](/types/actor#getactorsinradius)
@@ -170,13 +171,14 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.GetAbilities](/redux#getabilities)
 
 ## Knight's Sanity
-- KS.PushCharacter
-- KS.SelectCharacters
-- KS.SelectPoint
-- KS.SelectMultiPoint
-- KS.SelectDirection
-- KS.ProcessAoE
-- KS.ProcessMultiPointAoE
-- KS.ProcessDirectionalAoE
-- KS.GetSelectedPoints
-- KS.GetSelectedCharacters
+- [KS.PushCharacter](/knights-sanity#pushcharacter)
+- [KS.SelectCharacters](/knights-sanity#pushcharacter)
+- [KS.SelectPoint](/knights-sanity#selectpoint)
+- [KS.SelectMultiPoint](/knights-sanity#selectmultipoint)
+- [KS.SelectDirection](/knights-sanity#selectdirection)
+- [KS.ProcessAoE](/knights-sanity#processaoe)
+- [KS.ProcessMultiPointAoE](/knights-sanity#processmultipointaoe)
+- [KS.ProcessDirectionalAoE](/knights-sanity#processdirectionalaoe)
+- [KS.GetSelectedPoints](/knights-sanity#getselectedpoints)
+- [KS.GetSelectedCharacters](/knights-sanity#getselectedcharacters)
+- [KS.InfoBox](/knights-sanity#infobox)
