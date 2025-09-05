@@ -49,7 +49,7 @@ export default defineConfig({
       {
         text: 'Types',
         items: [
-          { text: 'Characters', link: '/types/character' },
+          { text: 'Character', link: '/types/character' },
           { text: 'Vector', link: '/types/vector' },
           { text: 'Rotator', link: '/types/rotator' },
           { text: 'Actor', link: '/types/actor' },
