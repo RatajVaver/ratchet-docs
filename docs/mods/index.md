@@ -6,12 +6,12 @@ However, support for these functions has to be implemented into Ratchet.
 I've already implemented support for some of the most popular mods.
 
 **Currently supported mods are:**
-- [Tot ! Chat](/totchat)
-- [Tot ! Sudo](/totsudo)
-- [Tot ! Admin](/totadmin)
-- [Tot ! Custom](/totcustom)
-- [Roleplay Redux](/redux)
-- [Knight's Sanity](/knights-sanity)
+- [Tot ! Chat](/mods/totchat)
+- [Tot ! Sudo](/mods/totsudo)
+- [Tot ! Admin](/mods/totadmin)
+- [Tot ! Custom](/mods/totcustom)
+- [Roleplay Redux](/mods/redux)
+- [Knight's Sanity](/mods/knights-sanity)
 
 Would you like to suggest compatibility with another popular mod? \
 Let me know about your idea on my [Discord](https://discord.gg/3WJNxCTn8m).

@@ -66,7 +66,7 @@ Functions in this section are to be called on a [TotPuppet](/objects#totpuppet) 
 
 Puppets inherit functions from Actors, any [Actor](/types/actor) functions can be used on Puppets as well.
 
-Appearance of Puppets can be manipulated with [Tot ! Custom](/totcustom) library.
+Appearance of Puppets can be manipulated with [Tot ! Custom](/mods/totcustom) library.
 
 ### `Move` <Badge type="info" text="function" />
 Syntax:
@@ -105,7 +105,7 @@ void TotPuppet:SendLocal( string message [, float distance = 10 ] )
 ```
 
 ### `GetSheet` <Badge type="info" text="function" />
-Returns serialized RPR sheet. This is the same format that can be used in [RPR.ImportSheet](/redux#importsheet).
+Returns serialized RPR sheet. This is the same format that can be used in [RPR.ImportSheet](/mods/redux#importsheet).
 
 Syntax:
 ```lua
@@ -113,7 +113,7 @@ string TotPuppet:GetSheet()
 ```
 
 ### `SetSheet` <Badge type="info" text="function" />
-Saves a serialized RPR sheet on a puppet. Use format returned from [RPR.ExportSheet](/redux#exportsheet).
+Saves a serialized RPR sheet on a puppet. Use format returned from [RPR.ExportSheet](/mods/redux#exportsheet).
 
 Syntax:
 ```lua

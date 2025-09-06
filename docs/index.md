@@ -29,7 +29,7 @@ features:
     linkText: How to use Hot Reload
   - title: 🔮 Mod Support
     details: Plugins can communicate with popular Workshop mods out of the box.
-    link: /mods
+    link: /mods/
     linkText: See mod compatibility
   - title: 📚 Libraries
     details: Ratchet offers libraries for HTTP requests, database management, and many more.

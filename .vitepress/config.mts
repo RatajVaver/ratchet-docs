@@ -60,24 +60,24 @@ export default defineConfig({
       {
         text: 'Libraries',
         items: [
-          { text: 'String', link: '/string' },
-          { text: 'Math', link: '/math' },
-          { text: 'Table', link: '/table' },
-          { text: 'Dice', link: '/dice' },
-          { text: 'Web', link: '/web' },
-          { text: 'JSON', link: '/json' },
+          { text: 'String', link: '/libs/string' },
+          { text: 'Math', link: '/libs/math' },
+          { text: 'Table', link: '/libs/table' },
+          { text: 'Dice', link: '/libs/dice' },
+          { text: 'Web', link: '/libs/web' },
+          { text: 'JSON', link: '/libs/json' },
         ]
       },
       {
         text: 'Mods',
         items: [
-          { text: 'Mod compatibility', link: '/mods' },
-          { text: 'Tot ! Chat', link: '/totchat' },
-          { text: 'Tot ! Sudo', link: '/totsudo' },
-          { text: 'Tot ! Admin', link: '/totadmin' },
-          { text: 'Tot ! Custom', link: '/totcustom' },
-          { text: 'Roleplay Redux', link: '/redux' },
-          { text: 'Knight\'s Sanity', link: '/knights-sanity' },
+          { text: 'Mod compatibility', link: '/mods/' },
+          { text: 'Tot ! Chat', link: '/mods/totchat' },
+          { text: 'Tot ! Sudo', link: '/mods/totsudo' },
+          { text: 'Tot ! Admin', link: '/mods/totadmin' },
+          { text: 'Tot ! Custom', link: '/mods/totcustom' },
+          { text: 'Roleplay Redux', link: '/mods/redux' },
+          { text: 'Knight\'s Sanity', link: '/mods/knights-sanity' },
         ]
       }
     ],

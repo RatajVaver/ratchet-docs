@@ -25,3 +25,11 @@ Syntax:
 ```lua
 float math.lerp( float start, float stop, float t )
 ```
+
+## `distance` <Badge type="info" text="function" />
+Calculates a distance between two points in 2D space using [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem).
+
+Syntax:
+```lua
+float math.distance( float x1, float y1, float x2, float y2 )
+```

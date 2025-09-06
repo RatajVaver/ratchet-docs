@@ -36,7 +36,7 @@ Use references obtained from events or functions.
 
 ::: warning
 This object cannot be directly constructed!
-Use [RPR.GetSheet](/redux#getsheet) to retrieve a valid instance.
+Use [RPR.GetSheet](/mods/redux#getsheet) to retrieve a valid instance.
 :::
 
 ## GUID
@@ -129,19 +129,19 @@ Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 ## TotAdminTool <Badge type="tip" text="Actor" />
 
 ## TotPuppet <Badge type="tip" text="TotAdminTool" />
-- [:Move](/totadmin#move)
-- [:GetName](/totadmin#getname)
-- [:SetName](/totadmin#setname)
-- [:Delete](/totadmin#delete)
-- [:SendLocal](/totadmin#sendlocal)
-- [:GetSheet](/totadmin#getsheet)
-- [:SetSheet](/totadmin#setsheet)
-- [:GetTags](/totadmin#gettags)
-- [:SetTags](/totadmin#settags)
+- [:Move](/mods/totadmin#move)
+- [:GetName](/mods/totadmin#getname)
+- [:SetName](/mods/totadmin#setname)
+- [:Delete](/mods/totadmin#delete)
+- [:SendLocal](/mods/totadmin#sendlocal)
+- [:GetSheet](/mods/totadmin#getsheet)
+- [:SetSheet](/mods/totadmin#setsheet)
+- [:GetTags](/mods/totadmin#gettags)
+- [:SetTags](/mods/totadmin#settags)
 
 ::: warning
 This object cannot be directly constructed!
-Use [TotAdmin.GetPuppet](/totadmin#getpuppet) to retrieve a valid instance.
+Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 :::
 
 ## TotPuppetTag

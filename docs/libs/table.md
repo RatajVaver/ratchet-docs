@@ -37,3 +37,47 @@ Syntax:
 ```lua
 table table.shuffle( table original )
 ```
+
+## `keys` <Badge type="info" text="function" />
+Syntax:
+```lua
+table table.keys( table list )
+```
+
+## `values` <Badge type="info" text="function" />
+Syntax:
+```lua
+table table.values( table list )
+```
+
+## `contains` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool table.contains( table list, mixed value )
+```
+
+## `isEmpty` <Badge type="info" text="function" />
+Checks whether a table is completely empty.
+
+Syntax:
+```lua
+bool table.isEmpty( table list )
+```
+
+## `count` <Badge type="info" text="function" />
+Returns the number of keys in a table, effectively counting the number of elements.
+
+This should be used for non-sequential tables, otherwise standard `#` is more efficient.
+
+Syntax:
+```lua
+int table.count( table list )
+```
+
+## `random` <Badge type="info" text="function" />
+Returns a random value from the table.
+
+Syntax:
+```lua
+mixed table.random( table list )
+```

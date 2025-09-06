@@ -11,7 +11,7 @@ Actor|nil spawnActor( string actorType, Vector location, Rotator rotation )
 
 | Actor Type |
 | - |
-| [TotPuppet](/totadmin#puppets) |
+| [TotPuppet](/mods/totadmin#puppets) |
 
 ::: danger
 This is not currently working correctly with Puppets (they will spawn but cannot be edited).
