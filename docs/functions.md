@@ -134,6 +134,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.GiveKit](/mods/totadmin#givekit)
 - [TotAdmin.GetPuppet](/mods/totadmin#getpuppet)
 - [TotAdmin.GetPuppetsInRadius](/mods/totadmin#getpuppetsinradius)
+- [TotAdmin.GetMapMarkers](/mods/totadmin#getmapmarkers)
+- [TotAdmin.SetMapMarker](/mods/totadmin#setmapmarker)
+- [TotAdmin.DeleteMapMarker](/mods/totadmin#deletemapmarker)
 
 ## Tot ! Custom
 - [TotCustom.GetBody](/mods/totcustom#getbody)
@@ -176,6 +179,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.ForgetSpell](/mods/redux#forgetspell)
 - [RPR.Refresh](/mods/redux#refresh)
 - [RPR.GetAbilities](/mods/redux#getabilities)
+- [RPR.GetEquippedRunes](/mods/redux#getequippedrunes)
+- [RPR.SetEquippedRunes](/mods/redux#setequippedrunes)
 
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)

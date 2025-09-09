@@ -61,6 +61,26 @@ Syntax:
 table<TotPuppet> TotAdmin.GetPuppetsInRadius( Vector location, float radius )
 ```
 
+### `GetMapMarkers` <Badge type="info" text="function" />
+Returns a list of all map markers as a table of [TotMapMarker](/objects#totmapmarker) objects.
+
+Syntax:
+```lua
+table<TotMapMarker> TotAdmin.GetMapMarkers()
+```
+
+### `SetMapMarker` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotAdmin.SetMapMarker( TotMapMarker data )
+```
+
+### `DeleteMapMarker` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotAdmin.DeleteMapMarker( GUID markerId )
+```
+
 ## Puppets
 Functions in this section are to be called on a [TotPuppet](/objects#totpuppet) object.
 

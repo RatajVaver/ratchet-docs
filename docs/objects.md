@@ -39,17 +39,43 @@ This object cannot be directly constructed!
 Use [RPR.GetSheet](/mods/redux#getsheet) to retrieve a valid instance.
 :::
 
+## ReduxAbility
+- .id
+- .name
+- .category
+- .range
+
+::: warning
+This object cannot be directly constructed!
+Use [RPR.GetAbilities](/mods/redux#getabilities) to retrieve a valid instance.
+:::
+
 ## GUID
 - .A
 - .B
 - .C
 - .D
 
+::: tip
+This object can be directly constructed using `GUID()` for a new random GUID.
+
+Specific GUID can also be re-created using `GUID(guidString)` (A-B-C-D format) or using `GUID(A,B,C,D)` with all parts being integers.
+Try to prefer the former over the latter.
+
+To convert GUID into a string format accepted by the constructor, use `tostring(myGuid)`
+:::
+
 ## Color
 - .R
 - .G
 - .B
 - .A
+
+::: tip
+This object can be directly constructed using `Color(R,G,B,A)` or `Color(R,G,B)` (non-transparent), all values have to be either 0-255 (int) or 0-1 (float).
+
+You can also use single argument Lua hex integer like this: `Color(0xFFCC00)`
+:::
 
 ## Vector
 - .x
@@ -69,6 +95,10 @@ It can also be returned by various functions.
 - .pitch
 - .yaw
 - .roll
+
+::: tip
+Rotators can be constructed in the same way as Vectors.
+:::
 
 ## Actor
 - .owner
@@ -148,3 +178,11 @@ Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 - .guid
 - .name
 - .color
+
+## TotMapMarker
+- .guid
+- .name
+- .x
+- .y
+- .icon
+- .iconName

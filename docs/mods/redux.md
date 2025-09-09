@@ -227,9 +227,31 @@ void RPR.Refresh( Character player )
 ## `GetAbilities` <Badge type="info" text="function" />
 Retrieves a list of all abilities in the RPR system.
 
-A table is returned, keys represent ability IDs and values represent ability names.
+A table is returned, containing [ReduxAbility](/objects#reduxability) objects.
+If the `keyed` argument is set to true, then ability IDs will be used as table keys, otherwise the table is sequential by default.
 
 Syntax:
 ```lua
-table<int,string> RPR.GetAbilities()
+table<ReduxAbility> RPR.GetAbilities( [ bool keyed = false ] )
 ```
+
+## `GetEquippedRunes` <Badge type="info" text="function" />
+Returns two tables. First one corresponds to item template IDs of the equipped runes while the other one corresponds to RPR rune IDs.
+Both tables are sequential and their indexes should correspond to each other, however this is not guaranteed.
+
+Syntax:
+```lua
+table<int>, table<int> RPR.GetEquippedRunes( Character player )
+```
+
+## `SetEquippedRunes` <Badge type="info" text="function" />
+Forces a list of item IDs to be equipped, replacing currently equipped runes.
+
+Syntax:
+```lua
+void RPR.SetEquippedRunes( Character player, table<int> runes )
+```
+
+::: warning
+Be super careful with this function when using it inside `RPR_updateRunes` event, as that could easily lead into infinite loop and slow down or even crash the server.
+:::
