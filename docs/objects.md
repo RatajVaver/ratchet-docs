@@ -9,6 +9,7 @@ This is a list of object structures (types), their member values and member func
 - [:GetSteamID](/types/character#getsteamid)
 - [:GetGuildID](/types/character#getguildid)
 - [:GetPosition](/types/character#getposition)
+- [:GetFeetPosition](/types/character#getfeetposition)
 - [:GiveItem](/types/character#giveitem)
 - [:Notify](/types/character#notify)
 - [:ExecuteConsoleCommand](/types/character#executeconsolecommand)

@@ -134,6 +134,12 @@ Syntax:
 Vector Character:GetPosition()
 ```
 
+## `GetFeetPosition` <Badge type="info" text="function" />
+Syntax:
+```lua
+Vector Character:GetFeetPosition()
+```
+
 Example:
 ```lua
 local position = player:GetPosition()
