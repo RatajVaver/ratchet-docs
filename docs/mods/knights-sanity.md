@@ -1,6 +1,17 @@
 # Knight's Sanity
 This library will not function if your server doesn't have the [Knight's Sanity](https://steamcommunity.com/sharedfiles/filedetails/?id=3373599765) mod installed.
 
+## AoE Shapes (Reference sheet)
+| Type | Index | Shape |
+|-|-|-|
+| Point | 0 | Point |
+| Point | 1 | Sphere |
+| Point | 2 | Cylinder |
+| MultiPoint | 0 | Wall |
+| Directional | 0 | Cone |
+| Directional | 1 | Line |
+| Directional | 2 | Cube |
+
 ## `PushCharacter` <Badge type="info" text="function" />
 Syntax:
 ```lua

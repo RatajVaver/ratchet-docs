@@ -164,3 +164,9 @@ Syntax:
 ```lua
 Vector, Rotator Actor:GetEyesViewPoint()
 ```
+
+## `Destroy` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Actor:Destroy()
+```
