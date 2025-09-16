@@ -1,6 +1,14 @@
 # Utilities
 This page documents miscellaneous functions that don't belong to any library.
 
+## `getType` <Badge type="info" text="function" />
+Returns the name of an object type for a specific object.
+
+Syntax:
+```lua
+string getType( mixed object )
+```
+
 ## `base64Encode` <Badge type="info" text="function" />
 Syntax:
 ```lua

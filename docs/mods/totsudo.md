@@ -12,6 +12,20 @@ Syntax:
 bool TotSudo.HasRole( Character player, string name )
 ```
 
+## `GrantRole` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotSudo.GrantRole( Character player, string name )
+```
+
+## `RevokeRole` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotSudo.RevokeRole( Character player, string name )
+```
+
 ## `GetRoles` <Badge type="info" text="function" />
 
 Syntax:

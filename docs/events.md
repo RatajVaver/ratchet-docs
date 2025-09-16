@@ -213,6 +213,25 @@ end
 on("example_event", callback)
 ```
 
+## Tot ! Admin Interactions
+Ratchet also implements an Action Module for all Admin Tools.
+You can directly call events when interacting with Puppets, points, or when players enter or exit a zone.
+Using this direct method is more performance friendly than calling events from Tot scripts.
+
+![Interaction setup](/images/tool-interaction.png)
+
+### Interaction Event
+```lua {1}
+function callback(player, adminTool, argument)
+    print(player:GetName() .. " interacted with " .. getType(adminTool))
+end
+```
+
+::: tip
+If the Admin Tool that the player interacts with is a Puppet, Ratchet will pass it into the callback function as a [TotPuppet](/objects#totpuppet) object.
+In all other cases, only [Actor](/objects#actor) functions can be used.
+:::
+
 ## Trigger from DevKit
 Events can also be called from your own Workshop mods using Ratchet interface API.
 

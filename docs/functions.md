@@ -25,6 +25,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [once](/events#once)
 - [emit](/events#emit)
 - [sendToClient](/events#sendtoclient)
+- [getType](/utils#gettype)
 - [base64Encode](/utils#base64encode)
 - [base64Decode](/utils#base64decode)
 - [friendlyTime](/utils#friendlytime)
@@ -106,6 +107,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 
 ## Tot ! Sudo
 - [TotSudo.HasRole](/mods/totsudo#hasrole)
+- [TotSudo.GrantRole](/mods/totsudo#grantrole)
+- [TotSudo.RevokeRole](/mods/totsudo#revokerole)
 - [TotSudo.GetRoles](/mods/totsudo#getroles)
 - [TotSudo.HasPermission](/mods/totsudo#haspermission)
 - [TotSudo.HasCharTag](/mods/totsudo#haschartag)
