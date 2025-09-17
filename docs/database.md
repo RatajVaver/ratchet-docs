@@ -17,7 +17,7 @@ Refer to examples below to use them properly.
 
 Syntax:
 ```lua
-DatabaseConnection|nil dbConnect( string databaseType, string connectionString )
+DatabaseConnection|nil dbConnect( string databaseType, string connectionString [, int timeout = 500 ] )
 ```
 
 Example:
@@ -85,9 +85,10 @@ void DatabaseConnection:query( string query [, function ( bool success, string e
 ```
 
 Example:
-```lua {2}
+```lua {2,3}
 local db = dbConnect("sqlite3", "data/test.db")
-db:query("SELECT `value` FROM `settings` WHERE `key` = 'motd'", function(success, error, rows)
+db:query("SELECT `value` FROM `settings` WHERE `key` = 'motd'",
+function(success, error, rows)
     print(rows[1].value)
 end)
 ```
@@ -98,13 +99,14 @@ This is mainly useful for `INSERT`, `DELETE` and `UPDATE` queries.
 
 Syntax:
 ```lua
-void DatabaseConnection:exec( string query [, function ( bool success, string error, int affected ) ] )
+void DatabaseConnection:exec( string query [, function ( bool success, string error, int|nil affected ) ] )
 ```
 
 Example:
-```lua {2}
+```lua {2,3}
 local db = dbConnect("sqlite3", "data/test.db")
-db:exec("UPDATE `settings` SET `value` = 'Hello world!' WHERE `key` = 'motd'", function(success, error, affected)
+db:exec("UPDATE `settings` SET `value` = 'Hello world!' WHERE `key` = 'motd'",
+function(success, error, affected)
     print(affected)
 end)
 ```
@@ -115,14 +117,20 @@ Every `?` in the query string will be replaced by corresponding value in the dat
 
 Syntax:
 ```lua
-void DatabaseConnection:prepare( string query, table data [, function ( bool success, string error, table|nil rows ) ] )
+void DatabaseConnection:prepare( string query, table data [, function ( bool success, string error, table|int|nil rows ) ] )
 ```
 
 Example:
-```lua {2}
+```lua {2,3,7,8}
 local db = dbConnect("sqlite3", "data/test.db")
-db:prepare("SELECT `value` FROM `settings` WHERE `key` = ?", { "motd" }, function(success, error, rows)
+db:prepare("SELECT `value` FROM `settings` WHERE `key` = ?", { "motd" },
+function(success, error, rows)
     print(rows[1].value)
+end)
+
+db:prepare("UPDATE `settings` SET `value` = ? WHERE `key` = ?", { "Hello world!", "motd" },
+function(success, error, affected)
+    print(affected)
 end)
 ```
 
@@ -152,19 +160,4 @@ Example:
 ```lua
 local db = dbConnect("sqlite3", "data/test.db")
 print(db:isConnected())
-```
-
-### `poolSize` <Badge type="info" text="function" />
-Return a number of active concurrent connections to the specific database under one connection object.
-This will never exceed 10 by design.
-
-Syntax:
-```lua
-int DatabaseConnection:poolSize()
-```
-
-Example:
-```lua
-local db = dbConnect("sqlite3", "data/test.db")
-print(db:poolSize())
 ```
