@@ -124,6 +124,7 @@ Rotators can be constructed in the same way as Vectors.
 - [:IsOverlappingActor](/types/actor#isoverlappingactor)
 - [:GetEyesViewPoint](/types/actor#geteyesviewpoint)
 - [:Destroy](/types/actor#destroy)
+- [:CallFunction](/types/actor#callfunction)
 
 ## Inventory
 - [:GetAllItems](/types/inventory#getallitems)

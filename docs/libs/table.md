@@ -7,7 +7,7 @@ Creates a deep copy of a table to break reference from the original.
 
 Syntax:
 ```lua
-table table.copy( table original )
+table|nil table.copy( table original )
 ```
 
 ## `merge` <Badge type="info" text="function" />
@@ -23,31 +23,31 @@ Swaps keys with values in a table.
 
 Syntax:
 ```lua
-table table.swap( table original )
+table|nil table.swap( table original )
 ```
 
 ## `reverse` <Badge type="info" text="function" />
 Syntax:
 ```lua
-table table.reverse( table original )
+table|nil table.reverse( table original )
 ```
 
 ## `shuffle` <Badge type="info" text="function" />
 Syntax:
 ```lua
-table table.shuffle( table original )
+table|nil table.shuffle( table original )
 ```
 
 ## `keys` <Badge type="info" text="function" />
 Syntax:
 ```lua
-table table.keys( table list )
+table|nil table.keys( table list )
 ```
 
 ## `values` <Badge type="info" text="function" />
 Syntax:
 ```lua
-table table.values( table list )
+table|nil table.values( table list )
 ```
 
 ## `contains` <Badge type="info" text="function" />

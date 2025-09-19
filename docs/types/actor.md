@@ -170,3 +170,13 @@ Syntax:
 ```lua
 void Actor:Destroy()
 ```
+
+## `CallFunction` <Badge type="info" text="function" />
+This is equivalent to `Call Function By Name` in the DevKit.
+
+Only use this if you know what you're doing.
+
+Syntax:
+```lua
+void Actor:CallFunction( string name )
+```
