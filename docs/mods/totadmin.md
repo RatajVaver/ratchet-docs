@@ -46,6 +46,15 @@ Syntax:
 bool TotAdmin.GiveKit( Character player, string kit )
 ```
 
+### `GetZone` <Badge type="info" text="function" />
+Use number if you want to find a zone by its UID.\
+Use string if you want to find a zone by its name.
+
+Syntax:
+```lua
+TotZone|nil TotAdmin.GetZone( int|string nameOrUID )
+```
+
 ### `GetPuppet` <Badge type="info" text="function" />
 Use number if you want to find a puppet by its UID.\
 Use string if you want to find a puppet by its internal name.
@@ -81,6 +90,64 @@ Syntax:
 bool TotAdmin.DeleteMapMarker( GUID markerId )
 ```
 
+## Zones
+Functions in this section are to be called on a [TotZone](/objects#totzone) object.
+
+Zones can either be spheres or boxes.
+
+### `GetUID` <Badge type="info" text="function" />
+Syntax:
+```lua
+int TotZone:GetUID()
+```
+
+### `GetName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string TotZone:GetName()
+```
+
+### `SetName` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotZone:SetName( string name )
+```
+
+### `GetParam` <Badge type="info" text="function" />
+Syntax:
+```lua
+string TotZone:GetParam( string name )
+```
+
+Available parameters:
+- Name
+- Radius (Sphere only)
+- Extends (Box only)
+- Enabled
+- Trigger for Players
+- Trigger for Spawned NPC
+- Trigger for Vanilla NPC
+- Trigger for Thralls
+- Rules
+
+### `SetParam` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotZone:SetParam( string name, float|string value )
+```
+
+### `IsBox` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotZone:IsBox()
+```
+
+### `IsSphere` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotZone:IsSphere()
+```
+
 ## Puppets
 Functions in this section are to be called on a [TotPuppet](/objects#totpuppet) object.
 
@@ -98,6 +165,12 @@ void TotPuppet:Move( Vector position [, float rotation = 0 ] )
 Syntax:
 ```lua
 Vector TotPuppet:GetPosition()
+```
+
+### `GetUID` <Badge type="info" text="function" />
+Syntax:
+```lua
+int TotPuppet:GetUID()
 ```
 
 ### `GetName` <Badge type="info" text="function" />

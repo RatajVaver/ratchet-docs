@@ -229,6 +229,7 @@ end
 
 ::: tip
 If the Admin Tool that the player interacts with is a Puppet, Ratchet will pass it into the callback function as a [TotPuppet](/objects#totpuppet) object.
+Similarly, if the Admin Tool is either a Sphere Zone or a Box Zone, Ratchet will use the [TotZone](/objects#totzone) object.
 In all other cases, only [Actor](/objects#actor) functions can be used.
 :::
 

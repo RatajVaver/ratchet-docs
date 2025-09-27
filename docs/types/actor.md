@@ -6,15 +6,17 @@ Actor type in Ratchet is used to contain functions that are shared across all of
 ## `spawnActor` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Actor|nil spawnActor( string actorType, Vector location, Rotator rotation )
+Actor|nil spawnActor( string actorType, Vector location [, Rotator rotation ] )
 ```
 
-| Actor Type |
-| - |
-| [TotPuppet](/mods/totadmin#puppets) |
+| Actor Type | Lua Object |
+| - | - |
+| TotPuppet | [TotPuppet](/mods/totadmin#puppets) |
+| TotBoxZone | [TotZone](/mods/totadmin#zones) |
+| TotSphereZone | [TotZone](/mods/totadmin#zones) |
 
 ::: danger
-This is not currently working correctly with Puppets (they will spawn but cannot be edited).
+This feature is currently not working (Puppets/Zones will spawn but cannot be edited).
 :::
 
 ## `findActor` <Badge type="info" text="function" />

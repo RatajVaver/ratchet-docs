@@ -135,6 +135,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.Teleport](/mods/totadmin#teleport)
 - [TotAdmin.Warp](/mods/totadmin#warp)
 - [TotAdmin.GiveKit](/mods/totadmin#givekit)
+- [TotAdmin.GetZone](/mods/totadmin#getzone)
 - [TotAdmin.GetPuppet](/mods/totadmin#getpuppet)
 - [TotAdmin.GetPuppetsInRadius](/mods/totadmin#getpuppetsinradius)
 - [TotAdmin.GetMapMarkers](/mods/totadmin#getmapmarkers)

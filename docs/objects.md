@@ -159,11 +159,24 @@ This object cannot be directly constructed!
 Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 :::
 
-## TotAdminTool <Badge type="tip" text="Actor" />
-
-## TotPuppet <Badge type="tip" text="TotAdminTool" />
-- [:Move](/mods/totadmin#move)
+## TotZone <Badge type="tip" text="Actor" />
+- [:GetUID](/mods/totadmin#getuid)
 - [:GetName](/mods/totadmin#getname)
+- [:SetName](/mods/totadmin#getname)
+- [:GetParam](/mods/totadmin#getparam)
+- [:SetParam](/mods/totadmin#setparam)
+- [:IsBox](/mods/totadmin#isbox)
+- [:IsSphere](/mods/totadmin#issphere)
+
+::: warning
+This object cannot be directly constructed!
+Use [TotAdmin.GetZone](/mods/totadmin#getzone) to retrieve a valid instance.
+:::
+
+## TotPuppet <Badge type="tip" text="Actor" />
+- [:Move](/mods/totadmin#move)
+- [:GetUID](/mods/totadmin#getuid-1)
+- [:GetName](/mods/totadmin#getname-1)
 - [:SetName](/mods/totadmin#setname)
 - [:Delete](/mods/totadmin#delete)
 - [:SendLocal](/mods/totadmin#sendlocal)
