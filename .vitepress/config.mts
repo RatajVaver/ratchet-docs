@@ -26,6 +26,7 @@ export default defineConfig({
         text: 'Server Configuration',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Configuration', link: '/config' },
           { text: 'Plugin Manager', link: '/plugin-manager' },
           { text: 'Hot Reload', link: '/hot-reload' },
           { text: 'Web Server', link: '/web-server' },

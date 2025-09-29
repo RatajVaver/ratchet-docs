@@ -15,16 +15,7 @@ From there it will be automatically loaded whenever server is started.
 
 Configuration file named `config.json` also has to remain in this directory. It will tell Ratchet where to look for plugins (and packages).
 
-By default, they are located in `ConanSandbox\Binaries\Win64\plugins` but this can be changed in the configuration file.
-
-::: code-group
-```json [config.json]{2}
-{
-  "plugins": "C:/Ratchet/plugins",
-  "packages": "C:/Users/USERNAME/AppData/Roaming/luarocks/share/lua/5.4/?.lua"
-}
-```
-:::
+By default, they are located in `ConanSandbox\Binaries\Win64\plugins` but this can be changed in the [configuration](/config) file.
 
 ### Workshop Mod
 
