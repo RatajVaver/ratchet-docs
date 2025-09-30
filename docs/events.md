@@ -127,6 +127,14 @@ Callback:
 function( Character character, table<int> runes )
 ```
 
+### `RPR_updateStatus` <Badge type="info" text="event" />
+Whenever anyone changes their custom status in RPR, this event is triggered.
+
+Callback:
+```lua
+function( Character character, string status, Color color )
+```
+
 ## Knight's Sanity
 
 ### `KS_midnight` <Badge type="info" text="event" />

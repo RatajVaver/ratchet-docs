@@ -255,3 +255,19 @@ void RPR.SetEquippedRunes( Character player, table<int> runes )
 ::: warning
 Be super careful with this function when using it inside `RPR_updateRunes` event, as that could easily lead into infinite loop and slow down or even crash the server.
 :::
+
+## `GetUserStatus` <Badge type="info" text="function" />
+Retrieves the custom status set by a user in RPR's Bio tab.
+
+Syntax:
+```lua
+string, Color RPR.GetUserStatus( Character player )
+```
+
+## `SetUserStatus` <Badge type="info" text="function" />
+Replaces the custom status in RPR's Bio tab and on nameplate.
+
+Syntax:
+```lua
+void RPR.SetUserStatus( Character player, string name, Color color )
+```

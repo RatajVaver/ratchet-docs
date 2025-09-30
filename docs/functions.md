@@ -186,6 +186,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.GetAbilities](/mods/redux#getabilities)
 - [RPR.GetEquippedRunes](/mods/redux#getequippedrunes)
 - [RPR.SetEquippedRunes](/mods/redux#setequippedrunes)
+- [RPR.GetUserStatus](/mods/redux#getuserstatus)
+- [RPR.SetUserStatus](/mods/redux#setuserstatus)
 
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)
