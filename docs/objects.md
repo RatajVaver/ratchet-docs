@@ -13,6 +13,7 @@ This is a list of object structures (types), their member values and member func
 - [:GiveItem](/types/character#giveitem)
 - [:Notify](/types/character#notify)
 - [:ExecuteConsoleCommand](/types/character#executeconsolecommand)
+- [:CallComponentFunction](/types/character#callcomponentfunction)
 
 ::: warning
 This object cannot be directly constructed!

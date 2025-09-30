@@ -216,3 +216,9 @@ Syntax:
 ```lua
 void Character:ExecuteConsoleCommand( string command )
 ```
+
+## `CallComponentFunction` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Character:CallComponentFunction( string componentName, string functionName )
+```
