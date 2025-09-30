@@ -47,7 +47,7 @@ Sends data to client listener ([see DevKit implementation](#client-side)).
 
 Syntax:
 ```lua
-void sendToClient( string name [, table<string> arguments ] )
+void sendToClient( Character player, string name [, table<string> arguments ] )
 ```
 
 ## Internal events
