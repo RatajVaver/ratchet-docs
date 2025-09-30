@@ -45,9 +45,31 @@ emit( string event [, arguments... ] )
 ### `sendToClient` <Badge type="info" text="function" />
 Sends data to client listener ([see DevKit implementation](#client-side)).
 
+Arguments are serialized in a way that's compatible with Tot API unmarshal functions.
+
 Syntax:
 ```lua
-void sendToClient( Character player, string name [, table<string> arguments ] )
+void sendToClient( Character player, string name [, arguments... ] )
+```
+
+### `sendToPlayer` <Badge type="info" text="function" />
+Sends data to player listener ([see DevKit implementation](#server-side)).
+
+Arguments are serialized in a way that's compatible with Tot API unmarshal functions.
+
+Syntax:
+```lua
+void sendToPlayer( Character player, string name [, arguments... ] )
+```
+
+### `sendToGlobal` <Badge type="info" text="function" />
+Sends data to global listener ([see DevKit implementation](#server-side)).
+
+Arguments are serialized in a way that's compatible with Tot API unmarshal functions.
+
+Syntax:
+```lua
+void sendToGlobal( string name [, arguments... ] )
 ```
 
 ## Internal events

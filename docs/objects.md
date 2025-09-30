@@ -14,6 +14,10 @@ This is a list of object structures (types), their member values and member func
 - [:Notify](/types/character#notify)
 - [:ExecuteConsoleCommand](/types/character#executeconsolecommand)
 - [:CallComponentFunction](/types/character#callcomponentfunction)
+- [:IsStanding](/types/character#isstanding)
+- [:IsWalking](/types/character#iswalking)
+- [:IsRiding](/types/character#isriding)
+- [:IsArmed](/types/character#isarmed)
 
 ::: warning
 This object cannot be directly constructed!

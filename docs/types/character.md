@@ -222,3 +222,27 @@ Syntax:
 ```lua
 void Character:CallComponentFunction( string componentName, string functionName )
 ```
+
+## `IsStanding` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsStanding()
+```
+
+## `IsWalking` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsWalking()
+```
+
+## `IsRiding` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsRiding()
+```
+
+## `IsArmed` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsArmed()
+```
