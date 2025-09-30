@@ -18,6 +18,8 @@ This is a list of object structures (types), their member values and member func
 - [:IsWalking](/types/character#iswalking)
 - [:IsRiding](/types/character#isriding)
 - [:IsArmed](/types/character#isarmed)
+- [:Freeze](/types/character#freeze)
+- [:PlayVoice](/types/character#playvoice)
 
 ::: warning
 This object cannot be directly constructed!

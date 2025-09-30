@@ -246,3 +246,19 @@ Syntax:
 ```lua
 bool Character:IsArmed()
 ```
+
+## `Freeze` <Badge type="info" text="function" />
+Freeze or unfreeze a player (restricting their movement).
+
+Syntax:
+```lua
+void Character:Freeze( bool enable )
+```
+
+## `PlayVoice` <Badge type="info" text="function" />
+Play a sound from the VoiceTable (such as `voc_pain` or `voc_jump`).
+
+Syntax:
+```lua
+void Character:PlayVoice( string sound )
+```
