@@ -8,6 +8,8 @@ Be it for controlling plugins or calling events.
 
 By default, web server is accessible on: `http://localhost:5460`
 
+Port can be changed in the [configuration](/config) file.
+
 ::: warning
 Make sure the web server's port is not publicly accessible from the internet, as that would allow malicious actors to disable your plugins remotely.
 :::
@@ -50,6 +52,17 @@ http://localhost:5460/refresh-schedule
 ```
 http://localhost:5460/refresh-plugins
 ```
+
+## Debugging
+
+### `/debug` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Change the setting of [debugFocus](/config#debugfocus) during runtime.
+
+```
+http://localhost:5460/debug/:focus
+```
+
+Focus value can be empty to disable logging of hooks completely, or `*` to enable it for all (this is resource intensive and should be used sparsely).
 
 ## Events
 

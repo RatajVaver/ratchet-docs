@@ -44,6 +44,10 @@ Below is an example of a config file that contains all the options that can be c
     "enabled": true,
     "connectionTimeout": 500,
     "logQueries": false
+  },
+  "hooks": {
+    "logHooks": false,
+    "debugFocus": ""
   }
 }
 ```
@@ -97,3 +101,16 @@ Default: `500`
 Print debug message with every SQL query.
 
 Default: `false`
+
+### hooks
+
+#### logHooks
+Log most game server actions. Enabling this can be very resource intensive and cause lags.
+
+Default: `false`
+
+#### debugFocus
+A partial name of a class to focus on and log everything from. Previous setting has to be enabled for this to work.
+Other hooks will be ignored and not logged.
+
+Default: &lt;empty string&gt;
