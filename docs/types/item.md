@@ -72,3 +72,21 @@ Syntax:
 ```lua
 bool Item:SetIntStat( string stat, int value )
 ```
+
+## `ModifyDurability` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Item:ModifyDurability( float value )
+```
+
+## `SetDurability` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Item:SetDurability( float value )
+```
+
+## `IsBroken` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Item:IsBroken()
+```

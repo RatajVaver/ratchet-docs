@@ -141,9 +141,6 @@ on("RPR_useAbility", useAbility)
 ### `RPR_updateRunes` <Badge type="info" text="event" />
 Whenever anyone (un)equips any rune in RPR, this event is triggered.
 
-Keep in mind, that due to nature of how inventory works in Conan Exiles, this event may be called much more often than needed.
-Make sure to use conditions in your code to only run some additional code when you actually need to.
-
 Callback:
 ```lua
 function( Character character, table<int> runes )

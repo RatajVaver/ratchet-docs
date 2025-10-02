@@ -245,7 +245,7 @@ table<int>, table<int> RPR.GetEquippedRunes( Character player )
 ```
 
 ## `SetEquippedRunes` <Badge type="info" text="function" />
-Forces a list of item IDs to be equipped, replacing currently equipped runes.
+Forces a list of rune IDs to be equipped, replacing currently equipped runes.
 
 Syntax:
 ```lua

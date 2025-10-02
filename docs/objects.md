@@ -152,6 +152,9 @@ Rotators can be constructed in the same way as Vectors.
 - [:CanUseItem](/types/item#canuseitem)
 - [:GetIntStat](/types/item#getintstat)
 - [:SetIntStat](/types/item#setintstat)
+- [:ModifyDurability](/types/item#modifydurability)
+- [:SetDurability](/types/item#setdurability)
+- [:IsBroken](/types/item#isbroken)
 
 ## DatabaseConnection
 - [:query](/database#query)
