@@ -44,3 +44,31 @@ Syntax:
 ```lua
 bool TotCustom.SetAccessories( Character|TotPuppet actor, string data )
 ```
+
+## `GetSliderValue` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+float TotCustom.GetSliderValue( Character|TotPuppet actor, string key )
+```
+
+## `SetSliderValue` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotCustom.SetSliderValue( Character|TotPuppet actor, string key, float value )
+```
+
+## `SetArmorPiece` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotCustom.SetArmorPiece( Character|TotPuppet actor, int slot, int itemId, Color color )
+```
+
+## `ClearArmorSlot` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotCustom.ClearArmorSlot( Character|TotPuppet actor, int slot )
+```

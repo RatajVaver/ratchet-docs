@@ -212,3 +212,13 @@ Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 - .y
 - .icon
 - .iconName
+
+## KSVolume
+- [:GetColor](/mods/knights-sanity#getcolor)
+- [:GetRadius](/mods/knights-sanity#getradius)
+- [:SetColor](/mods/knights-sanity#setcolor)
+- [:SetRadius](/mods/knights-sanity#setradius)
+
+::: tip
+This object can be directly constructed using [KSVolume](/mods/knights-sanity#ksvolume) constructor.
+:::

@@ -150,6 +150,10 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotCustom.SetBody](/mods/totcustom#setbody)
 - [TotCustom.SetArmor](/mods/totcustom#setarmor)
 - [TotCustom.SetAccessories](/mods/totcustom#setaccessories)
+- [TotCustom.GetSliderValue](/mods/totcustom#getslidervalue)
+- [TotCustom.SetSliderValue](/mods/totcustom#setslidervalue)
+- [TotCustom.SetArmorPiece](/mods/totcustom#setarmorpiece)
+- [TotCustom.ClearArmorSlot](/mods/totcustom#cleararmorslot)
 
 ## Roleplay Redux
 - [RPR.Roll](/mods/redux#roll)
