@@ -13,6 +13,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [getPlayersInRadius](/types/character#getplayersinradius)
 - [getAllPlayers](/types/character#getallplayers)
 - [getPlayerCount](/types/character#getplayercount)
+- [getGuildFromID](/types/guild#getguildfromid)
+- [getAllGuilds](/types/guild#getallguilds)
 - [spawnActor](/types/actor#spawnactor)
 - [findActor](/types/actor#findactor)
 - [getActorsInRadius](/types/actor#getactorsinradius)
@@ -95,6 +97,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [JSON.load](/libs/json#load)
 - [JSON.stringify](/libs/json#stringify)
 - [JSON.parse](/libs/json#parse)
+
+## World
+- [World.GetLandOwner](/libs/world#getlandowner)
 
 ## Tot ! Chat
 - [TotChat.Alert](/mods/totchat#alert)

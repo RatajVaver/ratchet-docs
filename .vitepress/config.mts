@@ -56,6 +56,7 @@ export default defineConfig({
           { text: 'Actor', link: '/types/actor' },
           { text: 'Inventory', link: '/types/inventory' },
           { text: 'Item', link: '/types/item' },
+          { text: 'Guild', link: '/types/guild' },
         ]
       },
       {
@@ -67,6 +68,7 @@ export default defineConfig({
           { text: 'Dice', link: '/libs/dice' },
           { text: 'Web', link: '/libs/web' },
           { text: 'JSON', link: '/libs/json' },
+          { text: 'World', link: '/libs/world' },
         ]
       },
       {

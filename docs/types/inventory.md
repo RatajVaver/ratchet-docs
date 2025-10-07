@@ -67,3 +67,33 @@ Syntax:
 ```lua
 Item, int Inventory:SpawnItem( int templateId )
 ```
+
+## `DeleteItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Inventory:DeleteItem( int templateId [, int quantity = 1 ] )
+```
+
+## `MoveItems` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Inventory:MoveItems( Inventory target, int templateId [, int quantity = 1 ] )
+```
+
+## `GetItemIndex` <Badge type="info" text="function" />
+Syntax:
+```lua
+int Inventory:GetItemIndex( Item item )
+```
+
+## `FindItemById` <Badge type="info" text="function" />
+Syntax:
+```lua
+int Inventory:FindItemById( int templateId [, int startIndex = 0 ] )
+```
+
+## `DropItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Inventory:DropItem( int index, Character invokingPlayer )
+```

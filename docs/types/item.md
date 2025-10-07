@@ -73,6 +73,27 @@ Syntax:
 bool Item:SetIntStat( string stat, int value )
 ```
 
+## `GetFloatStat` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Item:GetFloatStat( string stat )
+```
+
+Available stats:
+<div class="table-list">
+<div class="entry-wide">ArmorValue</div>
+<div class="entry-wide">EncumbranceWeight</div>
+<div class="entry-wide">MaxDurability</div>
+<div class="entry-wide">CurrentDurability</div>
+<div class="entry-wide">BurnTime</div>
+</div>
+
+## `SetFloatStat` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Item:SetFloatStat( string stat, float value )
+```
+
 ## `ModifyDurability` <Badge type="info" text="function" />
 Syntax:
 ```lua

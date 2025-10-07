@@ -70,6 +70,7 @@ Syntax:
 int getPlayerCount()
 ```
 
+
 ## `GetName` <Badge type="info" text="function" />
 Returns a display name of a character. This will use `/act` name if applicable.
 
@@ -126,6 +127,12 @@ local guildId = player:GetGuildID()
 print(guildId)
 ```
 
+## `GetGuild` <Badge type="info" text="function" />
+Syntax:
+```lua
+Guild Character:GetGuild()
+```
+
 ## `GetPosition` <Badge type="info" text="function" />
 Returns a vector of the current coordinates of player's position in the game world.
 
@@ -144,6 +151,24 @@ Example:
 ```lua
 local position = player:GetPosition()
 print(position.x, position.y, position.z)
+```
+
+## `GetRotation` <Badge type="info" text="function" />
+Syntax:
+```lua
+Rotator Character:GetRotation()
+```
+
+## `GetHeight` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Character:GetHeight()
+```
+
+## `GetHalfHeight` <Badge type="info" text="function" />
+Syntax:
+```lua
+float Character:GetHalfHeight()
 ```
 
 ## `GiveItem` <Badge type="info" text="function" />

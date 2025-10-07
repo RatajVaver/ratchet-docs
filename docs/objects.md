@@ -8,8 +8,12 @@ This is a list of object structures (types), their member values and member func
 - [:GetRealName](/types/character#getrealname)
 - [:GetSteamID](/types/character#getsteamid)
 - [:GetGuildID](/types/character#getguildid)
+- [:GetGuild](/types/character#getguild)
 - [:GetPosition](/types/character#getposition)
 - [:GetFeetPosition](/types/character#getfeetposition)
+- [:GetRotation](/types/character#getrotation)
+- [:GetHeight](/types/character#getheight)
+- [:GetHalfHeight](/types/character#gethalfheight)
 - [:GiveItem](/types/character#giveitem)
 - [:Notify](/types/character#notify)
 - [:ExecuteConsoleCommand](/types/character#executeconsolecommand)
@@ -140,6 +144,11 @@ Rotators can be constructed in the same way as Vectors.
 - [:HasItem](/types/inventory#hasitem)
 - [:CountItems](/types/inventory#countitems)
 - [:SpawnItem](/types/inventory#spawnitem)
+- [:DeleteItem](/types/inventory#deleteitem)
+- [:MoveItems](/types/inventory#moveitems)
+- [:GetItemIndex](/types/inventory#getitemindex)
+- [:FindItemById](/types/inventory#finditembyid)
+- [:DropItem](/types/inventory#dropitem)
 
 ## Item
 - [:GetOwner](/types/item#getowner)
@@ -152,9 +161,22 @@ Rotators can be constructed in the same way as Vectors.
 - [:CanUseItem](/types/item#canuseitem)
 - [:GetIntStat](/types/item#getintstat)
 - [:SetIntStat](/types/item#setintstat)
+- [:GetFloatStat](/types/item#getfloatstat)
+- [:SetFloatStat](/types/item#setfloatstat)
 - [:ModifyDurability](/types/item#modifydurability)
 - [:SetDurability](/types/item#setdurability)
 - [:IsBroken](/types/item#isbroken)
+
+## Guild
+- [:GetID](/types/guild#getid)
+- [:GetName](/types/guild#getname)
+- [:GetMOTD](/types/guild#getmotd)
+- [:GetOwner](/types/guild#getowner)
+- [:GetMembers](/types/guild#getmembers)
+
+## LandOwner
+- .ID
+- .guild
 
 ## DatabaseConnection
 - [:query](/database#query)
