@@ -17,6 +17,14 @@ setTimer(function()
 end, 5000, 5)
 ```
 
+### `isTimer` <Badge type="info" text="function" />
+Checks whether the handle for a timer is still valid (timer is running).
+
+Syntax:
+```lua
+isTimer( int handle )
+```
+
 ### `killTimer` <Badge type="info" text="function" />
 Use a timer handle returned from the [setTimer](#settimer) function to stop a timer.
 

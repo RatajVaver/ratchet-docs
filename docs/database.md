@@ -114,6 +114,7 @@ end)
 ### `prepare` <Badge type="info" text="function" />
 Prepared statements are very useful to prevent [SQL injection](https://en.wikipedia.org/wiki/SQL_injection).
 Every `?` in the query string will be replaced by corresponding value in the data table in order.
+Better yet, you can use `:name` and keyed table for the parameters.
 
 Syntax:
 ```lua

@@ -21,6 +21,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [getInventoryByType](/types/inventory#getinventorybytype)
 - [dbConnect](/database#dbconnect)
 - [setTimer](/timers#settimer)
+- [isTimer](/timers#istimer)
 - [killTimer](/timers#killtimer)
 - [on](/events#on)
 - [off](/events#off)
