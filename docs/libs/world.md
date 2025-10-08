@@ -11,9 +11,14 @@ LandOwner World.GetLandOwner( Vector location )
 Example:
 ```lua
 local claim = World.GetLandOwner(Vector(0,0,0))
-if(claim.guild)then
-    print("Land is owned by: " .. claim.guild:GetName())
+if(claim > 0)then
+    local guild = getGuildFromID(claim)
+    if(guild)then
+        print("Land is owned by " .. guild:GetName())
+    else
+        print("Land is owned by a player")
+    end
 else
-    print("Land is not owned by a clan")
+    print("Land is unclaimed")
 end
 ```

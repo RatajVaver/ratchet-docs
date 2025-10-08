@@ -174,9 +174,11 @@ Rotators can be constructed in the same way as Vectors.
 - [:GetOwner](/types/guild#getowner)
 - [:GetMembers](/types/guild#getmembers)
 
-## LandOwner
-- .ID
-- .guild
+## HitResult
+- .actor
+- .distance
+- .location
+- .normal
 
 ## DatabaseConnection
 - [:query](/database#query)

@@ -35,6 +35,49 @@ local time = friendlyTime(3600)
 print(time) -- "1 hour"
 ```
 
+## `traceLine` <Badge type="info" text="function" />
+Trace a line between two points, detecting blocking object.
+
+Syntax:
+```lua
+bool, HitResult traceLine( Vector origin, Vector destination [, int|table<string> filter = 0, bool complex = false, table<Actor> ignoreList = {} ] )
+```
+
+Filter can be either channel index from the table below or a table of strings representing object types from the table even further below.
+
+| Index | Channel |
+|-|-|
+| 0 | Visibility |
+| 1 | Camera |
+| 2 | Trace_BuildingStructure |
+| 3 | Trace_ProjectilePrecision |
+| 4 | Trace_BuildingGhost |
+| 5 | SandStormMonsterSpawn |
+| 6 | Trace_Interactable |
+| 7 | DamagePrevention_BlockNothing |
+
+Object Types
+<div class="table-list">
+<div class="entry-wide">WorldStatic</div>
+<div class="entry-wide">WorldDynamic</div>
+<div class="entry-wide">Pawn</div>
+<div class="entry-wide">PhysicsBody</div>
+<div class="entry-wide">Vehicle</div>
+<div class="entry-wide">Destructible</div>
+<div class="entry-wide">Attack</div>
+<div class="entry-wide">Defense</div>
+<div class="entry-wide">Hitbox</div>
+<div class="entry-wide">Building_Structure</div>
+<div class="entry-wide">Projectile</div>
+<div class="entry-wide">WaterPhysics</div>
+<div class="entry-wide">Resource</div>
+<div class="entry-wide">Sandstorm</div>
+<div class="entry-wide">CollisionTrigger</div>
+<div class="entry-wide">Hazard</div>
+<div class="entry-wide">AudioTrigger</div>
+<div class="entry-wide">LootBag</div>
+</div>
+
 ## `printDebug` <Badge type="info" text="function" />
 Same as the native `print` function, except for prepending plugin name and highlighting the message with **gray** color in the Ratchet console.
 This message will also be saved to the `ratchet.log` file located in the server's folder.
