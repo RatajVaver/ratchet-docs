@@ -6,6 +6,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 ## Global
 - [fileExists](/files#fileexists)
 - [getFilePath](/files#getfilepath)
+- [getVersion](/utils#getversion)
+- [getSecret](/utils#getsecret)
 - [include](/files#include)
 - [export](/exports#export)
 - [getPlayerFromID](/types/character#getplayerfromid)

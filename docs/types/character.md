@@ -71,6 +71,14 @@ int getPlayerCount()
 ```
 
 
+## `IsValid` <Badge type="info" text="function" />
+Checks whether the character reference is still valid and the player is online.
+
+Syntax:
+```lua
+bool Character:IsValid()
+```
+
 ## `GetName` <Badge type="info" text="function" />
 Returns a display name of a character. This will use `/act` name if applicable.
 

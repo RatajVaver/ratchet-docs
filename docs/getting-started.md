@@ -13,7 +13,7 @@ Ratchet is still in development and not yet publicly available for download!
 Ratchet has to be installed in the `ConanSandbox\Binaries\Win64` directory of the dedicated server.
 From there it will be automatically loaded whenever server is started.
 
-Configuration file named `config.json` also has to remain in this directory. It will tell Ratchet where to look for plugins (and packages).
+Configuration file named `config.json` has to sit in a `ratchet` sub-directory. It will tell Ratchet where to look for plugins (and packages).
 
 By default, they are located in `ConanSandbox\Binaries\Win64\plugins` but this can be changed in the [configuration](/config) file.
 
@@ -64,4 +64,23 @@ This file will be executed once with server startup before loading plugins.
 
 ::: warning
 Be careful with this file, as anything you declare in it will be shared with every plugin!
+:::
+
+## Secrets
+
+You can store all your passwords, tokens, webhook URLs and similar *"secrets"* in a `ratchet/secrets.txt` file.
+Every secret has a key, which is then used in the `getSecret` function to retrieve it.
+This way your `plugins` folder can be a Git repository without having passwords in plain sight.
+
+::: code-group
+```[secrets.txt]
+dbpass=123isAweakPassw0rd
+api_key=49n87zt48to43k
+discord_webhook=http://whatever
+```
+:::
+
+::: warning
+Note that this doesn't protect or encrypt your secrets in any way and malicious code could easily steal it anyway.
+It's a plain text file, it can be read by anyone with access to your server or plugins.
 :::

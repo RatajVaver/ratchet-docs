@@ -1,6 +1,23 @@
 # Utilities
 This page documents miscellaneous functions that don't belong to any library.
 
+## `getVersion` <Badge type="info" text="function" />
+Returns the current version of Ratchet.
+
+Syntax:
+```lua
+string getVersion()
+```
+
+## `getSecret` <Badge type="info" text="function" />
+Reads a secret from `ratchet/secrets.txt` to avoid storing passwords or tokens in plugin code.
+Empty string will be returned if a secret by the specified key is not found.
+
+Syntax:
+```lua
+string getVersion( string key )
+```
+
 ## `getType` <Badge type="info" text="function" />
 Returns the name of an object type for a specific object.
 

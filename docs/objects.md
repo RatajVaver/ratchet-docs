@@ -3,7 +3,8 @@
 This is a list of object structures (types), their member values and member functions.
 
 ## Character
-- .ID 
+- .ID
+- [:IsValid](/types/character#isvalid)
 - [:GetName](/types/character#getname)
 - [:GetRealName](/types/character#getrealname)
 - [:GetSteamID](/types/character#getsteamid)

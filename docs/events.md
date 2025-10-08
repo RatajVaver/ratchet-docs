@@ -80,6 +80,14 @@ This event is triggered right after the server boots up and Ratchet loads all pl
 There is no guarantee that all the mod controllers are spawned in yet unless Ratchet is on the bottom of the modlist order.
 It is however guaranteed, that this happens *after* all plugins are loaded, which happens only after Ratchet's Workshop mod is loaded.
 
+### `plugin_load` <Badge type="info" text="event" />
+This event is triggered right after any plugin loads in.
+
+Callback:
+```lua
+function( string pluginName )
+```
+
 ### `command_call` <Badge type="info" text="event" />
 This event is triggered whenever a player uses the `/ratchet call` command. \
 All subsequent arguments are passed as a table.
