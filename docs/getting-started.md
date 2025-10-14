@@ -23,9 +23,14 @@ For Ratchet to function, you also need to add the Workshop mod to your mod list.
 
 It is recommended to put Ratchet at the very bottom of the mod order or as near to it as possible to avoid overwriting interface API and other unforeseen issues.
 
-::: warning
-Ratchet is still in development, you will not find it on the Steam Workshop just yet.
-:::
+<div class="steam-widget">
+    <img src="https://images.steamusercontent.com/ugc/11127608332628097490/9BB730F7AFC59A7E8CE75EFDF6396DABEF6DD74F/?imw=200&amp;imh=200" alt="Ratchet">
+    <div>
+        <a class="title" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" title="Ratchet" target="_blank" rel="noreferrer">Ratchet</a>
+        <p>Ratchet is a script extender that enables modders and server admins to create server-side mods called plugins using Lua scripting language.</p>
+        <a class="button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" target="_blank" rel="noreferrer">Steam Workshop</a>
+    </div>
+</div>
 
 ## Installing plugins
 
@@ -54,6 +59,11 @@ discord-webhooks
 ::: tip
 Plugins can live in subfolders but it is generally good idea to not go too crazy with the structure.
 Use first level to organize plugins into categories or groups if you have too many of them.
+:::
+
+::: warning
+Even though you can create plugins in subfolders, they should have unique names.
+Do not create plugins of a same name in different folders, as that could cause issues.
 :::
 
 ## Global code

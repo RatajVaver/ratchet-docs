@@ -196,8 +196,11 @@ void Character:Notify( string icon, string text [, Color iconColor ] )
 Available icons:
 <div class="table-list">
 <div class="entry"><img class="ph-icon" alt="Asclepius" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/asclepius-fill.svg"/><span>Asclepius</span></div>
+<div class="entry"><img class="ph-icon" alt="Axe" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/axe-fill.svg"/><span>Axe</span></div>
+<div class="entry"><img class="ph-icon" alt="Bird" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/bird-fill.svg"/><span>Bird</span></div>
 <div class="entry"><img class="ph-icon" alt="Book" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/book-fill.svg"/><span>Book</span></div>
 <div class="entry"><img class="ph-icon" alt="Books" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/books-fill.svg"/><span>Books</span></div>
+<div class="entry"><img class="ph-icon" alt="Calendar" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/calendar-dots-fill.svg"/><span>Calendar</span></div>
 <div class="entry"><img class="ph-icon" alt="Campfire" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/campfire-fill.svg"/><span>Campfire</span></div>
 <div class="entry"><img class="ph-icon" alt="Chat" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/chat-dots-fill.svg"/><span>Chat</span></div>
 <div class="entry"><img class="ph-icon" alt="Check" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/check-fat-fill.svg"/><span>Check</span></div>
@@ -205,10 +208,13 @@ Available icons:
 <div class="entry"><img class="ph-icon" alt="Coins" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/coins-fill.svg"/><span>Coins</span></div>
 <div class="entry"><img class="ph-icon" alt="Confetti" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/confetti-fill.svg"/><span>Confetti</span></div>
 <div class="entry"><img class="ph-icon" alt="Crown" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/crown-simple-fill.svg"/><span>Crown</span></div>
+<div class="entry"><img class="ph-icon" alt="Door" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/door-open-fill.svg"/><span>Door</span></div>
 <div class="entry"><img class="ph-icon" alt="Dress" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/dress-fill.svg"/><span>Dress</span></div>
+<div class="entry"><img class="ph-icon" alt="Drink" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/champagne-fill.svg"/><span>Drink</span></div>
 <div class="entry"><img class="ph-icon" alt="Drop" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/drop-fill.svg"/><span>Drop</span></div>
 <div class="entry"><img class="ph-icon" alt="Envelope" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/envelope-simple-open-fill.svg"/><span>Envelope</span></div>
 <div class="entry"><img class="ph-icon" alt="Error" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/x-circle-fill.svg"/><span>Error</span></div>
+<div class="entry"><img class="ph-icon" alt="Fire" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/fire-fill.svg"/><span>Fire</span></div>
 <div class="entry"><img class="ph-icon" alt="Fist" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/hand-fist-fill.svg"/><span>Fist</span></div>
 <div class="entry"><img class="ph-icon" alt="Flag" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/flag-banner-fold-fill.svg"/><span>Flag</span></div>
 <div class="entry"><img class="ph-icon" alt="Flask" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/flask-fill.svg"/><span>Flask</span></div>
@@ -228,6 +234,7 @@ Available icons:
 <div class="entry"><img class="ph-icon" alt="Package" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/package-fill.svg"/><span>Package</span></div>
 <div class="entry"><img class="ph-icon" alt="Person" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/person-fill.svg"/><span>Person</span></div>
 <div class="entry"><img class="ph-icon" alt="Plant" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/plant-fill.svg"/><span>Plant</span></div>
+<div class="entry"><img class="ph-icon" alt="Puzzle" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/puzzle-piece-fill.svg"/><span>Puzzle</span></div>
 <div class="entry"><img class="ph-icon" alt="Question" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/question-fill.svg"/><span>Question</span></div>
 <div class="entry"><img class="ph-icon" alt="Sad" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/smiley-sad-fill.svg"/><span>Sad</span></div>
 <div class="entry"><img class="ph-icon" alt="Scales" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/scales-fill.svg"/><span>Scales</span></div>
@@ -237,7 +244,10 @@ Available icons:
 <div class="entry"><img class="ph-icon" alt="Star" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/star-fill.svg"/><span>Star</span></div>
 <div class="entry"><img class="ph-icon" alt="Student" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/student-fill.svg"/><span>Student</span></div>
 <div class="entry"><img class="ph-icon" alt="Sun" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/sun-fill.svg"/><span>Sun</span></div>
+<div class="entry"><img class="ph-icon" alt="Sword" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/sword-fill.svg"/><span>Sword</span></div>
+<div class="entry"><img class="ph-icon" alt="Tag" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/tag-fill.svg"/><span>Tag</span></div>
 <div class="entry"><img class="ph-icon" alt="Tower" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/castle-turret-fill.svg"/><span>Tower</span></div>
+<div class="entry"><img class="ph-icon" alt="Trophy" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/trophy-fill.svg"/><span>Trophy</span></div>
 <div class="entry"><img class="ph-icon" alt="Wand" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/magic-wand-fill.svg"/><span>Wand</span></div>
 <div class="entry"><img class="ph-icon" alt="Warning" src="https://raw.githubusercontent.com/phosphor-icons/core/refs/heads/main/assets/fill/warning-fill.svg"/><span>Warning</span></div>
 </div>

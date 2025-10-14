@@ -89,6 +89,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/RatajVaver/ratchet-docs' },
       { icon: 'discord', link: 'https://discord.gg/3WJNxCTn8m' },
       { icon: 'kofi', link: 'https://ko-fi.com/rataj' },
+      { icon: 'steam', link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598' },
     ],
 
     search: {
