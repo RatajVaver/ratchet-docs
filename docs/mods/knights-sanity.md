@@ -30,6 +30,14 @@ Syntax:
 void KS.SelectCharacters( Character player, int targets, float maxDistance, table<string> allowedTargetTypes, bool allowPartial, bool allowRepeat, string command, string title )
 ```
 
+Possible Target Types:
+<div class="table-list">
+<div class="entry-wide">Players</div>
+<div class="entry-wide">Self</div>
+<div class="entry-wide">Puppets</div>
+<div class="entry-wide">NPC</div>
+</div>
+
 ### `SelectPoint` <Badge type="info" text="function" />
 Syntax:
 ```lua
