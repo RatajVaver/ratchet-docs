@@ -50,6 +50,14 @@ Syntax:
 table|nil table.values( table list )
 ```
 
+## `unique` <Badge type="info" text="function" />
+Returns a new table containing each unique value only once (removing any duplicates), preserving the order of first occurrence.
+
+Syntax:
+```lua
+table|nil table.unique( table list )
+```
+
 ## `contains` <Badge type="info" text="function" />
 Syntax:
 ```lua

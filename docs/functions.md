@@ -78,6 +78,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [table.shuffle](/libs/table#shuffle)
 - [table.keys](/libs/table#keys)
 - [table.values](/libs/table#values)
+- [table.unique](/libs/table#unique)
 - [table.contains](/libs/table#contains)
 - [table.isEmpty](/libs/table#isempty)
 - [table.count](/libs/table#count)
