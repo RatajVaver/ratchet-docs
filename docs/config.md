@@ -38,7 +38,8 @@ Below is an example of a config file that contains all the options that can be c
   "webserver": {
     "enabled": true,
     "host": "0.0.0.0",
-    "port": 5460
+    "port": 5460,
+    "logRequests": false
   },
   "database": {
     "enabled": true,

@@ -4,6 +4,16 @@ Ratchet is a script extender that enables modders and server admins to create se
 
 Players don't have to install these plugins, neither do they have to install Ratchet itself, everything lives on the server and can be changed at runtime.
 
+::: danger DISCLAIMER
+Ratchet is intended for private and **educational purposes only**.
+It is not affiliated with, or endorsed by Funcom.
+This software is provided *as is*, without any guarantees or warranties of any kind.
+
+Use of this tool is **entirely at your own risk**, and the developer assumes **absolutely no liability**
+for any damages, losses, or violations of third-party Terms of Service or license agreements resulting from its use or misuse.
+Please make sure you know what you're doing before use.
+:::
+
 ::: warning
 Ratchet is still in development and not yet publicly available for download!
 :::

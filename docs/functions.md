@@ -30,6 +30,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [once](/events#once)
 - [emit](/events#emit)
 - [sendToClient](/events#sendtoclient)
+- [isServerLoaded](/utils#isserverloaded)
 - [getType](/utils#gettype)
 - [base64Encode](/utils#base64encode)
 - [base64Decode](/utils#base64decode)

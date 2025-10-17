@@ -18,6 +18,15 @@ Syntax:
 string getVersion( string key )
 ```
 
+## `isServerLoaded` <Badge type="info" text="function" />
+Checks whether the server is fully loaded (mods and plugins are loaded, players can connect).
+This is mostly useful for a custom REST API to check whether the server is still starting.
+
+Syntax:
+```lua
+bool isServerLoaded()
+```
+
 ## `getType` <Badge type="info" text="function" />
 Returns the name of an object type for a specific object.
 
