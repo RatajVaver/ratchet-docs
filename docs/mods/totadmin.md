@@ -136,6 +136,30 @@ Syntax:
 void TotZone:SetParam( string name, float|string value )
 ```
 
+### `GetActionModule` <Badge type="info" text="function" />
+Syntax:
+```lua
+string, string TotZone:GetActionModule( string event )
+```
+
+### `SetActionModule` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotZone:GetActionModule( string event, string moduleName, string data )
+```
+
+### `SetRatchetEvent` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotZone:SetRatchetEvent( string event, string ratchetEvent [, string argument = "" ] )
+```
+
+### `TriggerEvent` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotZone:TriggerEvent( Character player, string event )
+```
+
 ### `IsBox` <Badge type="info" text="function" />
 Syntax:
 ```lua

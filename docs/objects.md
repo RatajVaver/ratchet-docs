@@ -200,6 +200,10 @@ Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 - [:SetName](/mods/totadmin#getname)
 - [:GetParam](/mods/totadmin#getparam)
 - [:SetParam](/mods/totadmin#setparam)
+- [:GetActionModule](/mods/totadmin#getactionmodule)
+- [:SetActionModule](/mods/totadmin#setactionmodule)
+- [:SetRatchetEvent](/mods/totadmin#setratchetevent)
+- [:TriggerEvent](/mods/totadmin#triggerevent)
 - [:IsBox](/mods/totadmin#isbox)
 - [:IsSphere](/mods/totadmin#issphere)
 
@@ -238,7 +242,7 @@ Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 - .icon
 - .iconName
 
-## KSVolume
+## KSVolume <Badge type="tip" text="Actor" />
 - [:GetColor](/mods/knights-sanity#getcolor)
 - [:GetRadius](/mods/knights-sanity#getradius)
 - [:SetColor](/mods/knights-sanity#setcolor)
