@@ -49,6 +49,10 @@ Below is an example of a config file that contains all the options that can be c
   "hooks": {
     "logHooks": false,
     "debugFocus": ""
+  },
+  "timers": {
+    "enabled": true,
+    "logTimers": false
   }
 }
 ```
@@ -86,6 +90,11 @@ Web server port.
 
 Default: `5460`
 
+#### logRequests
+Print debug message with every REST API call.
+
+Default: `false`
+
 ### database
 
 #### enabled
@@ -115,3 +124,15 @@ A partial name of a class to focus on and log everything from. Previous setting 
 Other hooks will be ignored and not logged.
 
 Default: &lt;empty string&gt;
+
+### timers
+
+#### enabled
+Enable timers, allowing them to tick.
+
+Default: `true`
+
+#### logTimers
+Print debug message whenever timers are created, removed, or executed.
+
+Default: `false`

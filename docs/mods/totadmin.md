@@ -133,7 +133,7 @@ Available parameters:
 ### `SetParam` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void TotZone:SetParam( string name, float|string value )
+void TotZone:SetParam( string name, string|float|bool value )
 ```
 
 ### `GetActionModule` <Badge type="info" text="function" />
