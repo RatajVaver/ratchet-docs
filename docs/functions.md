@@ -41,6 +41,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [printSuccess](/utils#printsuccess)
 - [printWarning](/utils#printwarning)
 - [printError](/utils#printerror)
+- [dumpAllObjects](/utils#dumpallobjects)
 
 ## String
 - [string.explode](/libs/string#explode)

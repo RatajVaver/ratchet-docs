@@ -148,3 +148,12 @@ Syntax:
 ```lua
 void printError( [ string input, ... ] )
 ```
+
+## `dumpAllObjects` <Badge type="info" text="function" />
+Writes a list of all persistent actors and all their actor components into a `ratchet/dump.txt` file.
+This is potentially heavy operation and mostly only useful for advanced debugging.
+
+Syntax:
+```lua
+void dumpAllObjects()
+```

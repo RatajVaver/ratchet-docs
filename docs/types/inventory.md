@@ -4,7 +4,7 @@
 
 Syntax:
 ```lua
-Inventory|nil getInventoryByType( Actor owner, int|string inventoryType )
+Inventory|nil getInventoryByType( Character|Actor owner, int|string inventoryType )
 ```
 
 | ID | Inventory Type |

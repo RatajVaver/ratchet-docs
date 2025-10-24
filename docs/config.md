@@ -53,6 +53,10 @@ Below is an example of a config file that contains all the options that can be c
   "timers": {
     "enabled": true,
     "logTimers": false
+  },
+  "scheduler": {
+    "enabled": true,
+    "logEvents": false
   }
 }
 ```
@@ -134,5 +138,17 @@ Default: `true`
 
 #### logTimers
 Print debug message whenever timers are created, removed, or executed.
+
+Default: `false`
+
+### scheduler
+
+#### enabled
+Enable event scheduler.
+
+Default: `true`
+
+#### logEvents
+Print debug message whenever scheduler executes an event.
 
 Default: `false`
