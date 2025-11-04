@@ -305,3 +305,20 @@ Syntax:
 ```lua
 void Character:PlayVoice( string sound )
 ```
+
+## `PlayAnimation` <Badge type="info" text="function" />
+Play animation montage by path, such as:\
+`/Game/Characters/humans/animations/emotes/AM_emote_greet_salute.AM_emote_greet_salute`
+
+Syntax:
+```lua
+void Character:PlayAnimation( string path [, string startSection = "None", float playRate = 1.0 ] )
+```
+
+## `StopAnimation` <Badge type="info" text="function" />
+Stop animation montage by path, or all animations if no path is specified
+
+Syntax:
+```lua
+void Character:StopAnimation( [ string path = "" ] )
+```
