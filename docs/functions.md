@@ -107,6 +107,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 
 ## World
 - [World.GetLandOwner](/libs/world#getlandowner)
+- [World.GetTimeOfDay](/libs/world#gettimeofday)
+- [World.SetTimeOfDay](/libs/world#settimeofday)
 
 ## Tot ! Chat
 - [TotChat.Alert](/mods/totchat#alert)

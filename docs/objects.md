@@ -169,6 +169,7 @@ Rotators can be constructed in the same way as Vectors.
 - [:ModifyDurability](/types/item#modifydurability)
 - [:SetDurability](/types/item#setdurability)
 - [:IsBroken](/types/item#isbroken)
+- [:DeleteItem](/types/item#deleteitem)
 
 ## Guild
 - [:GetID](/types/guild#getid)

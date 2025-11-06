@@ -111,3 +111,9 @@ Syntax:
 ```lua
 bool Item:IsBroken()
 ```
+
+## `DeleteItem` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Item:DeleteItem( [ int quantity = 1 ] )
+```

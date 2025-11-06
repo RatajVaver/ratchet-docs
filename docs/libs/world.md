@@ -22,3 +22,15 @@ else
     print("Land is unclaimed")
 end
 ```
+
+## `GetTimeOfDay` <Badge type="info" text="function" />
+Syntax:
+```lua
+float World.GetTimeOfDay()
+```
+
+## `SetTimeOfDay` <Badge type="info" text="function" />
+Syntax:
+```lua
+void World.SetTimeOfDay( float time )
+```
