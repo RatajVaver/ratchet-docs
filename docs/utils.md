@@ -15,7 +15,7 @@ Empty string will be returned if a secret by the specified key is not found.
 
 Syntax:
 ```lua
-string getVersion( string key )
+string getSecret( string key )
 ```
 
 ## `isServerLoaded` <Badge type="info" text="function" />

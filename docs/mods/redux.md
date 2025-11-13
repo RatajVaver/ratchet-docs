@@ -150,14 +150,14 @@ bool RPR.HasItem( Character player, int itemId [, int quantity = 1 ] )
 
 Syntax:
 ```lua
-bool RPR.TakeItem( Character player, int itemId [, int quantity = 1 ] )
+void RPR.TakeItem( Character player, int itemId [, int quantity = 1 ] )
 ```
 
 ## `GiveItem` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-bool RPR.GiveItem( Character player, int itemId [, int quantity = 1 ] )
+void RPR.GiveItem( Character player, int itemId [, int quantity = 1 ] )
 ```
 
 ## `GetBuffs` <Badge type="info" text="function" />
