@@ -35,6 +35,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [base64Encode](/utils#base64encode)
 - [base64Decode](/utils#base64decode)
 - [friendlyTime](/utils#friendlytime)
+- [getRealTime](/utils#getrealtime)
 - [traceLine](/utils#traceline)
 - [printDebug](/utils#printdebug)
 - [printInfo](/utils#printinfo)

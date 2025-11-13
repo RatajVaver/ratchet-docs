@@ -61,6 +61,38 @@ local time = friendlyTime(3600)
 print(time) -- "1 hour"
 ```
 
+## `getRealTime` <Badge type="info" text="function" />
+Retrieves a table of various useful values regarding current real time.
+
+Syntax:
+```lua
+table getRealTime( [ bool localTimezone = false ] )
+```
+
+| Field | Type | Range | Description |
+|-------|------|-------|-------------|
+| `timestamp` | number | - | Unix epoch in seconds |
+| `hour` | number | 0-23 | Hour (24-hour format) |
+| `minute` | number | 0-59 | Minute |
+| `second` | number | 0-60 | Second (60 for leap seconds) |
+| `year` | number | - | Full year (e.g. 2025) |
+| `month` | number | 1-12 | Month |
+| `day` | number | 1-31 | Day of month |
+| `weekday` | number | 0-6 | Day of week (0=Sunday) |
+| `weekdayiso` | number | 1-7 | ISO weekday (1=Monday, 7=Sunday) |
+| `yearday` | number | 1-366 | Day of year |
+| `isdst` | boolean | - | Daylight saving time |
+| `date` | string | - | ISO 8601 date (YYYY-MM-DD) |
+| `time` | string | - | ISO 8601 time (HH:MM:SS) |
+| `datetime` | string | - | ISO 8601 datetime (YYYY-MM-DDTHH:MM:SS) |
+| `hour12` | number | 1-12 | Hour (12-hour format) |
+| `ampm` | string | - | "AM" or "PM" |
+
+Example:
+```lua
+print(getRealTime().time) -- "18:04:23"
+```
+
 ## `traceLine` <Badge type="info" text="function" />
 Trace a line between two points, detecting blocking object.
 
