@@ -271,3 +271,29 @@ Syntax:
 ```lua
 void RPR.SetUserStatus( Character player, string name, Color color )
 ```
+
+## `GetBio` <Badge type="info" text="function" />
+Syntax:
+```lua
+table RPR.GetBio( Character player )
+```
+
+| Field | Type |
+|-|-|
+| `shortDesc` | string |
+| `longDesc` | string |
+| `renown` | string |
+| `portrait` | string |
+
+## `GetConsents` <Badge type="info" text="function" />
+Syntax:
+```lua
+table RPR.GetConsents( Character player )
+```
+
+| Field | Type |
+|-|-|
+| `answers` | table&lt;string&gt; |
+| `choices` | table&lt;table&lt;int&gt;&gt; |
+
+Both fields are tables indexed by IDs, they might not be sequential.
