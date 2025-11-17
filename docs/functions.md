@@ -209,6 +209,12 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.SetUserStatus](/mods/redux#setuserstatus)
 - [RPR.GetBio](/mods/redux#getbio)
 - [RPR.GetConsents](/mods/redux#getconsents)
+- [RPR.ClearPerks](/mods/redux#clearperks)
+- [RPR.ClearSpells](/mods/redux#clearspells)
+- [RPR.ClearBuffs](/mods/redux#clearbuffs)
+- [RPR.GetAssignedPerks](/mods/redux#getassignedperks)
+- [RPR.GetLearnedSpells](/mods/redux#getlearnedspells)
+- [RPR.GetActiveBuffs](/mods/redux#getactivebuffs)
 
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)

@@ -168,6 +168,7 @@ table<string> RPR.GetBuffs( Character player )
 ```
 
 ## `GetSheet` <Badge type="info" text="function" />
+Returns a [CharacterSheet](/objects#charactersheet) object.
 
 Syntax:
 ```lua
@@ -297,3 +298,59 @@ table RPR.GetConsents( Character player )
 | `choices` | table&lt;table&lt;int&gt;&gt; |
 
 Both fields are tables indexed by IDs, they might not be sequential.
+
+## `ClearPerks` <Badge type="info" text="function" />
+Remove all assigned perks from a character.
+
+Syntax:
+```lua
+bool RPR.ClearPerks( Character player )
+```
+
+## `ClearSpells` <Badge type="info" text="function" />
+Remove all learned spells from a character.
+
+Syntax:
+```lua
+bool RPR.ClearSpells( Character player )
+```
+
+## `ClearBuffs` <Badge type="info" text="function" />
+Remove all active buffs from a character.
+
+Syntax:
+```lua
+bool RPR.ClearBuffs( Character player )
+```
+
+## `GetAssignedPerks` <Badge type="info" text="function" />
+Returns a list of IDs of assigned perks. To retrieve perk names, use [GetSheet](#getsheet) instead.
+
+Syntax:
+```lua
+table RPR.GetAssignedPerks( Character player )
+```
+
+## `GetLearnedSpells` <Badge type="info" text="function" />
+Returns a list of IDs of learned spells.
+
+Syntax:
+```lua
+table RPR.GetLearnedSpells( Character player )
+```
+
+## `GetActiveBuffs` <Badge type="info" text="function" />
+Syntax:
+```lua
+table RPR.GetActiveBuffs( Character player )
+```
+
+| Field | Type |
+|-|-|
+| `category` | string |
+| `type` | number |
+| `target` | number |
+| `modifier` | number |
+| `from` | string |
+| `until` | string |
+| `permanent` | boolean |
