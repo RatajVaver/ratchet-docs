@@ -10,8 +10,8 @@ By default, web server is accessible on: `http://localhost:5460`
 
 Port can be changed in the [configuration](/config) file.
 
-::: warning
-Make sure the web server's port is not publicly accessible from the internet, as that would allow malicious actors to disable your plugins remotely.
+::: danger
+Make sure the web server's port is **NOT** publicly accessible from the internet, as that would allow malicious actors to disable your plugins remotely.
 :::
 
 ## Plugin Management
@@ -24,33 +24,54 @@ http://localhost:5460/plugins
 ```
 
 ### `/reloadall` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Unload all running plugins and load those listed in `plugins.txt` file.
+
 ```
 http://localhost:5460/reloadall
 ```
 
 ### `/reload` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Load (enable) or reload a plugin (if it's already running).
+
 ```
 http://localhost:5460/reload?plugin=myfirstplugin
 ```
 
 ### `/unload` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Unload (disable) a plugin.
+
 ```
 http://localhost:5460/unload?plugin=myfirstplugin
 ```
 
 ### `/watch` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Activate [hot reload](/hot-reload) for a plugin.
+
 ```
 http://localhost:5460/watch?plugin=myfirstplugin
 ```
 
 ### `/refresh-schedule` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Refresh [scheduler](/scheduler) to apply new planned events.
+
 ```
 http://localhost:5460/refresh-schedule
 ```
 
 ### `/refresh-plugins` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Refresh the list of plugins (after adding or removing a plugin).
+
 ```
 http://localhost:5460/refresh-plugins
+```
+
+## Logs
+
+### `/logs` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Read the current Ratchet console log. Last 20 lines will be displayed by default. This can be changed with `n` parameter.
+
+```
+http://localhost:5460/logs?n=20
 ```
 
 ## Debugging

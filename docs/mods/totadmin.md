@@ -27,7 +27,7 @@ This will save a return position. Teleportation under 200m will be without loadi
 
 Syntax:
 ```lua
-bool TotAdmin.Teleport( Character player, Vector position [, float rotation = 0 ] )
+bool TotAdmin.Teleport( Character player, Vector position [, float rotation ] )
 ```
 
 ### `Warp` <Badge type="info" text="function" />

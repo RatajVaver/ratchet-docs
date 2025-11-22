@@ -36,7 +36,7 @@ Below is an example of a config file that contains all the options that can be c
   "packages": "C:/Users/USERNAME/AppData/Roaming/luarocks/share/lua/5.4/?.lua",
   "msPerTick": 50,
   "webserver": {
-    "enabled": true,
+    "enabled": false,
     "host": "0.0.0.0",
     "port": 5460,
     "logRequests": false
