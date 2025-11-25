@@ -92,6 +92,12 @@ Syntax:
 void KS.InfoBox( Character player, string title, string content )
 ```
 
+### `CombatTracker` <Badge type="info" text="function" />
+Syntax:
+```lua
+void KS.CombatTracker( Character player [, table<string> playerNames = {}, int activeTurn = -1 ] )
+```
+
 ## Volumes
 Volumes are static visualized areas, they can represent lasting area of effect, or anything else. They have essentially no functionality and only serve as visualizers.
 
@@ -100,8 +106,13 @@ KSVolume can be constructed directly using a function of the same name.
 
 Syntax:
 ```lua
-KSVolume KSVolume( Vector location [, float radius = 1, Color color ] )
+KSVolume KSVolume( Vector location, string shape, table options )
 ```
+
+| Shape | Options |
+|-------|------------------|
+| `Sphere` | `radius`, `color` |
+| `Cylinder` | `radius`, `height`, `color` |
 
 ### `GetColor` <Badge type="info" text="function" />
 Syntax:
@@ -115,6 +126,18 @@ Syntax:
 float KSVolume:GetRadius()
 ```
 
+### `GetHeight` <Badge type="info" text="function" />
+Syntax:
+```lua
+float KSVolume:GetHeight()
+```
+
+### `GetShape` <Badge type="info" text="function" />
+Syntax:
+```lua
+string KSVolume:GetShape()
+```
+
 ### `SetColor` <Badge type="info" text="function" />
 Syntax:
 ```lua
@@ -125,4 +148,10 @@ void KSVolume:SetColor( Color color )
 Syntax:
 ```lua
 void KSVolume:SetRadius( float radius )
+```
+
+### `SetHeight` <Badge type="info" text="function" />
+Syntax:
+```lua
+void KSVolume:SetHeight( float height )
 ```

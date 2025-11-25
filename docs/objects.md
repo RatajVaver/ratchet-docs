@@ -248,8 +248,11 @@ Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 ## KSVolume <Badge type="tip" text="Actor" />
 - [:GetColor](/mods/knights-sanity#getcolor)
 - [:GetRadius](/mods/knights-sanity#getradius)
+- [:GetHeight](/mods/knights-sanity#getheight)
+- [:GetShape](/mods/knights-sanity#getshape)
 - [:SetColor](/mods/knights-sanity#setcolor)
 - [:SetRadius](/mods/knights-sanity#setradius)
+- [:SetHeight](/mods/knights-sanity#setheight)
 
 ::: tip
 This object can be directly constructed using [KSVolume](/mods/knights-sanity#ksvolume) constructor.

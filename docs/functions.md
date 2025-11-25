@@ -228,3 +228,4 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [KS.GetSelectedPoints](/mods/knights-sanity#getselectedpoints)
 - [KS.GetSelectedCharacters](/mods/knights-sanity#getselectedcharacters)
 - [KS.InfoBox](/mods/knights-sanity#infobox)
+- [KS.CombatTracker](/mods/knights-sanity#combattracker)
