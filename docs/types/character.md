@@ -1,6 +1,11 @@
 # Character
 A character object in Ratchet represents an online player.
 
+::: info
+Keep in mind that the Character object currently does not inherit from Actor.\
+This is due to compatibility reasons and might be resolved in future versions.
+:::
+
 ## Members
 Characters have only one variable member, which is `ID` - this is the same number as *Character Unique ID* in the DevKit (see the image below) and also as the database ID.
 

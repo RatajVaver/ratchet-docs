@@ -67,13 +67,18 @@ discord-webhooks
 :::
 
 ::: tip
-Plugins can live in subfolders but it is generally good idea to not go too crazy with the structure.
+Plugins can live in subfolders but it is generally good idea to not go too crazy with the structure.\
 Use first level to organize plugins into categories or groups if you have too many of them.
 :::
 
 ::: warning
-Even though you can create plugins in subfolders, they should have unique names.
+Even though you can create plugins in subfolders, they should have unique names.\
 Do not create plugins of a same name in different folders, as that could cause issues.
+:::
+
+::: danger
+Do not run plugins that you do not trust on your server. Always check the code.\
+Malicious plugins could seriously harm your server machine, or steal your data.
 :::
 
 ## Global code

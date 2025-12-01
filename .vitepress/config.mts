@@ -81,6 +81,7 @@ export default defineConfig({
           { text: 'Tot ! Custom', link: '/mods/totcustom' },
           { text: 'Roleplay Redux', link: '/mods/redux' },
           { text: 'Knight\'s Sanity', link: '/mods/knights-sanity' },
+          { text: 'Devious Desires', link: '/mods/devious-desires' },
         ]
       }
     ],

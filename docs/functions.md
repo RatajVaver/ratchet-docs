@@ -20,6 +20,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [spawnActor](/types/actor#spawnactor)
 - [findActor](/types/actor#findactor)
 - [getActorsInRadius](/types/actor#getactorsinradius)
+- [getActorsByClass](/types/actor#getactorsbyclass)
 - [getInventoryByType](/types/inventory#getinventorybytype)
 - [dbConnect](/database#dbconnect)
 - [setTimer](/timers#settimer)
@@ -229,3 +230,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [KS.GetSelectedCharacters](/mods/knights-sanity#getselectedcharacters)
 - [KS.InfoBox](/mods/knights-sanity#infobox)
 - [KS.CombatTracker](/mods/knights-sanity#combattracker)
+
+## Devious Desires
+- [DD.GetRestraints](/mods/devious-desires#getrestraints)
+- [DD.IsInPartnerScene](/mods/devious-desires#isinpartnerscene)
+- [DD.IsBeingCarried](/mods/devious-desires#isbeingcarried)
+- [DD.IsCarrying](/mods/devious-desires#iscarrying)

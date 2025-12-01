@@ -162,6 +162,14 @@ Callback:
 function( Character character, string status, Color color )
 ```
 
+### `RPR_updateSheet` <Badge type="info" text="event" />
+Whenever anyone's sheet is changed. Be it by creating their sheet, or being edited by an admin.
+
+Callback:
+```lua
+function( Character target, Character editor )
+```
+
 ## Knight's Sanity
 
 ### `KS_midnight` <Badge type="info" text="event" />
@@ -199,6 +207,26 @@ function( Character character, Rotator rotation, string command )
 Callback:
 ```lua
 function( Character character, table<Character> selectedPlayers, table<TotPuppet> selectedPuppets, string command )
+```
+
+## Devious Desires
+
+### `DD_equipRestraint` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character target, int itemIndex )
+```
+
+### `DD_unequipRestraint` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character target, int equipmentSlot )
+```
+
+### `DD_updateGag` <Badge type="info" text="event" />
+Callback:
+```lua
+function( Character target, bool isGagged )
 ```
 
 ## Tot ! Admin Scripts

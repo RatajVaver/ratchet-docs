@@ -12,6 +12,7 @@ I've already implemented support for some of the most popular mods.
 - [Tot ! Custom](/mods/totcustom)
 - [Roleplay Redux](/mods/redux)
 - [Knight's Sanity](/mods/knights-sanity)
+- [Devious Desires](/mods/devious-desires)
 
 Would you like to suggest compatibility with another popular mod? \
 Let me know about your idea on my [Discord](https://discord.gg/3WJNxCTn8m).

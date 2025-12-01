@@ -57,6 +57,10 @@ Below is an example of a config file that contains all the options that can be c
   "scheduler": {
     "enabled": true,
     "logEvents": false
+  },
+  "sandbox": {
+    "enabled": true,
+    "logUsage": false
   }
 }
 ```
@@ -150,5 +154,17 @@ Default: `true`
 
 #### logEvents
 Print debug message whenever scheduler executes an event.
+
+Default: `false`
+
+### sandbox
+
+#### enabled
+Enable code execution from `/ratchet sandbox`.
+
+Default: `true`
+
+#### logUsage
+Print debug message whenever Sandbox is used.
 
 Default: `false`

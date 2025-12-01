@@ -6,7 +6,7 @@ Actor type in Ratchet is used to contain functions that are shared across all of
 ## `spawnActor` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Actor|nil spawnActor( string actorType, Vector location [, Rotator rotation ] )
+Actor|nil spawnActor( string actorTypeOrPath, Vector location [, Rotator rotation ] )
 ```
 
 | Actor Type | Lua Object |
@@ -46,6 +46,17 @@ Syntax:
 ```lua
 table<Actor> getActorsInRadius( Vector location, float radius )
 ```
+
+## `getActorsByClass` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<Actor> getActorsByClass( string path )
+```
+
+::: warning
+This feature is currently not working, or maybe it does, but I have not yet figured out a path that works with it.
+Let me know if you happen to get it to work, so I can provide instructions.
+:::
 
 ## `IsValid` <Badge type="info" text="function" />
 Syntax:
