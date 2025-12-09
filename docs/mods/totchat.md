@@ -66,3 +66,25 @@ Syntax:
 ```lua
 void TotChat.Warn( Character player, string message )
 ```
+
+## `GetLanguages` <Badge type="info" text="function" />
+Returns a table of known languages (key being language name and value being its knowledge value).
+
+Syntax:
+```lua
+table TotChat.GetLanguages( Character player )
+```
+
+## `SetLanguage` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+void TotChat.SetLanguage( Character player, string language, float knowledge )
+```
+
+## `RemoveLanguage` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+void TotChat.RemoveLanguage( Character player, string language )
+```

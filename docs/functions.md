@@ -121,6 +121,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotChat.Notify](/mods/totchat#notify)
 - [TotChat.NotifyLocal](/mods/totchat#notifylocal)
 - [TotChat.Warn](/mods/totchat#warn)
+- [TotChat.GetLanguages](/mods/totchat#getlanguages)
+- [TotChat.SetLanguage](/mods/totchat#setlanguage)
+- [TotChat.RemoveLanguage](/mods/totchat#removelanguage)
 
 ## Tot ! Sudo
 - [TotSudo.HasRole](/mods/totsudo#hasrole)
