@@ -90,6 +90,24 @@ Syntax:
 bool TotAdmin.DeleteMapMarker( GUID markerId )
 ```
 
+### `SendHome` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotAdmin.SendHome( Character player [, string name ] )
+```
+
+### `SetHome` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotAdmin.SetHome( Character player, string name, Vector position, Rotator rotation )
+```
+
+### `ClearHome` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotAdmin.ClearHome( Character player )
+```
+
 ## Zones
 Functions in this section are to be called on a [TotZone](/objects#totzone) object.
 

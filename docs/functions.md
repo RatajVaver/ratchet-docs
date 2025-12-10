@@ -161,6 +161,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.GetMapMarkers](/mods/totadmin#getmapmarkers)
 - [TotAdmin.SetMapMarker](/mods/totadmin#setmapmarker)
 - [TotAdmin.DeleteMapMarker](/mods/totadmin#deletemapmarker)
+- [TotAdmin.SendHome](/mods/totadmin#sendhome)
+- [TotAdmin.SetHome](/mods/totadmin#sethome)
+- [TotAdmin.ClearHome](/mods/totadmin#clearhome)
 
 ## Tot ! Custom
 - [TotCustom.GetBody](/mods/totcustom#getbody)
