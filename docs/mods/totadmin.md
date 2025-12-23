@@ -99,13 +99,19 @@ bool TotAdmin.SendHome( Character player [, string name ] )
 ### `SetHome` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool TotAdmin.SetHome( Character player, string name, Vector position, Rotator rotation )
+bool TotAdmin.SetHome( Character player, string name, Vector position [, float rotation ] )
 ```
 
 ### `ClearHome` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool TotAdmin.ClearHome( Character player )
+```
+
+### `ListHomes` <Badge type="info" text="function" />
+Syntax:
+```lua
+table TotAdmin.ListHomes( Character player )
 ```
 
 ## Zones

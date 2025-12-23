@@ -164,6 +164,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotAdmin.SendHome](/mods/totadmin#sendhome)
 - [TotAdmin.SetHome](/mods/totadmin#sethome)
 - [TotAdmin.ClearHome](/mods/totadmin#clearhome)
+- [TotAdmin.ListHomes](/mods/totadmin#listhomes)
 
 ## Tot ! Custom
 - [TotCustom.GetBody](/mods/totcustom#getbody)

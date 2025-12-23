@@ -17,5 +17,11 @@ I've already implemented support for some of the most popular mods.
 Would you like to suggest compatibility with another popular mod? \
 Let me know about your idea on my [Discord](https://discord.gg/3WJNxCTn8m).
 
-## Communication with your own mod
-You can use Ratchet interface API to [trigger events and receive updates](/events#trigger-from-devkit).
+## Your own mod
+You can use Ratchet interface API to [trigger events and receive updates](/events#trigger-from-devkit) in your own mod.
+
+[Download interface API](https://ratajmods.net/assets/files/Ratchet-devkit.zip)
+
+Extract Ratchet folder found in this zip file into `ConanExilesDevKit\Games\ConanSandbox\Content\ModsShared`
+
+You can then reference the interfaces in DevKit just like with any other mod API.

@@ -297,7 +297,7 @@ In all other cases, only [Actor](/objects#actor) functions can be used.
 :::
 
 ## Trigger from DevKit
-Events can also be called from your own Workshop mods using Ratchet interface API.
+Events can also be called from your own Workshop mods using [Ratchet interface API](/mods/#your-own-mod).
 
 ### Server-side
 Callback functions are the same as on the examples in previous section of this page.

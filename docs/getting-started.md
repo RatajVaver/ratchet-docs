@@ -4,7 +4,9 @@ Ratchet is a script extender that enables modders and server admins to create se
 
 Players don't have to install these plugins, neither do they have to install Ratchet itself, everything lives on the server and can be changed at runtime.
 
-::: danger DISCLAIMER
+## Download
+
+::: warning DISCLAIMER
 Ratchet is intended for private and **educational purposes only**.
 It is not affiliated with, or endorsed by Funcom.
 This software is provided *as is*, without any guarantees or warranties of any kind.
@@ -14,9 +16,20 @@ for any damages, losses, or violations of third-party Terms of Service or licens
 Please make sure you know what you're doing before use.
 :::
 
-::: warning
-Ratchet is still in development and not yet publicly available for download!
+::: danger
+Please note, that Ratchet will break with every game update and needs to be manually updated.
+
+Running Ratchet requires some level of technical knowledge and might not be suitable for everyone. You have been warned.
 :::
+
+::: info
+Ratchet is still just a wee baby! Things are expected to break with its early versions and it shouldn't be used on live servers.
+Please report any bugs and/or crashes on my Discord.
+
+If you like my work, you can also consider [donating](https://ko-fi.com/rataj).
+:::
+
+[I've read all of the above, please take me to download.](https://ratajmods.net/ratchet)
 
 ## Installing Ratchet
 
@@ -31,7 +44,7 @@ By default, they are located in `ConanSandbox\Binaries\Win64\plugins` but this c
 
 For Ratchet to function, you also need to add the Workshop mod to your mod list.
 
-It is recommended to put Ratchet at the very bottom of the mod order or as near to it as possible to avoid overwriting interface API and other unforeseen issues.
+It is recommended to put Ratchet at the very bottom of the mod order or as near to it as possible to avoid overwriting [interface API](/mods/#your-own-mod) and other unforeseen issues.
 
 <div class="steam-widget">
     <img src="https://images.steamusercontent.com/ugc/11127608332628097490/9BB730F7AFC59A7E8CE75EFDF6396DABEF6DD74F/?imw=200&amp;imh=200" alt="Ratchet">
@@ -41,6 +54,13 @@ It is recommended to put Ratchet at the very bottom of the mod order or as near 
         <a class="button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" target="_blank" rel="noreferrer">Steam Workshop</a>
     </div>
 </div>
+
+::: tip
+Ratchet can work completely standalone, but it is **highly recommended** to use it alongside
+the [Sudo](https://steamcommunity.com/sharedfiles/filedetails/?id=3036057084)
+and [Admin](https://steamcommunity.com/sharedfiles/filedetails/?id=2850232250)
+mod by **Tot** for best experience (plugin manager requires the admin menu).
+:::
 
 ## Installing plugins
 
