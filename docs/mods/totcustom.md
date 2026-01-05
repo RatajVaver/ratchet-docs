@@ -59,7 +59,24 @@ Syntax:
 bool TotCustom.SetSliderValue( Character|TotPuppet actor, string key, float value )
 ```
 
+## `GetArmorPieces` <Badge type="info" text="function" />
+Returns a list of item IDs of equipped armor pieces (in sequential table).
+
+Syntax:
+```lua
+table<int> TotCustom.GetArmorPieces( Character|TotPuppet actor )
+```
+
+| Index | Slot |
+|-|-|
+| 1 | Head |
+| 2 | Torso |
+| 3 | Hands |
+| 4 | Legs |
+| 5 | Feet |
+
 ## `SetArmorPiece` <Badge type="info" text="function" />
+Set an armor piece on a character, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
 
 Syntax:
 ```lua
@@ -67,6 +84,7 @@ bool TotCustom.SetArmorPiece( Character|TotPuppet actor, int slot, int itemId, C
 ```
 
 ## `ClearArmorSlot` <Badge type="info" text="function" />
+Remove an armor piece from a character, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
 
 Syntax:
 ```lua
