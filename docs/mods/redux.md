@@ -354,3 +354,48 @@ table RPR.GetActiveBuffs( Character player )
 | `from` | string |
 | `until` | string |
 | `permanent` | boolean |
+
+## `GetLFRP` <Badge type="info" text="function" />
+Retrieve the LFRP information of a player.
+
+Syntax:
+```lua
+table RPR.GetLFRP( Character player )
+```
+
+| Field | Type |
+|-|-|
+| `enabled` | boolean |
+| `showName` | boolean |
+| `showMarker` | boolean |
+| `name` | string |
+| `self1` | string |
+| `self2` | string |
+| `looking1` | string |
+| `looking2` | string |
+
+## `SetLFRP` <Badge type="info" text="function" />
+Set the LFRP information, uses the same options fields as [GetLFRP](#getlfrp).
+
+Syntax:
+```lua
+void RPR.SetLFRP( Character player, table options )
+```
+
+## `GetWaypoints` <Badge type="info" text="function" />
+Syntax:
+```lua
+table RPR.GetWaypoints()
+```
+
+| Field | Type |
+|-|-|
+| `id` | number |
+| `enabled` | boolean |
+| `hidden` | boolean |
+| `showMarker` | boolean |
+| `name` | string |
+| `category` | string |
+| `color` | [Color](/objects#color) |
+| `location` | [Vector](/types/vector) |
+| `rotation` | [Rotator](/types/rotator) |

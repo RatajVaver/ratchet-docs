@@ -223,6 +223,9 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.GetAssignedPerks](/mods/redux#getassignedperks)
 - [RPR.GetLearnedSpells](/mods/redux#getlearnedspells)
 - [RPR.GetActiveBuffs](/mods/redux#getactivebuffs)
+- [RPR.GetLFRP](/mods/redux#getlfrp)
+- [RPR.SetLFRP](/mods/redux#setlfrp)
+- [RPR.GetWaypoints](/mods/redux#getwaypoints)
 
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)
