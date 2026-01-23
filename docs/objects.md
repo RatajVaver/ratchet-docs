@@ -237,6 +237,11 @@ Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
 - .name
 - .color
 
+::: tip
+This object can be directly constructed using `TotPuppetTag( string name [, Color color ] )` with GUID being randomly generated.
+It can also be retrieved from [GetTags](/mods/totadmin#gettags) method of a [TotPuppet](#totpuppet).
+:::
+
 ## TotMapMarker
 - .guid
 - .name

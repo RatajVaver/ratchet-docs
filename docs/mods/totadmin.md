@@ -262,6 +262,8 @@ void TotPuppet:SetSheet( string data )
 ```
 
 ### `GetTags` <Badge type="info" text="function" />
+Returns a list of [TotPuppetTag](/objects#totpuppettag) objects.
+
 Syntax:
 ```lua
 table<TotPuppetTag> TotPuppet:GetTags()
