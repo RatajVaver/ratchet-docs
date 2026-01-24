@@ -175,6 +175,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotCustom.SetAccessories](/mods/totcustom#setaccessories)
 - [TotCustom.GetSliderValue](/mods/totcustom#getslidervalue)
 - [TotCustom.SetSliderValue](/mods/totcustom#setslidervalue)
+- [TotCustom.GetArmorPieces](/mods/totcustom#getarmorpieces)
+- [TotCustom.GetArmorPiece](/mods/totcustom#getarmorpiece)
 - [TotCustom.SetArmorPiece](/mods/totcustom#setarmorpiece)
 - [TotCustom.ClearArmorSlot](/mods/totcustom#cleararmorslot)
 

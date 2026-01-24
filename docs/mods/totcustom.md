@@ -75,12 +75,22 @@ table<int> TotCustom.GetArmorPieces( Character|TotPuppet actor )
 | 4 | Legs |
 | 5 | Feet |
 
-## `SetArmorPiece` <Badge type="info" text="function" />
-Set an armor piece on a character, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
+## `GetArmorPiece` <Badge type="info" text="function" />
+Get an armor piece and its colors, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
 
 Syntax:
 ```lua
-bool TotCustom.SetArmorPiece( Character|TotPuppet actor, int slot, int itemId, Color color )
+int, Color|nil, Color|nil, Color|nil, Color|nil TotCustom.GetArmorPiece( Character|TotPuppet actor, int slot )
+```
+
+## `SetArmorPiece` <Badge type="info" text="function" />
+Set an armor piece on a character, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
+
+Make sure to either provide no colors (everything will be black), one color (which will be applied to all layers), or all of them.
+
+Syntax:
+```lua
+bool TotCustom.SetArmorPiece( Character|TotPuppet actor, int slot, int itemId [, Color color1 [, Color color2, Color color3, Color color4 ] ] )
 ```
 
 ## `ClearArmorSlot` <Badge type="info" text="function" />
