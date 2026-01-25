@@ -16,6 +16,30 @@ if(fileExists("other.lua"))then
 end
 ```
 
+## `readFile` <Badge type="info" text="function" />
+Read all content of a text file.
+
+Syntax:
+```lua
+string readFile( string path )
+```
+
+## `writeFile` <Badge type="info" text="function" />
+Write text into a file, replacing all previous content.
+
+Syntax:
+```lua
+bool writeFile( string path, string content )
+```
+
+## `appendFile` <Badge type="info" text="function" />
+Write text into a file, adding it after all existing content.
+
+Syntax:
+```lua
+bool appendFile( string path, string content )
+```
+
 ## `getFilePath` <Badge type="info" text="function" />
 Returns path of the current file relative to the specific plugin's folder.
 
