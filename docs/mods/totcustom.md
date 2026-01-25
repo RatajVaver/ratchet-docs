@@ -71,8 +71,8 @@ table<int> TotCustom.GetArmorPieces( Character|TotPuppet actor )
 |-|-|
 | 1 | Head |
 | 2 | Torso |
-| 3 | Hands |
-| 4 | Legs |
+| 3 | Legs |
+| 4 | Hands |
 | 5 | Feet |
 
 ## `GetArmorPiece` <Badge type="info" text="function" />
