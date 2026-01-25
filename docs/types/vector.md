@@ -66,7 +66,7 @@ Divide this by 256 if you want a distance in tiles.
 
 Syntax:
 ```lua
-Vector Vector:getDistanceTo( Vector other )
+float Vector:getDistanceTo( Vector other )
 ```
 
 Example:
@@ -75,6 +75,16 @@ local pos1 = player1:GetPosition()
 local pos2 = player2:GetPosition()
 local distance = pos1:getDistanceTo(pos2) / 256
 print("Players are distanced " .. distance .. " tiles apart.")
+```
+
+## `getDistance2D` <Badge type="info" text="function" />
+Returns the 2D distance between two vectors in centimeters.
+
+Divide this by 256 if you want a distance in tiles.
+
+Syntax:
+```lua
+float Vector:getDistance2D( Vector other )
 ```
 
 ## `findLookAtRotation` <Badge type="info" text="function" />

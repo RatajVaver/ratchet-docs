@@ -99,6 +99,7 @@ You can also use single argument Lua hex integer like this: `Color(0xFFCC00)`
 - [:length](/types/vector#length)
 - [:getNormalized](/types/vector#getnormalized)
 - [:getDistanceTo](/types/vector#getdistanceto)
+- [:getDistance2D](/types/vector#getdistance2d)
 - [:findLookAtRotation](/types/vector#findlookatrotation)
 
 ::: tip
