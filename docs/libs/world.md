@@ -5,7 +5,7 @@ World is a library for game world related tasks.
 ## `GetLandOwner` <Badge type="info" text="function" />
 Syntax:
 ```lua
-LandOwner World.GetLandOwner( Vector location )
+int World.GetLandOwner( Vector location )
 ```
 
 Example:
