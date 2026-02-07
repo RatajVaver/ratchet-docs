@@ -61,6 +61,9 @@ Below is an example of a config file that contains all the options that can be c
   "sandbox": {
     "enabled": true,
     "logUsage": false
+  },
+  "defer": {
+    "enabled": true
   }
 }
 ```
@@ -168,3 +171,10 @@ Default: `true`
 Print debug message whenever Sandbox is used.
 
 Default: `false`
+
+### defer
+
+#### enabled
+Enable defer manager.
+
+Default: `true`

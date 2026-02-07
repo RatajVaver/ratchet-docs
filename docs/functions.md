@@ -47,6 +47,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [printWarning](/utils#printwarning)
 - [printError](/utils#printerror)
 - [dumpAllObjects](/utils#dumpallobjects)
+- [defer](/utils#defer)
 
 ## String
 - [string.explode](/libs/string#explode)

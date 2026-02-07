@@ -189,3 +189,14 @@ Syntax:
 ```lua
 void dumpAllObjects()
 ```
+
+## `defer` <Badge type="info" text="function" />
+Defer execution of a function to one of the next ticks, giving it a very tiny delay (~50ms on default config).
+This also ensures that no two deferred functions are executed at the same time (they are executed in order as they were requested).
+
+You can use this function to improve performance of heavy operations, by atomizing them into multiple functions that are chain-linked with defer.
+
+Syntax:
+```lua
+void defer( function func [, ... ] )
+```
