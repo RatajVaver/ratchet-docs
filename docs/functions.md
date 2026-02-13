@@ -246,6 +246,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [KS.GetSelectedCharacters](/mods/knights-sanity#getselectedcharacters)
 - [KS.InfoBox](/mods/knights-sanity#infobox)
 - [KS.CombatTracker](/mods/knights-sanity#combattracker)
+- [KS.CreateCUI](/mods/knights-sanity#createcui)
+- [KS.Redlight](/mods/knights-sanity#redlight)
 
 ## Devious Desires
 - [DD.GetRestraints](/mods/devious-desires#getrestraints)

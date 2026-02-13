@@ -98,6 +98,22 @@ Syntax:
 void KS.CombatTracker( Character player [, table<string> playerNames = {}, int activeTurn = -1 ] )
 ```
 
+### `CreateCUI` <Badge type="info" text="function" />
+Shows a Custom User Interface to a player. Generate definition code using [cui.ratajmods.net](https://cui.ratajmods.net).
+
+Syntax:
+```lua
+void KS.CreateCUI( Character player, string definition )
+```
+
+### `Redlight` <Badge type="info" text="function" />
+Toggle redlight warning on screen of all players.
+
+Syntax:
+```lua
+void KS.Redlight( bool enabled [, bool blocking = false ] )
+```
+
 ## Volumes
 Volumes are static visualized areas, they can represent lasting area of effect, or anything else. They have essentially no functionality and only serve as visualizers.
 
