@@ -36,6 +36,12 @@ Syntax:
 string Item:GetLongDesc()
 ```
 
+## `GetStackSize` <Badge type="info" text="function" />
+Syntax:
+```lua
+int, int Item:GetStackSize()
+```
+
 ## `SetStackSize` <Badge type="info" text="function" />
 Syntax:
 ```lua
@@ -92,6 +98,12 @@ Available stats:
 Syntax:
 ```lua
 bool Item:SetFloatStat( string stat, float value )
+```
+
+## `GetDurability` <Badge type="info" text="function" />
+Syntax:
+```lua
+int, int Item:GetDurability()
 ```
 
 ## `ModifyDurability` <Badge type="info" text="function" />

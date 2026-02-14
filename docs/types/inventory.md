@@ -74,6 +74,12 @@ Syntax:
 bool Inventory:DeleteItem( int templateId [, int quantity = 1 ] )
 ```
 
+## `DeleteAllItems` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Inventory:DeleteAllItems()
+```
+
 ## `MoveItems` <Badge type="info" text="function" />
 Syntax:
 ```lua
