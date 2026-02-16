@@ -65,6 +65,22 @@ Refresh the list of plugins (after adding or removing a plugin).
 http://localhost:5460/refresh-plugins
 ```
 
+## Stats
+
+### `/status` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Retrieve the current Ratchet performance stats.
+
+```
+http://localhost:5460/status
+```
+
+### `/players` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
+Retrieve a list of online players.
+
+```
+http://localhost:5460/players
+```
+
 ## Logs
 
 ### `/logs` <Badge type="tip" text="GET" /> <Badge type="info" text="API endpoint" />
