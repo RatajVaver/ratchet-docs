@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Character
 A character object in Ratchet represents an online player.
 
@@ -17,7 +21,9 @@ which is the only way to construct a character object without retrieving it from
 
 ![Get Character ID](../images/characterid.png)
 
-## `getPlayerFromID` <Badge type="info" text="function" />
+## Global
+
+### `getPlayerFromID` <Badge type="info" text="function" />
 Create a character object from the player's database ID.
 
 Syntax:
@@ -31,7 +37,7 @@ local player = getPlayerFromID(301)
 print(type(player))
 ```
 
-## `getPlayerFromName` <Badge type="info" text="function" />
+### `getPlayerFromName` <Badge type="info" text="function" />
 Find a player by their character's real name (this will ignore `/act` names and similar).
 
 Syntax:
@@ -45,7 +51,7 @@ local player = getPlayerFromName("Bob")
 print(type(player))
 ```
 
-## `getPlayersInRadius` <Badge type="info" text="function" />
+### `getPlayersInRadius` <Badge type="info" text="function" />
 Returns a table with all players in radius of specified number of **tiles** from a vector position.
 
 Syntax:
@@ -59,7 +65,7 @@ Example:
 local players = getPlayersInRadius(caster:GetPosition(), 10)
 ```
 
-## `getAllPlayers` <Badge type="info" text="function" />
+### `getAllPlayers` <Badge type="info" text="function" />
 Returns a table of all players online on the server.
 
 Syntax:
@@ -67,7 +73,7 @@ Syntax:
 table<Character> getAllPlayers()
 ```
 
-## `getPlayerCount` <Badge type="info" text="function" />
+### `getPlayerCount` <Badge type="info" text="function" />
 Returns a number of online players on the server.
 
 Syntax:
@@ -75,8 +81,9 @@ Syntax:
 int getPlayerCount()
 ```
 
+## General
 
-## `IsValid` <Badge type="info" text="function" />
+### `IsValid` <Badge type="info" text="function" />
 Checks whether the character reference is still valid and the player is online.
 
 Syntax:
@@ -84,7 +91,7 @@ Syntax:
 bool Character:IsValid()
 ```
 
-## `GetName` <Badge type="info" text="function" />
+### `GetName` <Badge type="info" text="function" />
 Returns a display name of a character. This will use `/act` name if applicable.
 
 Syntax:
@@ -98,7 +105,7 @@ local name = player:GetName()
 print(name)
 ```
 
-## `GetRealName` <Badge type="info" text="function" />
+### `GetRealName` <Badge type="info" text="function" />
 Returns the actual character name as it exists in the database (ignoring `/act` and similar).
 
 Syntax:
@@ -112,7 +119,7 @@ local name = player:GetRealName()
 print(name)
 ```
 
-## `GetSteamID` <Badge type="info" text="function" />
+### `GetSteamID` <Badge type="info" text="function" />
 Returns SteamID64 (decimal), it is just a long number, but it is saved as a string.
 
 Syntax:
@@ -126,7 +133,7 @@ local steamId = player:GetSteamID()
 print(steamId)
 ```
 
-## `GetGuildID` <Badge type="info" text="function" />
+### `GetGuildID` <Badge type="info" text="function" />
 Returns the database ID of a clan the player is a member of.
 
 Syntax:
@@ -140,13 +147,13 @@ local guildId = player:GetGuildID()
 print(guildId)
 ```
 
-## `GetGuild` <Badge type="info" text="function" />
+### `GetGuild` <Badge type="info" text="function" />
 Syntax:
 ```lua
 Guild Character:GetGuild()
 ```
 
-## `GetPosition` <Badge type="info" text="function" />
+### `GetPosition` <Badge type="info" text="function" />
 Returns a vector of the current coordinates of player's position in the game world.
 
 Syntax:
@@ -154,7 +161,7 @@ Syntax:
 Vector Character:GetPosition()
 ```
 
-## `GetFeetPosition` <Badge type="info" text="function" />
+### `GetFeetPosition` <Badge type="info" text="function" />
 Syntax:
 ```lua
 Vector Character:GetFeetPosition()
@@ -166,31 +173,31 @@ local position = player:GetPosition()
 print(position.x, position.y, position.z)
 ```
 
-## `GetRotation` <Badge type="info" text="function" />
+### `GetRotation` <Badge type="info" text="function" />
 Syntax:
 ```lua
 Rotator Character:GetRotation()
 ```
 
-## `GetHeight` <Badge type="info" text="function" />
+### `GetHeight` <Badge type="info" text="function" />
 Syntax:
 ```lua
 float Character:GetHeight()
 ```
 
-## `GetHalfHeight` <Badge type="info" text="function" />
+### `GetHalfHeight` <Badge type="info" text="function" />
 Syntax:
 ```lua
 float Character:GetHalfHeight()
 ```
 
-## `GiveItem` <Badge type="info" text="function" />
+### `GiveItem` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool Character:GiveItem( int itemId [, int quantity = 1 ] )
 ```
 
-## `Notify` <Badge type="info" text="function" />
+### `Notify` <Badge type="info" text="function" />
 Shows a HUD notification to a player.
 
 Syntax:
@@ -259,43 +266,43 @@ Available icons:
 
 <small>These beautiful icons come from [Phosphor Icons](https://phosphoricons.com/), permitted under MIT License.</small>
 
-## `ExecuteConsoleCommand` <Badge type="info" text="function" />
+### `ExecuteConsoleCommand` <Badge type="info" text="function" />
 Syntax:
 ```lua
 void Character:ExecuteConsoleCommand( string command )
 ```
 
-## `CallComponentFunction` <Badge type="info" text="function" />
+### `CallComponentFunction` <Badge type="info" text="function" />
 Syntax:
 ```lua
 void Character:CallComponentFunction( string componentName, string functionName )
 ```
 
-## `IsStanding` <Badge type="info" text="function" />
+### `IsStanding` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool Character:IsStanding()
 ```
 
-## `IsWalking` <Badge type="info" text="function" />
+### `IsWalking` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool Character:IsWalking()
 ```
 
-## `IsRiding` <Badge type="info" text="function" />
+### `IsRiding` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool Character:IsRiding()
 ```
 
-## `IsArmed` <Badge type="info" text="function" />
+### `IsArmed` <Badge type="info" text="function" />
 Syntax:
 ```lua
 bool Character:IsArmed()
 ```
 
-## `Freeze` <Badge type="info" text="function" />
+### `Freeze` <Badge type="info" text="function" />
 Freeze or unfreeze a player (restricting their movement).
 
 Syntax:
@@ -303,7 +310,7 @@ Syntax:
 void Character:Freeze( bool enable )
 ```
 
-## `PlayVoice` <Badge type="info" text="function" />
+### `PlayVoice` <Badge type="info" text="function" />
 Play a sound from the VoiceTable (such as `voc_pain` or `voc_jump`).
 
 Syntax:
@@ -311,7 +318,7 @@ Syntax:
 void Character:PlayVoice( string sound )
 ```
 
-## `PlayAnimation` <Badge type="info" text="function" />
+### `PlayAnimation` <Badge type="info" text="function" />
 Play animation montage by path, such as:\
 `/Game/Characters/humans/animations/emotes/AM_emote_greet_salute.AM_emote_greet_salute`
 
@@ -320,10 +327,51 @@ Syntax:
 void Character:PlayAnimation( string path [, string startSection = "None", float playRate = 1.0 ] )
 ```
 
-## `StopAnimation` <Badge type="info" text="function" />
+### `StopAnimation` <Badge type="info" text="function" />
 Stop animation montage by path, or all animations if no path is specified
 
 Syntax:
 ```lua
 void Character:StopAnimation( [ string path = "" ] )
+```
+
+## Player Data
+Every character can have some permanent data stored in an efficient key-value storage, which is always loaded in memory when the player is online, and otherwise saved in `ratchet/storage.db` SQLite file.
+
+These functions can also be used on offline players using the [PlayerData](/libs/playerdata) library.
+
+### `SetData` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Character:SetData( string key, string|number|bool value )
+```
+
+### `GetData` <Badge type="info" text="function" />
+Syntax:
+```lua
+string|number|bool Character:GetData( string key )
+```
+
+### `GetAllData` <Badge type="info" text="function" />
+Syntax:
+```lua
+table Character:GetAllData()
+```
+
+### `HasData` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:HasData( string key )
+```
+
+### `DeleteData` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Character:DeleteData( string key )
+```
+
+### `DeleteAllData` <Badge type="info" text="function" />
+Syntax:
+```lua
+void Character:DeleteAllData()
 ```

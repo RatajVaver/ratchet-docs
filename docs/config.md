@@ -64,6 +64,12 @@ Below is an example of a config file that contains all the options that can be c
   },
   "defer": {
     "enabled": true
+  },
+  "playerData": {
+    "enabled": true
+  },
+  "profiler": {
+    "enabled": false
   }
 }
 ```
@@ -178,3 +184,17 @@ Default: `false`
 Enable defer manager.
 
 Default: `true`
+
+### playerData
+
+#### enabled
+Enable [PlayerData](/libs/playerdata) (in-memory + SQLite permanent key-value storage).
+
+Default: `true`
+
+### profiler
+
+#### enabled
+Enable Lua profiler for [Admin UI](/web-server) to track heaviest operations per plugin.
+
+Default: `false`

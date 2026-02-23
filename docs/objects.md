@@ -27,6 +27,12 @@ This is a list of object structures (types), their member values and member func
 - [:PlayVoice](/types/character#playvoice)
 - [:PlayAnimation](/types/character#playanimation)
 - [:StopAnimation](/types/character#stopanimation)
+- [:SetData](/types/character#setdata)
+- [:GetData](/types/character#getdata)
+- [:GetAllData](/types/character#getalldata)
+- [:HasData](/types/character#hasdata)
+- [:DeleteData](/types/character#deletedata)
+- [:DeleteAllData](/types/character#deletealldata)
 
 ::: warning
 This object cannot be directly constructed!

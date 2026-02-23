@@ -116,6 +116,14 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [World.GetTimeOfDay](/libs/world#gettimeofday)
 - [World.SetTimeOfDay](/libs/world#settimeofday)
 
+## PlayerData
+- [PlayerData.Set](/libs/playerdata#set)
+- [PlayerData.Get](/libs/playerdata#get)
+- [PlayerData.GetAll](/libs/playerdata#getall)
+- [PlayerData.Has](/libs/playerdata#has)
+- [PlayerData.Delete](/libs/playerdata#delete)
+- [PlayerData.DeleteAll](/libs/playerdata#deleteall)
+
 ## Tot ! Chat
 - [TotChat.Alert](/mods/totchat#alert)
 - [TotChat.Broadcast](/mods/totchat#broadcast)

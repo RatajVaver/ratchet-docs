@@ -69,6 +69,7 @@ export default defineConfig({
           { text: 'Web', link: '/libs/web' },
           { text: 'JSON', link: '/libs/json' },
           { text: 'World', link: '/libs/world' },
+          { text: 'PlayerData', link: '/libs/playerdata' },
         ]
       },
       {
