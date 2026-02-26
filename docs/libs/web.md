@@ -43,3 +43,25 @@ Web.Post("https://lichess.org/api/challenge/open", "name=Conan Exiles Chess Matc
     end
 end)
 ```
+
+## `Request` <Badge type="info" text="function" />
+Sends a custom HTTP request, allowing you to control all the options.
+
+Syntax:
+```lua
+void Web.Request( table options [, function ( bool success, int status, string response ) ] )
+```
+
+Example:
+```lua {1}
+Web.Request({
+    url = "https://api.example.com/items/1",
+    method = "PATCH", -- GET/POST/PUT/PATCH/DELETE
+    body = { status = "active" }, -- string|table
+    headers = { Authorization = "Bearer xyz" },
+    timeout = 30,
+    connectTimeout = 5,
+}, function(success, status, response)
+    print(response)
+end)
+```

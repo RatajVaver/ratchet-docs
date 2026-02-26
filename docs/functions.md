@@ -48,6 +48,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [printError](/utils#printerror)
 - [dumpAllObjects](/utils#dumpallobjects)
 - [defer](/utils#defer)
+- [batch](/utils#batch)
 
 ## String
 - [string.explode](/libs/string#explode)
@@ -104,6 +105,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 ## Web
 - [Web.Get](/libs/web#get)
 - [Web.Post](/libs/web#post)
+- [Web.Request](/libs/web#request)
 
 ## JSON
 - [JSON.save](/libs/json#save)

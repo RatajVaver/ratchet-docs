@@ -200,3 +200,30 @@ Syntax:
 ```lua
 void defer( function func [, ... ] )
 ```
+
+## `batch` <Badge type="info" text="function" />
+Execute multiple game thread operations in bulk without blocking Lua thread with round-trips.
+For example, changing 20 RPR stats at once without batch can take ~100ms, while with batch it might only take ~5ms.
+
+This might be one of the most useful functions when it comes to improving performance of your heavy plugins, as long as you know what you're doing.
+Keep in mind that this is a double-edged sword and can also cause issues by overloading the game thread tick.
+
+Only use this for writing/executing, never read data or expect a return.
+All operations within batch function are executed in bulk at the same time.
+Without batch, every function influencing game thread is called in order and waiting to be fully executed before allowing Lua code to progress further, this is called a round-trip.
+
+Syntax:
+```lua
+void batch( function func [, ... ] )
+```
+
+Example:
+```lua
+batch(function()
+    RPR.ModifyStat(player, "Stat1", 1)
+    RPR.ModifyStat(player, "Stat2", 1)
+    RPR.ModifyStat(player, "Stat3", 1)
+    -- many more calls, all executing at once
+end)
+-- all stats are set by here, back to synchronous code, safe to read
+```
