@@ -214,7 +214,7 @@ Without batch, every function influencing game thread is called in order and wai
 
 Syntax:
 ```lua
-void batch( function func [, ... ] )
+void batch( function func )
 ```
 
 Example:
