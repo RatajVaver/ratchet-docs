@@ -7,6 +7,7 @@ This is a list of object structures (types), their member values and member func
 - [:IsValid](/types/character#isvalid)
 - [:GetName](/types/character#getname)
 - [:GetRealName](/types/character#getrealname)
+- [:SetName](/types/character#setname)
 - [:GetSteamID](/types/character#getsteamid)
 - [:GetGuildID](/types/character#getguildid)
 - [:GetGuild](/types/character#getguild)

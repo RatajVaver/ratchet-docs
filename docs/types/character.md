@@ -119,6 +119,14 @@ local name = player:GetRealName()
 print(name)
 ```
 
+### `SetName` <Badge type="info" text="function" />
+Change the name of a character (to change `/act` name use [TotSudo.SetActName](/mods/totsudo#setactname)).
+
+Syntax:
+```lua
+void Character:SetName( string name )
+```
+
 ### `GetSteamID` <Badge type="info" text="function" />
 Returns SteamID64 (decimal), it is just a long number, but it is saved as a string.
 

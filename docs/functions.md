@@ -145,6 +145,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [TotSudo.RevokeRole](/mods/totsudo#revokerole)
 - [TotSudo.GetRoles](/mods/totsudo#getroles)
 - [TotSudo.HasPermission](/mods/totsudo#haspermission)
+- [TotSudo.SetActName](/mods/totsudo#setactname)
 - [TotSudo.HasCharTag](/mods/totsudo#haschartag)
 - [TotSudo.AddCharTag](/mods/totsudo#addchartag)
 - [TotSudo.RemoveCharTag](/mods/totsudo#removechartag)

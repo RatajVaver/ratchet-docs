@@ -40,6 +40,13 @@ Syntax:
 bool TotSudo.HasPermission( Character player, string name )
 ```
 
+## `SetActName` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+bool TotSudo.SetActName( Character player, string name )
+```
+
 ## CharVars
 
 ### `HasCharTag` <Badge type="info" text="function" />
