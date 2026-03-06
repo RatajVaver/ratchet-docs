@@ -304,6 +304,30 @@ Syntax:
 bool Character:IsRiding()
 ```
 
+### `IsSwimming` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsSwimming()
+```
+
+### `IsFalling` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsFalling()
+```
+
+### `IsFlying` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsFlying()
+```
+
+### `IsClimbing` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool Character:IsClimbing()
+```
+
 ### `IsArmed` <Badge type="info" text="function" />
 Syntax:
 ```lua
