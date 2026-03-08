@@ -29,6 +29,7 @@ This is a list of object structures (types), their member values and member func
 - [:IsClimbing](/types/character#isclimbing)
 - [:IsArmed](/types/character#isarmed)
 - [:Freeze](/types/character#freeze)
+- [:StopMovement](/types/character#stopmovement)
 - [:PlayVoice](/types/character#playvoice)
 - [:PlayAnimation](/types/character#playanimation)
 - [:StopAnimation](/types/character#stopanimation)

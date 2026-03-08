@@ -342,6 +342,14 @@ Syntax:
 void Character:Freeze( bool enable )
 ```
 
+### `StopMovement` <Badge type="info" text="function" />
+Immediately stops momentum of a player.
+
+Syntax:
+```lua
+void Character:StopMovement()
+```
+
 ### `PlayVoice` <Badge type="info" text="function" />
 Play a sound from the VoiceTable (such as `voc_pain` or `voc_jump`).
 

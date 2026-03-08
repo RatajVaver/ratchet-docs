@@ -165,6 +165,10 @@ function( Character character, string status, Color color )
 ### `RPR_updateSheet` <Badge type="info" text="event" />
 Whenever anyone's sheet is changed. Be it by creating their sheet, or being edited by an admin.
 
+::: warning
+Please note that this doesn't currently reliably work with admin edits.
+:::
+
 Callback:
 ```lua
 function( Character target, Character editor )
