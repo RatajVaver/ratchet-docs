@@ -70,6 +70,11 @@ Below is an example of a config file that contains all the options that can be c
   },
   "profiler": {
     "enabled": false
+  },
+  "chatLogger": {
+    "enabled": false,
+    "path": "ratchet/chat",
+    "retainDays": 14
   }
 }
 ```
@@ -198,3 +203,22 @@ Default: `true`
 Enable Lua profiler for [Admin UI](/web-server) to track heaviest operations per plugin.
 
 Default: `false`
+
+### chatLogger
+
+#### enabled
+Enable logging of all chat messages into text files, also accessible in the [Admin UI](/web-server).
+
+This is way more privacy friendly alternative to Discord webhooks, as the data never leave the device and isn't shared with third parties.
+
+Default: `false`
+
+#### path
+Path to save chat logs into. Logs are saved into text files split per each day.
+
+Default: `ratchet/chat`
+
+#### retainDays
+Logs are automatically deleted after this amount of days.
+
+Default: `14`
