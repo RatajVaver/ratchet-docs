@@ -15,6 +15,20 @@ Syntax:
 void TotChat.Broadcast( string message )
 ```
 
+## `BroadcastMessage` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+void TotChat.BroadcastMessage( string emitterName, int channelId, table<string> tags, string language, string message )
+```
+
+## `BroadcastMessageInRadius` <Badge type="info" text="function" />
+
+Syntax:
+```lua
+void TotChat.BroadcastMessageInRadius( Vector location, float radius, string emitterName, table<string> tags, string language, string message )
+```
+
 ## `SendLocal` <Badge type="info" text="function" />
 
 Syntax:

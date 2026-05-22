@@ -127,6 +127,14 @@ Syntax:
 void Character:SetName( string name )
 ```
 
+### `GetIP` <Badge type="info" text="function" />
+Returns the player's IP address.
+
+Syntax:
+```lua
+string Character:GetIP()
+```
+
 ### `GetSteamID` <Badge type="info" text="function" />
 Returns SteamID64 (decimal), it is just a long number, but it is saved as a string.
 
@@ -383,13 +391,13 @@ These functions can also be used on offline players using the [PlayerData](/libs
 ### `SetData` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void Character:SetData( string key, string|number|bool value )
+void Character:SetData( string key, string|number|bool|table value )
 ```
 
 ### `GetData` <Badge type="info" text="function" />
 Syntax:
 ```lua
-string|number|bool Character:GetData( string key )
+string|number|bool|table Character:GetData( string key )
 ```
 
 ### `GetAllData` <Badge type="info" text="function" />

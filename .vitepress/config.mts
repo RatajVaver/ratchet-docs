@@ -71,6 +71,7 @@ export default defineConfig({
           { text: 'World', link: '/libs/world' },
           { text: 'Server', link: '/libs/server' },
           { text: 'PlayerData', link: '/libs/playerdata' },
+          { text: 'Storage', link: '/libs/storage' },
         ]
       },
       {

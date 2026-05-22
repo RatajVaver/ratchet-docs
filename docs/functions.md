@@ -1,7 +1,7 @@
 # Functions
 
 This is a list of all functions provided by Ratchet, except for object methods that are not listed here but on the [objects](/objects) page.
-You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided by the standard libraries.
+You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided by the standard libraries.
 
 ## Global
 - [fileExists](/files#fileexists)
@@ -25,6 +25,13 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [getActorsInRadius](/types/actor#getactorsinradius)
 - [getActorsByClass](/types/actor#getactorsbyclass)
 - [getInventoryByType](/types/inventory#getinventorybytype)
+- getBuildingPiecesInRadius
+- getBuildingPiecesByOwner
+- getBuildingPieceBelow
+- spawnBuildingPiece
+- pasteBuilding
+- getAllPOIs
+- getPOIsInRadius
 - [dbConnect](/database#dbconnect)
 - [setTimer](/timers#settimer)
 - [isTimer](/timers#istimer)
@@ -132,9 +139,19 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [PlayerData.Delete](/libs/playerdata#delete)
 - [PlayerData.DeleteAll](/libs/playerdata#deleteall)
 
+## Storage
+- [Storage.Set](/libs/storage#set)
+- [Storage.Get](/libs/storage#get)
+- [Storage.GetAll](/libs/storage#getall)
+- [Storage.Has](/libs/storage#has)
+- [Storage.Delete](/libs/storage#delete)
+- [Storage.DeleteAll](/libs/storage#deleteall)
+
 ## Tot ! Chat
 - [TotChat.Alert](/mods/totchat#alert)
 - [TotChat.Broadcast](/mods/totchat#broadcast)
+- [TotChat.BroadcastMessage](/mods/totchat#broadcastmessage)
+- [TotChat.BroadcastMessageInRadius](/mods/totchat#broadcastmessageinradius)
 - [TotChat.SendLocal](/mods/totchat#sendlocal)
 - [TotChat.SendMessage](/mods/totchat#sendmessage)
 - [TotChat.ReceiveMessage](/mods/totchat#receivemessage)
@@ -249,6 +266,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.1/) provided b
 - [RPR.GetLFRP](/mods/redux#getlfrp)
 - [RPR.SetLFRP](/mods/redux#setlfrp)
 - [RPR.GetWaypoints](/mods/redux#getwaypoints)
+- [RPR.TeleportToWaypoint](/mods/redux#teleporttowaypoint)
 
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)

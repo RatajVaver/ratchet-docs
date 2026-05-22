@@ -399,3 +399,9 @@ table RPR.GetWaypoints()
 | `color` | [Color](/objects#color) |
 | `location` | [Vector](/types/vector) |
 | `rotation` | [Rotator](/types/rotator) |
+
+## `TeleportToWaypoint` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool RPR.TeleportToWaypoint( Character player, int waypointId )
+```

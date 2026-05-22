@@ -8,6 +8,7 @@ This is a list of object structures (types), their member values and member func
 - [:GetName](/types/character#getname)
 - [:GetRealName](/types/character#getrealname)
 - [:SetName](/types/character#setname)
+- [:GetIP](/types/character#getip)
 - [:GetSteamID](/types/character#getsteamid)
 - [:GetGuildID](/types/character#getguildid)
 - [:GetGuild](/types/character#getguild)
@@ -194,6 +195,44 @@ Rotators can be constructed in the same way as Vectors.
 - [:GetOwner](/types/guild#getowner)
 - [:GetMembers](/types/guild#getmembers)
 
+## BuildingPiece <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+- :GetLocation
+- :GetRotation
+- :GetTemplateID
+- :GetOwnerID
+- :GetOwnerName
+- :IsBuilding
+- :IsDoor
+- :IsHatch
+- :IsGate
+- :IsPortcullis
+- :SetOwner
+- :SetOwnerGuild
+- :IsOwner
+- :DropInventory
+- :GetMaster
+- :GetRoot
+- :IsLocked
+- :SetLocked
+- :IsRPLocked
+- :SetRPLocked
+- :GetRPKey
+- :SetRPKey
+- :IsOpen
+- :SetOpen
+- :HasAutoClose
+- :SetAutoClose
+- :GetAutoCloseTime
+- :SetAutoCloseTime
+- :Move
+- :MoveBuilding
+- :SerializeBuilding
+
+::: danger
+This functionality is unfinished, experimental, and dangerous.
+Only use it at your own risk and never on actual builds as it can easily destroy what you've built.
+:::
+
 ## HitResult
 - .actor
 - .distance
@@ -214,9 +253,9 @@ Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 :::
 
 ## TotZone <Badge type="tip" text="Actor" />
-- [:GetUID](/mods/totadmin#getuid)
-- [:GetName](/mods/totadmin#getname)
-- [:SetName](/mods/totadmin#getname)
+- [:GetUID](/mods/totadmin#getuid-1)
+- [:GetName](/mods/totadmin#getname-1)
+- [:SetName](/mods/totadmin#setname-1)
 - [:GetParam](/mods/totadmin#getparam)
 - [:SetParam](/mods/totadmin#setparam)
 - [:GetActionModule](/mods/totadmin#getactionmodule)
@@ -225,27 +264,41 @@ Use [dbConnect](/database#dbconnect) to retrieve a valid instance.
 - [:TriggerEvent](/mods/totadmin#triggerevent)
 - [:IsBox](/mods/totadmin#isbox)
 - [:IsSphere](/mods/totadmin#issphere)
+- [:Delete](/mods/totadmin#delete-1)
 
-::: warning
-This object cannot be directly constructed!
-Use [TotAdmin.GetZone](/mods/totadmin#getzone) to retrieve a valid instance.
+::: tip
+This object can be directly constructed using [TotZone](/mods/totadmin#totzone) constructor.
+:::
+
+## TotBasicNPC <Badge type="tip" text="BuildingPiece" /> <Badge type="warning" text="Experimental" />
+- [:GetName](/mods/totadmin#getname-2)
+- [:SetName](/mods/totadmin#setname-2)
+- [:Delete](/mods/totadmin#delete-2)
+
+::: tip
+This object can be directly constructed using [TotBasicNPC](/mods/totadmin#totbasicnpc) constructor.
 :::
 
 ## TotPuppet <Badge type="tip" text="Actor" />
 - [:Move](/mods/totadmin#move)
-- [:GetUID](/mods/totadmin#getuid-1)
-- [:GetName](/mods/totadmin#getname-1)
-- [:SetName](/mods/totadmin#setname)
-- [:Delete](/mods/totadmin#delete)
+- [:GetUID](/mods/totadmin#getuid-2)
+- [:GetName](/mods/totadmin#getname-3)
+- [:SetName](/mods/totadmin#setname-3)
+- [:GetSysName](/mods/totadmin#getsysname)
+- [:SetSysName](/mods/totadmin#setsysname)
+- [:IsInvisible](/mods/totadmin#isinvisible)
+- [:SetInvisible](/mods/totadmin#setinvisible)
+- [:IsNameplateHidden](/mods/totadmin#isnameplatehidden)
+- [:SetNameplateHidden](/mods/totadmin#setnameplatehidden)
+- [:Delete](/mods/totadmin#delete-3)
 - [:SendLocal](/mods/totadmin#sendlocal)
 - [:GetSheet](/mods/totadmin#getsheet)
 - [:SetSheet](/mods/totadmin#setsheet)
 - [:GetTags](/mods/totadmin#gettags)
 - [:SetTags](/mods/totadmin#settags)
 
-::: warning
-This object cannot be directly constructed!
-Use [TotAdmin.GetPuppet](/mods/totadmin#getpuppet) to retrieve a valid instance.
+::: tip
+This object can be directly constructed using [TotPuppet](/mods/totadmin#totpuppet) constructor.
 :::
 
 ## TotPuppetTag
@@ -265,6 +318,69 @@ It can also be retrieved from [GetTags](/mods/totadmin#gettags) method of a [Tot
 - .y
 - .icon
 - .iconName
+
+## TotLight <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+## TotPoint <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+## TotPortal <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+## TotScriptContainer <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+## TotSpawner <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
+
+## RPNoticeBoard <Badge type="tip" text="BuildingPiece" /> <Badge type="warning" text="Experimental" />
+- :GetMessages
+- :AddMessage
+- :DeleteMessage
+- :ToggleSticky
+- :GetMaxMessages
+- :SetMaxMessages
+- :GetForceCharacterName
+- :SetForceCharacterName
+
+## RPPOI <Badge type="tip" text="BuildingPiece" /> <Badge type="warning" text="Experimental" />
+- :ResetInspections
+- :AddEditor
+- :GetEditors
+- :IsHidden
+- :GetInspectResults
+- :GetDescription
+- :SetDescription
+- :GetIcon
+- :SetIcon
+- :GetInspectionDistance
+- :SetInspectionDistance
+- :GetSpotDistance
+- :SetSpotDistance
+- :GetCanAnyoneRemove
+- :SetCanAnyoneRemove
+- :GetIsDateHidden
+- :SetIsDateHidden
+- :GetCleanupDuration
+- :SetCleanupDuration
+- :GetRolls
+- :SetRolls
+
+## RPWaypoint <Badge type="tip" text="BuildingPiece" /> <Badge type="warning" text="Experimental" />
+- :GetID
+- :GetName
+- :SetName
+- :GetWaypointLocation
+- :GetWaypointRotation
+- :IsEnabled
+- :SetEnabled
+- :IsHidden
+- :SetHidden
+- :IsShowOnMap
+- :SetShowOnMap
+- :IsClanHome
+- :IsCustomWormhole
+- :GetCategory
+- :SetCategory
+- :GetColor
+- :SetColor
+- :GetWormholeID
+- :SetWormholeID
+- :GetPreventCarry
+- :SetPreventCarry
+- :Save
 
 ## KSVolume <Badge type="tip" text="Actor" />
 - [:GetColor](/mods/knights-sanity#getcolor)

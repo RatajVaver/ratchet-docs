@@ -119,6 +119,16 @@ Functions in this section are to be called on a [TotZone](/objects#totzone) obje
 
 Zones can either be spheres or boxes.
 
+### `TotZone` <Badge type="info" text="constructor" />
+Zones can be constructed directly using a function of the same name.
+
+Shape can be either `Sphere` or `Box`.
+
+Syntax:
+```lua
+TotZone TotZone( string shape, Vector location )
+```
+
 ### `GetUID` <Badge type="info" text="function" />
 Syntax:
 ```lua
@@ -196,12 +206,57 @@ Syntax:
 bool TotZone:IsSphere()
 ```
 
+### `Delete` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotZone:Delete()
+```
+
+## Basic NPCs
+Functions in this section are to be called on a [TotBasicNPC](/objects#totbasicnpc) object.
+
+Basic NPCs are considered decoration pieces, any [BuildingPiece](/types/buildingpiece) function can be used on NPCs as well.
+
+### `TotBasicNPC` <Badge type="info" text="constructor" />
+NPCs can be constructed directly using a function of the same name.
+
+Syntax:
+```lua
+TotBasicNPC TotBasicNPC( Vector location [, Rotator rotation ] )
+```
+
+### `GetName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string TotBasicNPC:GetName()
+```
+
+### `SetName` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotBasicNPC:SetName( string displayName )
+```
+
+### `Delete` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotBasicNPC:Delete()
+```
+
 ## Puppets
 Functions in this section are to be called on a [TotPuppet](/objects#totpuppet) object.
 
-Puppets inherit functions from Actors, any [Actor](/types/actor) functions can be used on Puppets as well.
+Puppets inherit functions from Actors, any [Actor](/types/actor) function can be used on Puppets as well.
 
 Appearance of Puppets can be manipulated with [Tot ! Custom](/mods/totcustom) library.
+
+### `TotPuppet` <Badge type="info" text="constructor" />
+Puppets can be constructed directly using a function of the same name.
+
+Syntax:
+```lua
+TotPuppet TotPuppet( Vector location [, Rotator rotation ] )
+```
 
 ### `Move` <Badge type="info" text="function" />
 Syntax:
@@ -231,6 +286,42 @@ string TotPuppet:GetName()
 Syntax:
 ```lua
 void TotPuppet:SetName( string displayName )
+```
+
+### `GetSysName` <Badge type="info" text="function" />
+Syntax:
+```lua
+string TotPuppet:GetSysName()
+```
+
+### `SetSysName` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotPuppet:SetSysName( string internalName )
+```
+
+### `IsInvisible` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotPuppet:IsInvisible()
+```
+
+### `SetInvisible` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotPuppet:SetInvisible( bool invisible )
+```
+
+### `IsNameplateHidden` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotPuppet:IsNameplateHidden()
+```
+
+### `SetNameplateHidden` <Badge type="info" text="function" />
+Syntax:
+```lua
+void TotPuppet:SetNameplateHidden( bool hidden )
 ```
 
 ### `Delete` <Badge type="info" text="function" />

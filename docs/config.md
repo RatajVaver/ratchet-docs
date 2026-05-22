@@ -68,6 +68,9 @@ Below is an example of a config file that contains all the options that can be c
   "playerData": {
     "enabled": true
   },
+  "storage": {
+    "enabled": true
+  },
   "profiler": {
     "enabled": false
   },
@@ -194,6 +197,13 @@ Default: `true`
 
 #### enabled
 Enable [PlayerData](/libs/playerdata) (in-memory + SQLite permanent key-value storage).
+
+Default: `true`
+
+### storage
+
+#### enabled
+Enable [Storage](/libs/storage) (in-memory + SQLite permanent key-value storage).
 
 Default: `true`
 

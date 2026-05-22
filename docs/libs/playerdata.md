@@ -6,13 +6,13 @@ These functions can also be used directly on the [Character](/types/character#pl
 ## `Set` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void PlayerData.Set( int ID, string key, string|number|bool value )
+void PlayerData.Set( int ID, string key, string|number|bool|table value )
 ```
 
 ## `Get` <Badge type="info" text="function" />
 Syntax:
 ```lua
-string|number|bool PlayerData.Get( int ID, string key )
+string|number|bool|table PlayerData.Get( int ID, string key )
 ```
 
 ## `GetAll` <Badge type="info" text="function" />
