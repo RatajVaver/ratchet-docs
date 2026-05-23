@@ -215,7 +215,7 @@ void TotZone:Delete()
 ## Basic NPCs
 Functions in this section are to be called on a [TotBasicNPC](/objects#totbasicnpc) object.
 
-Basic NPCs are considered decoration pieces, any [BuildingPiece](/types/buildingpiece) function can be used on NPCs as well.
+Basic NPCs are considered decoration pieces, any BuildingPiece function can be used on NPCs as well.
 
 ### `TotBasicNPC` <Badge type="info" text="constructor" />
 NPCs can be constructed directly using a function of the same name.
