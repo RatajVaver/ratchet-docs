@@ -214,10 +214,18 @@ Rotators can be constructed in the same way as Vectors.
 - :GetRoot
 - :IsLocked
 - :SetLocked
-- :IsRPLocked
-- :SetRPLocked
-- :GetRPKey
-- :SetRPKey
+- [:IsRPLocked](/mods/redux#locks)
+- [:SetRPLocked](/mods/redux#locks)
+- [:GetRPKey](/mods/redux#locks)
+- [:SetRPKey](/mods/redux#locks)
+- [:IsRP2Lockable](/mods/rp2#locks)
+- [:IsRP2Locked](/mods/rp2#locks)
+- [:SetRP2Locked](/mods/rp2#locks)
+- [:GetRP2Key](/mods/rp2#locks)
+- [:SetRP2Key](/mods/rp2#locks)
+- [:GetRP2LockType](/mods/rp2#locks)
+- [:GetRP2LockBehavior](/mods/rp2#locks)
+- [:HasRP2Key](/mods/rp2#locks)
 - :IsOpen
 - :SetOpen
 - :HasAutoClose
@@ -245,7 +253,6 @@ Only use it at your own risk and never on actual builds as it can easily destroy
 - [:prepare](/database#prepare)
 - [:close](/database#close)
 - [:isConnected](/database#isConnected)
-- [:poolSize](/database#poolSize)
 
 ::: warning
 This object cannot be directly constructed!
@@ -318,6 +325,14 @@ It can also be retrieved from [GetTags](/mods/totadmin#gettags) method of a [Tot
 - .y
 - .icon
 - .iconName
+- .radius <Badge type="tip" text="Enhanced" />
+- .color <Badge type="tip" text="Enhanced" />
+- .hideIcon <Badge type="tip" text="Enhanced" />
+- .zOrder <Badge type="tip" text="Enhanced" />
+
+::: warning
+The `radius`, `color`, `hideIcon`, and `zOrder` fields don't exist on **Legacy**.
+:::
 
 ## TotLight <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />
 ## TotPoint <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />

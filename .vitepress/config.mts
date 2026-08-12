@@ -31,6 +31,7 @@ export default defineConfig({
           { text: 'Hot Reload', link: '/hot-reload' },
           { text: 'Web Server', link: '/web-server' },
           { text: 'Scheduler', link: '/scheduler' },
+          { text: 'Extensions', link: '/extensions' },
         ]
       },
       {
@@ -72,6 +73,7 @@ export default defineConfig({
           { text: 'Server', link: '/libs/server' },
           { text: 'PlayerData', link: '/libs/playerdata' },
           { text: 'Storage', link: '/libs/storage' },
+          { text: 'Hook', link: '/libs/hook' },
         ]
       },
       {
@@ -79,12 +81,15 @@ export default defineConfig({
         items: [
           { text: 'Mod compatibility', link: '/mods/' },
           { text: 'Tot ! Chat', link: '/mods/totchat' },
+          { text: 'Tot ! Chat V2', link: '/mods/totchatv2' },
           { text: 'Tot ! Sudo', link: '/mods/totsudo' },
           { text: 'Tot ! Admin', link: '/mods/totadmin' },
           { text: 'Tot ! Custom', link: '/mods/totcustom' },
           { text: 'Roleplay Redux', link: '/mods/redux' },
+          { text: 'Roleplay Enhanced', link: '/mods/rp2' },
           { text: 'Knight\'s Sanity', link: '/mods/knights-sanity' },
           { text: 'Devious Desires', link: '/mods/devious-desires' },
+          { text: 'RIFT', link: '/mods/rift' },
         ]
       }
     ],

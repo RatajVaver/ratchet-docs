@@ -1,5 +1,7 @@
 # Roleplay Redux
-This library will not function if your server doesn't have the [Roleplay Redux](https://steamcommunity.com/sharedfiles/filedetails/?id=3036058836) mod installed.
+This library will not function if your server doesn't have Roleplay Redux installed:
+- [Roleplay Redux](https://steamcommunity.com/sharedfiles/filedetails/?id=3036058836) <Badge type="warning" text="Legacy" />
+- [Roleplay Redux](https://steamcommunity.com/sharedfiles/filedetails/?id=3778881456) <Badge type="tip" text="Enhanced" />
 
 ## `Roll` <Badge type="info" text="function" />
 
@@ -390,7 +392,7 @@ table RPR.GetWaypoints()
 
 | Field | Type |
 |-|-|
-| `id` | number |
+| `id` | number <Badge type="warning" text="Legacy" /> / [GUID](/objects#guid) <Badge type="tip" text="Enhanced" /> |
 | `enabled` | boolean |
 | `hidden` | boolean |
 | `showMarker` | boolean |
@@ -400,8 +402,24 @@ table RPR.GetWaypoints()
 | `location` | [Vector](/types/vector) |
 | `rotation` | [Rotator](/types/rotator) |
 
+::: warning
+Waypoint IDs changed from plain numbers to [GUID](/objects#guid) with Enhanced.
+:::
+
 ## `TeleportToWaypoint` <Badge type="info" text="function" />
 Syntax:
-```lua
+::: code-group
+```lua [Enhanced]
+bool RPR.TeleportToWaypoint( Character player, GUID waypointId )
+```
+```lua [Legacy]
 bool RPR.TeleportToWaypoint( Character player, int waypointId )
 ```
+:::
+
+## Locks
+[BuildingPiece](/objects#buildingpiece) objects also expose RPR's lock system directly:
+- `:IsRPLocked`
+- `:SetRPLocked`
+- `:GetRPKey`
+- `:SetRPKey`

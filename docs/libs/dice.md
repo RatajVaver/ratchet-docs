@@ -1,4 +1,4 @@
-# Dice
+# Dice 🎲
 
 Dice is a simple library for generating random numbers by rolling dice.
 

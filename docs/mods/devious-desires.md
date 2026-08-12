@@ -1,5 +1,7 @@
 # Devious Desires
-This library will not function if your server doesn't have the [Devious Desires](https://steamcommunity.com/sharedfiles/filedetails/?id=2300463941) mod installed.
+This library will not function if your server doesn't have Devious Desires installed:
+- [Devious Desires](https://steamcommunity.com/sharedfiles/filedetails/?id=2300463941) <Badge type="warning" text="Legacy" />
+- [Devious Desires](https://steamcommunity.com/sharedfiles/filedetails/?id=3731681816) <Badge type="tip" text="Enhanced" />
 
 ## `GetRestraints` <Badge type="info" text="function" />
 Syntax:

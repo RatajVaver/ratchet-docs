@@ -1,5 +1,7 @@
 # Tot ! Custom
-This library will not function if your server doesn't have the [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=2886779102) mod installed.
+This library will not function if your server doesn't have Tot ! Custom installed:
+- [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=2886779102) <Badge type="warning" text="Legacy" />
+- [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=3721096154) <Badge type="tip" text="Enhanced" />
 
 All of these functions are compatible with both [player characters](/types/character) and [puppets](/mods/totadmin#puppets).
 
@@ -45,15 +47,13 @@ Syntax:
 bool TotCustom.SetAccessories( Character|TotPuppet actor, string data )
 ```
 
-## `GetSliderValue` <Badge type="info" text="function" />
-
+## `GetSliderValue` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
 Syntax:
 ```lua
 float TotCustom.GetSliderValue( Character|TotPuppet actor, string key )
 ```
 
-## `SetSliderValue` <Badge type="info" text="function" />
-
+## `SetSliderValue` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
 Syntax:
 ```lua
 bool TotCustom.SetSliderValue( Character|TotPuppet actor, string key, float value )
@@ -83,7 +83,7 @@ Syntax:
 int, Color|nil, Color|nil, Color|nil, Color|nil TotCustom.GetArmorPiece( Character|TotPuppet actor, int slot )
 ```
 
-## `SetArmorPiece` <Badge type="info" text="function" />
+## `SetArmorPiece` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
 Set an armor piece on a character, uses same slot numbers as [GetArmorPieces](#getarmorpieces).
 
 Make sure to either provide no colors (everything will be black), one color (which will be applied to all layers), or all of them.

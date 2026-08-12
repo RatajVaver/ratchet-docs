@@ -1,5 +1,11 @@
-# Tot ! Chat
+# Tot ! Chat <Badge type="warning" text="Legacy" />
 This library will not function if your server doesn't have the [Tot ! Chat](https://steamcommunity.com/sharedfiles/filedetails/?id=2847709656) mod installed.
+
+::: warning
+The functions outlined on this page will only function on Conan Exiles **Legacy**.
+
+For **Enhanced** version, see [Tot ! Chat V2](/mods/totchatv2).
+:::
 
 ## `Alert` <Badge type="info" text="function" />
 

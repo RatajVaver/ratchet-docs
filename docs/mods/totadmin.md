@@ -3,7 +3,9 @@ outline: deep
 ---
 
 # Tot ! Admin
-This library will not function if your server doesn't have the [Tot ! Admin](https://steamcommunity.com/sharedfiles/filedetails/?id=2850232250) mod installed.
+This library will not function if your server doesn't have Tot ! Admin installed:
+- [Tot ! Admin](https://steamcommunity.com/sharedfiles/filedetails/?id=2850232250) <Badge type="warning" text="Legacy" />
+- [Tot ! Admin](https://steamcommunity.com/sharedfiles/filedetails/?id=3729640272) <Badge type="tip" text="Enhanced" />
 
 ## General
 

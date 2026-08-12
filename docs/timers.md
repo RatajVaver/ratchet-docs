@@ -38,3 +38,20 @@ Example:
 local timer = setTimer(doStuff, 1000, 1)
 killTimer(timer)
 ```
+
+### `getTimer` <Badge type="info" text="function" />
+Retrieves timing information about a running timer.
+
+Syntax:
+```lua
+int, int getTimer( int handle )
+```
+
+Returns the amount of milliseconds left until the next trigger, followed by the timer's interval in milliseconds.
+You can also use this to see how far we are into a single run timer. Two zeroes are returned on invalid handle.
+
+Example:
+```lua
+local timer = setTimer(doStuff, 5000, 0)
+local msLeft, interval = getTimer(timer)
+```

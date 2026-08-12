@@ -3,7 +3,9 @@ outline: deep
 ---
 
 # Knight's Sanity
-This library will not function if your server doesn't have the [Knight's Sanity](https://steamcommunity.com/sharedfiles/filedetails/?id=3373599765) mod installed.
+This library will not function if your server doesn't have Knight's Sanity installed:
+- [Knight's Sanity](https://steamcommunity.com/sharedfiles/filedetails/?id=3373599765) <Badge type="warning" text="Legacy" />
+- [Knight's Sanity](https://steamcommunity.com/sharedfiles/filedetails/?id=3782380750) <Badge type="tip" text="Enhanced" />
 
 ## General
 

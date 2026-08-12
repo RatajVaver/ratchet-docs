@@ -34,6 +34,10 @@ Below is an example of a config file that contains all the options that can be c
 {
   "plugins": "C:/Ratchet/plugins",
   "packages": "C:/Users/USERNAME/AppData/Roaming/luarocks/share/lua/5.4/?.lua",
+  "extensions": {
+    "enabled": true,
+    "path": "ratchet/extensions"
+  },
   "msPerTick": 50,
   "webserver": {
     "enabled": false,
@@ -92,6 +96,18 @@ Default: `plugins`
 Path to Lua packages used in `require` for [LuaRocks](https://luarocks.org/) support.
 
 Default: &lt;empty string&gt;
+
+### extensions
+
+#### enabled
+Enable loading of extensions (`.dll` on Windows, `.so` on Linux) from a directory.
+
+Default: `true`
+
+#### path
+Path to the directory for extensions.
+
+Default: `ratchet/extensions`
 
 ### msPerTick
 Amount of milliseconds in between each main loop tick. This is best left unchanged.

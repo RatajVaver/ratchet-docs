@@ -3,7 +3,9 @@ outline: deep
 ---
 
 # Tot ! Sudo
-This library will not function if your server doesn't have the [Tot ! Sudo](https://steamcommunity.com/sharedfiles/filedetails/?id=3036057084) mod installed.
+This library will not function if your server doesn't have Tot ! Sudo installed:
+- [Tot ! Sudo](https://steamcommunity.com/sharedfiles/filedetails/?id=3036057084) <Badge type="warning" text="Legacy" />
+- [Tot ! Sudo](https://steamcommunity.com/sharedfiles/filedetails/?id=3721090132) <Badge type="tip" text="Enhanced" />
 
 ## `HasRole` <Badge type="info" text="function" />
 

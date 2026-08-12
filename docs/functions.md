@@ -36,6 +36,7 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [setTimer](/timers#settimer)
 - [isTimer](/timers#istimer)
 - [killTimer](/timers#killtimer)
+- [getTimer](/timers#gettimer)
 - [on](/events#on)
 - [off](/events#off)
 - [once](/events#once)
@@ -147,6 +148,13 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [Storage.Delete](/libs/storage#delete)
 - [Storage.DeleteAll](/libs/storage#deleteall)
 
+## Hook
+- [Hook.Add](/libs/hook#add)
+- [Hook.Watch](/libs/hook#watch)
+- [Hook.Remove](/libs/hook#remove)
+- [Hook.Run](/libs/hook#run)
+- [Hook.Fold](/libs/hook#fold)
+
 ## Tot ! Chat
 - [TotChat.Alert](/mods/totchat#alert)
 - [TotChat.Broadcast](/mods/totchat#broadcast)
@@ -161,6 +169,21 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [TotChat.GetLanguages](/mods/totchat#getlanguages)
 - [TotChat.SetLanguage](/mods/totchat#setlanguage)
 - [TotChat.RemoveLanguage](/mods/totchat#removelanguage)
+
+## Tot ! Chat V2
+- [TotChat.GetGlobalChannelId](/mods/totchatv2#getglobalchannelid)
+- [TotChat.GetLocalChannelId](/mods/totchatv2#getlocalchannelid)
+- [TotChat.SendLocal](/mods/totchatv2#sendlocal)
+- [TotChat.SendGlobal](/mods/totchatv2#sendglobal)
+- [TotChat.Broadcast](/mods/totchatv2#broadcast)
+- [TotChat.Notify](/mods/totchatv2#notify)
+- [TotChat.Send](/mods/totchatv2#send)
+- [TotChat.SendInRadius](/mods/totchatv2#sendinradius)
+- [TotChat.GetPlayerLanguages](/mods/totchatv2#getplayerlanguages)
+- [TotChat.SetPlayerLanguage](/mods/totchatv2#setplayerlanguage)
+- [TotChat.RemovePlayerLanguage](/mods/totchatv2#removeplayerlanguage)
+- [TotChat.GetServerLanguages](/mods/totchatv2#getserverlanguages)
+- [TotChat.GetServerRanges](/mods/totchatv2#getserverranges)
 
 ## Tot ! Sudo
 - [TotSudo.HasRole](/mods/totsudo#hasrole)
@@ -268,6 +291,20 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [RPR.GetWaypoints](/mods/redux#getwaypoints)
 - [RPR.TeleportToWaypoint](/mods/redux#teleporttowaypoint)
 
+## Roleplay Enhanced
+- [RP2.GetLFRP](/mods/rp2#getlfrp)
+- [RP2.GetCharacter](/mods/rp2#getcharacter)
+- [RP2.GetCharacters](/mods/rp2#getcharacters)
+- [RP2.CreateCharacter](/mods/rp2#createcharacter)
+- [RP2.DeleteCharacter](/mods/rp2#deletecharacter)
+- [RP2.SwitchCharacter](/mods/rp2#switchcharacter)
+- [RP2.GetKeys](/mods/rp2#getkeys)
+- [RP2.HasKey](/mods/rp2#haskey)
+- [RP2.GiveKey](/mods/rp2#givekey)
+- [RP2.RenameKey](/mods/rp2#renamekey)
+- [RP2.TeleportToWaypoint](/mods/rp2#teleporttowaypoint)
+- [RP2.GetWaypoints](/mods/rp2#getwaypoints)
+
 ## Knight's Sanity
 - [KS.PushCharacter](/mods/knights-sanity#pushcharacter)
 - [KS.SelectCharacters](/mods/knights-sanity#pushcharacter)
@@ -289,3 +326,6 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [DD.IsInPartnerScene](/mods/devious-desires#isinpartnerscene)
 - [DD.IsBeingCarried](/mods/devious-desires#isbeingcarried)
 - [DD.IsCarrying](/mods/devious-desires#iscarrying)
+
+## RIFT
+- [R3.Redirect](/mods/rift#redirect)

@@ -7,6 +7,8 @@ Events are one of the core mechanics of Ratchet. They're called when something h
 
 You can create your own events, however there are also some built into Ratchet that allow you to integrate your plugins with most common mods such as Roleplay Redux.
 
+If you need a listener for custom calls that can return a value, see [Hook](/libs/hook) instead.
+
 ## Usage
 
 ### `on` <Badge type="info" text="function" />
@@ -172,6 +174,16 @@ Please note that this doesn't currently reliably work with admin edits.
 Callback:
 ```lua
 function( Character target, Character editor )
+```
+
+## Roleplay Enhanced
+
+### `RP2_charSwitch` <Badge type="info" text="event" />
+Whenever a player switches to a different RP2 character, this event is triggered.
+
+Callback:
+```lua
+function( Character player, string charId )
 ```
 
 ## Knight's Sanity

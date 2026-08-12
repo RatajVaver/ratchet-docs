@@ -4,6 +4,8 @@ Ratchet is a script extender that enables modders and server admins to create se
 
 Players don't have to install these plugins, neither do they have to install Ratchet itself, everything lives on the server and can be changed at runtime.
 
+Both **Legacy** and **Enhanced** versions of Conan Exiles are supported.
+
 ## Download
 
 ::: warning DISCLAIMER
@@ -29,12 +31,6 @@ Please report any bugs and/or crashes on my Discord.
 If you like my work, you can also consider [donating](https://ko-fi.com/rataj).
 :::
 
-::: warning
-Ratchet currently supports only the Legacy version of the game.
-
-Enhanced version of Ratchet will come soon.
-:::
-
 [I've read all of the above, please take me to download.](https://ratajmods.net/ratchet)
 
 ## Installing Ratchet
@@ -53,11 +49,20 @@ For Ratchet to function, you also need to add the Workshop mod to your mod list.
 It is recommended to put Ratchet at the very bottom of the mod order or as near to it as possible to avoid overwriting [interface API](/mods/#your-own-mod) and other unforeseen issues.
 
 <div class="steam-widget">
-    <img src="https://images.steamusercontent.com/ugc/17722145768196459774/0AD0ADF75010E34E5803A21FA0FFECAB4D037502/?imw=200&amp;imh=200" alt="Ratchet">
+    <img src="https://images.steamusercontent.com/ugc/17722145768196459774/0AD0ADF75010E34E5803A21FA0FFECAB4D037502/?imw=200&imh=200" alt="Ratchet">
     <div>
-        <a class="title" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" title="Ratchet" target="_blank" rel="noreferrer">Ratchet (Legacy)</a>
+        <a class="title" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" title="Ratchet" target="_blank" rel="noreferrer">Ratchet <Badge type="warning" text="Legacy" /></a>
         <p>Ratchet is a script extender that enables modders and server admins to create server-side mods called plugins using Lua scripting language.</p>
         <a class="button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3578032598" target="_blank" rel="noreferrer">Steam Workshop</a>
+    </div>
+</div>
+
+<div class="steam-widget">
+    <img src="https://images.steamusercontent.com/ugc/10033389272141548393/9BB730F7AFC59A7E8CE75EFDF6396DABEF6DD74F/?imw=200&imh=200" alt="Ratchet">
+    <div>
+        <a class="title" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3782392235" title="Ratchet" target="_blank" rel="noreferrer">Ratchet <Badge type="tip" text="Enhanced" /></a>
+        <p>Ratchet is a script extender that enables modders and server admins to create server-side mods called plugins using Lua scripting language.</p>
+        <a class="button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3782392235" target="_blank" rel="noreferrer">Steam Workshop</a>
     </div>
 </div>
 
