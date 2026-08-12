@@ -74,7 +74,7 @@ It can also return `true` as a second value to stop folding early, skipping any 
 
 Syntax:
 ```lua
-any Hook.Fold( string name, any initial, function combiner [, arguments... ] )
+mixed Hook.Fold( string name, mixed initial, function combiner [, arguments... ] )
 ```
 
 Example: summing up a numeric modifier contributed by every hook.
