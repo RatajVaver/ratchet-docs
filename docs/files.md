@@ -74,3 +74,9 @@ Syntax:
 ```lua
 table listFiles( string path [, string extension ] )
 ```
+
+## `getFileModTime` <Badge type="info" text="function" />
+Syntax:
+```lua
+int getFileModTime( string path )
+```

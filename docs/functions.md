@@ -12,6 +12,8 @@ You can also use any [Lua functions](https://www.lua.org/manual/5.5/) provided b
 - [getVersion](/utils#getversion)
 - [getSecret](/utils#getsecret)
 - [include](/files#include)
+- [listFiles](/files#listFiles)
+- [getFileModTime](/files#getFileModTime)
 - [export](/exports#export)
 - [getPlayerFromID](/types/character#getplayerfromid)
 - [getPlayerFromName](/types/character#getplayerfromname)
