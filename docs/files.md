@@ -68,3 +68,9 @@ Example:
 ```lua
 local module = include("other.lua")
 ```
+
+## `listFiles` <Badge type="info" text="function" />
+Syntax:
+```lua
+table listFiles( string path [, string extension ] )
+```

@@ -224,7 +224,6 @@ Rotators can be constructed in the same way as Vectors.
 - [:GetRP2Key](/mods/rp2#locks)
 - [:SetRP2Key](/mods/rp2#locks)
 - [:GetRP2LockType](/mods/rp2#locks)
-- [:GetRP2LockBehavior](/mods/rp2#locks)
 - [:HasRP2Key](/mods/rp2#locks)
 - :IsOpen
 - :SetOpen

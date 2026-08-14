@@ -122,5 +122,4 @@ table RP2.GetWaypoints()
 - `:GetRP2Key`
 - `:SetRP2Key`
 - `:GetRP2LockType`
-- `:GetRP2LockBehavior`
 - `:HasRP2Key`
