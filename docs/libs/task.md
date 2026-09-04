@@ -77,13 +77,14 @@ end)
 ```
 
 ## `Await` <Badge type="info" text="function" />
-Calls an object's method, assuming its last parameter is a callback, and suspends the current task until that callback fires. Must be called from inside a task.
+Calls a method that takes a trailing callback, and suspends the current task until that callback fires. Must be called from inside a task.
 
 This turns any existing callback-based API ([Database](/database), [Web](/libs/web), or your own) into something you can call as a single line instead of nesting a function inside it.
 
 Syntax:
 ```lua
 ... Task.Await( table object, string method [, arguments... ] )
+... Task.Await( function target [, arguments... ] )
 ```
 
 Example:
@@ -106,12 +107,19 @@ Task.Spawn(function()
 end)
 ```
 
+```lua {2}
+Task.Spawn(function()
+    local result = Task.Await(doSomethingWithCallback, id)
+end)
+```
+
 ## `AwaitTimeout` <Badge type="info" text="function" />
 Same as [Await](#await), but gives up after `timeoutMilliseconds` and returns `false, "timeout"` if the callback didn't finish in time.
 
 Syntax:
 ```lua
 ... Task.AwaitTimeout( int timeoutMilliseconds, table object, string method [, arguments... ] )
+... Task.AwaitTimeout( int timeoutMilliseconds, function target [, arguments... ] )
 ```
 
 Example:
