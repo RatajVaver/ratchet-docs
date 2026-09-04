@@ -35,19 +35,19 @@ Inventory|nil getInventoryByType( Character|Actor owner, int|string inventoryTyp
 ## `GetAllItems` <Badge type="info" text="function" />
 Syntax:
 ```lua
-table<Item> Inventory:GetAllItems()
+table<GameItem> Inventory:GetAllItems()
 ```
 
 ## `GetItemByIndex` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Item|nil Inventory:GetItemByIndex( int index )
+GameItem|nil Inventory:GetItemByIndex( int index )
 ```
 
 ## `GetItemById` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Item|nil Inventory:GetItemById( int templateId )
+GameItem|nil Inventory:GetItemById( int templateId )
 ```
 
 ## `HasItem` <Badge type="info" text="function" />
@@ -65,7 +65,7 @@ int Inventory:CountItems( int templateId )
 ## `SpawnItem` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Item, int Inventory:SpawnItem( int templateId )
+GameItem, int Inventory:SpawnItem( int templateId )
 ```
 
 ## `DeleteItem` <Badge type="info" text="function" />
@@ -89,7 +89,7 @@ bool Inventory:MoveItems( Inventory target, int templateId [, int quantity = 1 ]
 ## `GetItemIndex` <Badge type="info" text="function" />
 Syntax:
 ```lua
-int Inventory:GetItemIndex( Item item )
+int Inventory:GetItemIndex( GameItem item )
 ```
 
 ## `FindItemById` <Badge type="info" text="function" />

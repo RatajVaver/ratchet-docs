@@ -1,63 +1,63 @@
-# Item
+# GameItem
 
 ## `GetOwner` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Character|Actor Item:GetOwner()
+Character|Actor GameItem:GetOwner()
 ```
 
 ## `GetOwnerInventory` <Badge type="info" text="function" />
 Syntax:
 ```lua
-Inventory Item:GetOwnerInventory()
+Inventory GameItem:GetOwnerInventory()
 ```
 
 ## `GetId` <Badge type="info" text="function" />
 Syntax:
 ```lua
-int Item:GetId()
+int GameItem:GetId()
 ```
 
 ## `GetName` <Badge type="info" text="function" />
 Syntax:
 ```lua
-string Item:GetName()
+string GameItem:GetName()
 ```
 
 ## `GetShortDesc` <Badge type="info" text="function" />
 Syntax:
 ```lua
-string Item:GetShortDesc()
+string GameItem:GetShortDesc()
 ```
 
 ## `GetLongDesc` <Badge type="info" text="function" />
 Syntax:
 ```lua
-string Item:GetLongDesc()
+string GameItem:GetLongDesc()
 ```
 
 ## `GetStackSize` <Badge type="info" text="function" />
 Syntax:
 ```lua
-int, int Item:GetStackSize()
+int, int GameItem:GetStackSize()
 ```
 
 ## `SetStackSize` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void Item:SetStackSize( int stackSize )
+void GameItem:SetStackSize( int stackSize )
 ```
 
 ## `CanUseItem` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool Item:CanUseItem( Character player )
+bool GameItem:CanUseItem( Character player )
 ```
 
 ## `GetIntStat` <Badge type="info" text="function" />
 Syntax:
 ```lua
-int Item:GetIntStat( string stat )
+int GameItem:GetIntStat( string stat )
 ```
 
 Available stats:
@@ -76,13 +76,13 @@ Available stats:
 ## `SetIntStat` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool Item:SetIntStat( string stat, int value )
+bool GameItem:SetIntStat( string stat, int value )
 ```
 
 ## `GetFloatStat` <Badge type="info" text="function" />
 Syntax:
 ```lua
-float Item:GetFloatStat( string stat )
+float GameItem:GetFloatStat( string stat )
 ```
 
 Available stats:
@@ -97,35 +97,35 @@ Available stats:
 ## `SetFloatStat` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool Item:SetFloatStat( string stat, float value )
+bool GameItem:SetFloatStat( string stat, float value )
 ```
 
 ## `GetDurability` <Badge type="info" text="function" />
 Syntax:
 ```lua
-int, int Item:GetDurability()
+int, int GameItem:GetDurability()
 ```
 
 ## `ModifyDurability` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void Item:ModifyDurability( float value )
+void GameItem:ModifyDurability( float value )
 ```
 
 ## `SetDurability` <Badge type="info" text="function" />
 Syntax:
 ```lua
-void Item:SetDurability( float value )
+void GameItem:SetDurability( float value )
 ```
 
 ## `IsBroken` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool Item:IsBroken()
+bool GameItem:IsBroken()
 ```
 
 ## `DeleteItem` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool Item:DeleteItem( [ int quantity = 1 ] )
+bool GameItem:DeleteItem( [ int quantity = 1 ] )
 ```

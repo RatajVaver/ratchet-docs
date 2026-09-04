@@ -56,7 +56,7 @@ export default defineConfig({
           { text: 'Rotator', link: '/types/rotator' },
           { text: 'Actor', link: '/types/actor' },
           { text: 'Inventory', link: '/types/inventory' },
-          { text: 'Item', link: '/types/item' },
+          { text: 'GameItem', link: '/types/item' },
           { text: 'Guild', link: '/types/guild' },
         ]
       },
@@ -74,6 +74,7 @@ export default defineConfig({
           { text: 'PlayerData', link: '/libs/playerdata' },
           { text: 'Storage', link: '/libs/storage' },
           { text: 'Hook', link: '/libs/hook' },
+          { text: 'Task', link: '/libs/task' },
         ]
       },
       {

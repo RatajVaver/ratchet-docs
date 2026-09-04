@@ -218,7 +218,7 @@ Shows a HUD notification to a player.
 
 Syntax:
 ```lua
-void Character:Notify( string icon, string text [, Color iconColor ] )
+void Character:Notify( [ string icon, ] string text [, Color iconColor ] )
 ```
 
 Available icons:

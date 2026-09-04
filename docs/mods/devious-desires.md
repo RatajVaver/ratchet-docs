@@ -15,12 +15,12 @@ table DD.GetRestraints( Character player )
 | `isBlindfolded` | boolean | Is the character blindfolded? |
 | `hasBoundHands` | boolean | Are the character's hands bound? |
 | `hasBoundLegs` | boolean | Are the character's legs bound? |
-| `armRestraint` | Item&vert;nil | Arms binder item (if any) |
-| `handCuffs` | Item&vert;nil | Hand cuffs/rope item (if any) |
-| `legCuffs` | Item&vert;nil | Leg cuffs/rope item (if any) |
-| `blindfold` | Item&vert;nil | Blindfold item (if any) |
-| `collar` | Item&vert;nil | Collar item (if any) |
-| `gag` | Item&vert;nil | Gag item (if any) |
+| `armRestraint` | GameItem&vert;nil | Arms binder item (if any) |
+| `handCuffs` | GameItem&vert;nil | Hand cuffs/rope item (if any) |
+| `legCuffs` | GameItem&vert;nil | Leg cuffs/rope item (if any) |
+| `blindfold` | GameItem&vert;nil | Blindfold item (if any) |
+| `collar` | GameItem&vert;nil | Collar item (if any) |
+| `gag` | GameItem&vert;nil | Gag item (if any) |
 
 ## `IsInPartnerScene` <Badge type="info" text="function" />
 Syntax:

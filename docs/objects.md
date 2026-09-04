@@ -168,7 +168,7 @@ Rotators can be constructed in the same way as Vectors.
 - [:FindItemById](/types/inventory#finditembyid)
 - [:DropItem](/types/inventory#dropitem)
 
-## Item
+## GameItem
 - [:GetOwner](/types/item#getowner)
 - [:GetOwnerInventory](/types/item#getownerinventory)
 - [:GetId](/types/item#getid)
