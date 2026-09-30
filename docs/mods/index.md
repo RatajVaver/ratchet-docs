@@ -23,8 +23,16 @@ Let me know about your idea on my [Discord](https://discord.gg/3WJNxCTn8m).
 ## Your own mod
 You can use Ratchet interface API to [trigger events and receive updates](/events#trigger-from-devkit) in your own mod.
 
-[Download interface API for Legacy](https://ratajmods.net/assets/files/Ratchet-devkit.zip)
+## Legacy
+[Download interface API for Legacy](https://ratajmods.net/assets/files/Ratchet-Legacy-devkit.zip)
 
 Extract Ratchet folder found in this zip file into `ConanExilesDevKit\Games\ConanSandbox\Content\ModsShared`
+
+You can then reference the interfaces in DevKit just like with any other mod API.
+
+## Enhanced
+[Download interface API for Enhanced](https://ratajmods.net/assets/files/Ratchet-Enhanced-devkit.zip)
+
+Extract Ratchet folder found in this zip file into `CEUE5Devkit\UE4\Content\ModsShared`
 
 You can then reference the interfaces in DevKit just like with any other mod API.
