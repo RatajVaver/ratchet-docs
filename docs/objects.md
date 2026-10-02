@@ -114,6 +114,8 @@ You can also use single argument Lua hex integer like this: `Color(0xFFCC00)`
 - [:getDistanceTo](/types/vector#getdistanceto)
 - [:getDistance2D](/types/vector#getdistance2d)
 - [:findLookAtRotation](/types/vector#findlookatrotation)
+- [:getInFront](/types/vector#getinfront)
+- [:getOffset](/types/vector#getoffset)
 
 ::: tip
 This object can be directly constructed using `Vector()` for an empty vector, or `Vector(x,y,z)` for an actual representation of position in 3D space.
@@ -124,6 +126,9 @@ It can also be returned by various functions.
 - .pitch
 - .yaw
 - .roll
+- [:getForwardVector](/types/rotator#getforwardvector)
+- [:getRightVector](/types/rotator#getrightvector)
+- [:getUpVector](/types/rotator#getupvector)
 
 ::: tip
 Rotators can be constructed in the same way as Vectors.

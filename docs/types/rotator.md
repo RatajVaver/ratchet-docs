@@ -36,3 +36,37 @@ local rot1 = Rotator(5)
 local rot2 = Rotator(5,10)
 local rot3 = Rotator(5,10,4)
 ```
+
+## `getForwardVector` <Badge type="info" text="function" />
+Returns a unit [Vector](/types/vector) pointing in the direction this rotation is facing.
+
+Syntax:
+```lua
+Vector Rotator:getForwardVector()
+```
+
+Example:
+```lua {2}
+local rot = player:GetRotation()
+local dest = player:GetPosition() + rot:getForwardVector() * 300
+```
+
+::: tip
+For simple cases, [Vector:getInFront](/types/vector#getinfront) does the same in a single call.
+:::
+
+## `getRightVector` <Badge type="info" text="function" />
+Returns a unit [Vector](/types/vector) pointing to the right of this rotation.
+
+Syntax:
+```lua
+Vector Rotator:getRightVector()
+```
+
+## `getUpVector` <Badge type="info" text="function" />
+Returns a unit [Vector](/types/vector) pointing up relative to this rotation.
+
+Syntax:
+```lua
+Vector Rotator:getUpVector()
+```
