@@ -38,6 +38,10 @@ Below is an example of a config file that contains all the options that can be c
     "enabled": true,
     "path": "ratchet/extensions"
   },
+  "buildCheck": {
+    "enabled": true,
+    "loadAnyway": false
+  },
   "msPerTick": 50,
   "webserver": {
     "enabled": false,
@@ -108,6 +112,26 @@ Default: `true`
 Path to the directory for extensions.
 
 Default: `ratchet/extensions`
+
+### buildCheck
+Every Ratchet release is made for one specific build of the Conan Exiles dedicated server. Running it on a different build will most likely crash the server.
+
+When this check is enabled, Ratchet reads the build ID of the server on startup and compares it with the one it was made for.
+When they don't match, a critical error is logged and Ratchet won't load.
+Your server will load without Ratchet, unless you force it to try to load Ratchet anyway.
+
+#### enabled
+Default: `true`
+
+#### loadAnyway
+Load Ratchet even when the server build doesn't match. A critical error is still logged.
+
+Default: `false`
+
+::: danger
+Changing this to `true` is likely to get your server stuck in a crash loop whenever there's a game update.
+Only enable this if you know what you're doing.
+:::
 
 ### msPerTick
 Amount of milliseconds in between each main loop tick. This is best left unchanged.
@@ -231,12 +255,11 @@ Enable Lua profiler for [Admin UI](/web-server) to track heaviest operations per
 Default: `false`
 
 ### chatLogger
-
-#### enabled
-Enable logging of all chat messages into text files, also accessible in the [Admin UI](/web-server).
+Chat logger saves all chat messages into text files, also accessible in the [Admin UI](/web-server).
 
 This is way more privacy friendly alternative to Discord webhooks, as the data never leave the device and isn't shared with third parties.
 
+#### enabled
 Default: `false`
 
 #### path

@@ -245,6 +245,10 @@ This functionality is unfinished, experimental, and dangerous.
 Only use it at your own risk and never on actual builds as it can easily destroy what you've built.
 :::
 
+## NPC <Badge type="tip" text="Actor" />
+- :GetOwnerID
+- :GetOwnerGuild
+
 ## HitResult
 - .actor
 - .distance
@@ -336,6 +340,10 @@ It can also be retrieved from [GetTags](/mods/totadmin#gettags) method of a [Tot
 
 ::: warning
 The `radius`, `color`, `hideIcon`, and `zOrder` fields don't exist on **Legacy**.
+:::
+
+::: tip
+This object can be directly constructed using [TotMapMarker](/mods/totadmin#totmapmarker) constructor.
 :::
 
 ## TotLight <Badge type="tip" text="Actor" /> <Badge type="warning" text="Experimental" />

@@ -48,50 +48,6 @@ Syntax:
 bool TotAdmin.GiveKit( Character player, string kit )
 ```
 
-### `GetZone` <Badge type="info" text="function" />
-Use number if you want to find a zone by its UID.\
-Use string if you want to find a zone by its name.
-
-Syntax:
-```lua
-TotZone|nil TotAdmin.GetZone( int|string nameOrUID )
-```
-
-### `GetPuppet` <Badge type="info" text="function" />
-Use number if you want to find a puppet by its UID.\
-Use string if you want to find a puppet by its internal name.
-
-Syntax:
-```lua
-TotPuppet|nil TotAdmin.GetPuppet( int|string internalNameOrUID )
-```
-
-### `GetPuppetsInRadius` <Badge type="info" text="function" />
-Syntax:
-```lua
-table<TotPuppet> TotAdmin.GetPuppetsInRadius( Vector location, float radius )
-```
-
-### `GetMapMarkers` <Badge type="info" text="function" />
-Returns a list of all map markers as a table of [TotMapMarker](/objects#totmapmarker) objects.
-
-Syntax:
-```lua
-table<TotMapMarker> TotAdmin.GetMapMarkers()
-```
-
-### `SetMapMarker` <Badge type="info" text="function" />
-Syntax:
-```lua
-void TotAdmin.SetMapMarker( TotMapMarker data )
-```
-
-### `DeleteMapMarker` <Badge type="info" text="function" />
-Syntax:
-```lua
-bool TotAdmin.DeleteMapMarker( GUID markerId )
-```
-
 ### `SendHome` <Badge type="info" text="function" />
 Syntax:
 ```lua
@@ -116,6 +72,64 @@ Syntax:
 table TotAdmin.ListHomes( Character player )
 ```
 
+## Map Markers
+### `TotMapMarker` <Badge type="info" text="constructor" />
+Creates a new [TotMapMarker](/objects#totmapmarker) object from a table. All fields are optional.
+
+| Field | Type | Default |
+| - | - | - |
+| guid | [GUID](/objects#guid) | new random GUID |
+| name | string | `""` |
+| x | float | `0` |
+| y | float | `0` |
+| icon | string | `""` |
+| iconName | string | `""` |
+| radius | float | `0` |
+| color | [Color](/objects#color) | white |
+| hideIcon | bool | `false` |
+| zOrder | int | `0` |
+
+Syntax:
+```lua
+TotMapMarker TotMapMarker( table data )
+```
+
+::: tip
+Use the [SetMapMarker](#setmapmarker) function to actually place the marker on the map (or update existing one).
+:::
+
+### `GetMapMarkers` <Badge type="info" text="function" />
+Returns a list of all map markers as a table of [TotMapMarker](/objects#totmapmarker) objects.
+
+Syntax:
+```lua
+table<TotMapMarker> TotAdmin.GetMapMarkers()
+```
+
+### `SetMapMarker` <Badge type="info" text="function" />
+Creates a new map marker, or updates an existing one with the same `guid`.
+
+Syntax:
+```lua
+void TotAdmin.SetMapMarker( TotMapMarker data )
+```
+
+Example:
+```lua
+TotAdmin.SetMapMarker(TotMapMarker({
+    name = "Tavern",
+    x = 12500,
+    y = -48000,
+    color = Color(0xffcc00),
+}))
+```
+
+### `DeleteMapMarker` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotAdmin.DeleteMapMarker( GUID markerId )
+```
+
 ## Zones
 Functions in this section are to be called on a [TotZone](/objects#totzone) object.
 
@@ -129,6 +143,15 @@ Shape can be either `Sphere` or `Box`.
 Syntax:
 ```lua
 TotZone TotZone( string shape, Vector location )
+```
+
+### `GetZone` <Badge type="info" text="function" />
+Use number if you want to find a zone by its UID.\
+Use string if you want to find a zone by its name.
+
+Syntax:
+```lua
+TotZone|nil TotAdmin.GetZone( int|string nameOrUID )
 ```
 
 ### `GetUID` <Badge type="info" text="function" />
@@ -258,6 +281,21 @@ Puppets can be constructed directly using a function of the same name.
 Syntax:
 ```lua
 TotPuppet TotPuppet( Vector location [, Rotator rotation ] )
+```
+
+### `GetPuppet` <Badge type="info" text="function" />
+Use number if you want to find a puppet by its UID.\
+Use string if you want to find a puppet by its internal name.
+
+Syntax:
+```lua
+TotPuppet|nil TotAdmin.GetPuppet( int|string internalNameOrUID )
+```
+
+### `GetPuppetsInRadius` <Badge type="info" text="function" />
+Syntax:
+```lua
+table<TotPuppet> TotAdmin.GetPuppetsInRadius( Vector location, float radius )
 ```
 
 ### `Move` <Badge type="info" text="function" />

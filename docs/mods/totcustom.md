@@ -3,60 +3,60 @@ This library will not function if your server doesn't have Tot ! Custom installe
 - [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=2886779102) <Badge type="warning" text="Legacy" />
 - [Tot ! Custom](https://steamcommunity.com/sharedfiles/filedetails/?id=3721096154) <Badge type="tip" text="Enhanced" />
 
-All of these functions are compatible with both [player characters](/types/character) and [puppets](/mods/totadmin#puppets).
+All of these functions are compatible with [player characters](/types/character), [puppets](/mods/totadmin#puppets), and [basic NPCs](/mods/totadmin#basic-npcs).
 
 ## `GetBody` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-string TotCustom.GetBody( Character|TotPuppet actor )
+string TotCustom.GetBody( Character|TotPuppet|TotBasicNPC actor )
 ```
 
 ## `GetArmor` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-string TotCustom.GetArmor( Character|TotPuppet actor )
+string TotCustom.GetArmor( Character|TotPuppet|TotBasicNPC actor )
 ```
 
 ## `GetAccessories` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-string TotCustom.GetAccessories( Character|TotPuppet actor )
+string TotCustom.GetAccessories( Character|TotPuppet|TotBasicNPC actor )
 ```
 
 ## `SetBody` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-bool TotCustom.SetBody( Character|TotPuppet actor, string data )
+bool TotCustom.SetBody( Character|TotPuppet|TotBasicNPC actor, string data )
 ```
 
 ## `SetArmor` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-bool TotCustom.SetArmor( Character|TotPuppet actor, string data )
+bool TotCustom.SetArmor( Character|TotPuppet|TotBasicNPC actor, string data )
 ```
 
 ## `SetAccessories` <Badge type="info" text="function" />
 
 Syntax:
 ```lua
-bool TotCustom.SetAccessories( Character|TotPuppet actor, string data )
+bool TotCustom.SetAccessories( Character|TotPuppet|TotBasicNPC actor, string data )
 ```
 
 ## `GetSliderValue` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
 Syntax:
 ```lua
-float TotCustom.GetSliderValue( Character|TotPuppet actor, string key )
+float TotCustom.GetSliderValue( Character|TotPuppet|TotBasicNPC actor, string key )
 ```
 
 ## `SetSliderValue` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
 Syntax:
 ```lua
-bool TotCustom.SetSliderValue( Character|TotPuppet actor, string key, float value )
+bool TotCustom.SetSliderValue( Character|TotPuppet|TotBasicNPC actor, string key, float value )
 ```
 
 ## `GetArmorPieces` <Badge type="info" text="function" />
@@ -64,7 +64,7 @@ Returns a list of item IDs of equipped armor pieces (in sequential table).
 
 Syntax:
 ```lua
-table<int> TotCustom.GetArmorPieces( Character|TotPuppet actor )
+table<int> TotCustom.GetArmorPieces( Character|TotPuppet|TotBasicNPC actor )
 ```
 
 | Index | Slot |
@@ -80,7 +80,7 @@ Get an armor piece and its colors, uses same slot numbers as [GetArmorPieces](#g
 
 Syntax:
 ```lua
-int, Color|nil, Color|nil, Color|nil, Color|nil TotCustom.GetArmorPiece( Character|TotPuppet actor, int slot )
+int, Color|nil, Color|nil, Color|nil, Color|nil TotCustom.GetArmorPiece( Character|TotPuppet|TotBasicNPC actor, int slot )
 ```
 
 ## `SetArmorPiece` <Badge type="info" text="function" /> <Badge type="warning" text="Legacy" />
@@ -90,7 +90,7 @@ Make sure to either provide no colors (everything will be black), one color (whi
 
 Syntax:
 ```lua
-bool TotCustom.SetArmorPiece( Character|TotPuppet actor, int slot, int itemId [, Color color1 [, Color color2, Color color3, Color color4 ] ] )
+bool TotCustom.SetArmorPiece( Character|TotPuppet|TotBasicNPC actor, int slot, int itemId [, Color color1 [, Color color2, Color color3, Color color4 ] ] )
 ```
 
 ## `ClearArmorSlot` <Badge type="info" text="function" />
@@ -98,5 +98,5 @@ Remove an armor piece from a character, uses same slot numbers as [GetArmorPiece
 
 Syntax:
 ```lua
-bool TotCustom.ClearArmorSlot( Character|TotPuppet actor, int slot )
+bool TotCustom.ClearArmorSlot( Character|TotPuppet|TotBasicNPC actor, int slot )
 ```
