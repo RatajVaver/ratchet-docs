@@ -9,6 +9,7 @@ Do not replace any of these variables (or any library or function names used in 
 ## Global
 - **START_TIME** - Unix timestamp (UTC) of the time when server was last started
 - **PLUGINS_PATH** - Path to the root plugins directory
+- **NULL** - Representation of SQL NULL in Lua, so we can safely pass it into :prepare
 
 ## Plugin specific
 - **PLUGIN_NAME** - Name of the plugin (name of the directory)
