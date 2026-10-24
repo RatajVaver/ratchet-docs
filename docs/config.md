@@ -43,6 +43,7 @@ Below is an example of a config file that contains all the options that can be c
     "loadAnyway": false
   },
   "msPerTick": 50,
+  "netFixes": false,
   "webserver": {
     "enabled": false,
     "host": "0.0.0.0",
@@ -137,6 +138,12 @@ Only enable this if you know what you're doing.
 Amount of milliseconds in between each main loop tick. This is best left unchanged.
 
 Default: `50`
+
+### netFixes <Badge type="warning" text="Legacy" />
+Conan Exiles has many networking issues on its Legacy version. One such issue is with the connection code that results in refusal of connections when there's too many players online.
+Ratchet has a built-in solution for this included in the version 0.2.6, enabling this setting will apply three fixes that address these connection issues.
+
+Default: `false`
 
 ### webserver
 

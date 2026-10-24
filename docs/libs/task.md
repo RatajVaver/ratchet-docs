@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Task <Badge type="tip" text="Enhanced" />
+# Task
 Task is a coroutine-based async library.
 
 ## `Spawn` <Badge type="info" text="function" />

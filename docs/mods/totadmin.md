@@ -204,7 +204,7 @@ string, string TotZone:GetActionModule( string event )
 ### `SetActionModule` <Badge type="info" text="function" />
 Syntax:
 ```lua
-bool TotZone:GetActionModule( string event, string moduleName, string data )
+bool TotZone:SetActionModule( string event, string moduleName, string data )
 ```
 
 ### `SetRatchetEvent` <Badge type="info" text="function" />
@@ -404,4 +404,22 @@ table<TotPuppetTag> TotPuppet:GetTags()
 Syntax:
 ```lua
 void TotPuppet:SetTags( table<TotPuppetTag> tags )
+```
+
+### `GetActionModule` <Badge type="info" text="function" />
+Syntax:
+```lua
+string, string TotPuppet:GetActionModule( string event )
+```
+
+### `SetActionModule` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotPuppet:SetActionModule( string event, string moduleName, string data )
+```
+
+### `SetRatchetEvent` <Badge type="info" text="function" />
+Syntax:
+```lua
+bool TotPuppet:SetRatchetEvent( string event, string ratchetEvent [, string argument = "" ] )
 ```

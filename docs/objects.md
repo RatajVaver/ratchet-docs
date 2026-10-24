@@ -311,6 +311,9 @@ This object can be directly constructed using [TotBasicNPC](/mods/totadmin#totba
 - [:SetSheet](/mods/totadmin#setsheet)
 - [:GetTags](/mods/totadmin#gettags)
 - [:SetTags](/mods/totadmin#settags)
+- [:GetActionModule](/mods/totadmin#getactionmodule-1)
+- [:SetActionModule](/mods/totadmin#setactionmodule-1)
+- [:SetRatchetEvent](/mods/totadmin#setratchetevent-1)
 
 ::: tip
 This object can be directly constructed using [TotPuppet](/mods/totadmin#totpuppet) constructor.

@@ -1,4 +1,4 @@
-# Hook 🪝 <Badge type="tip" text="Enhanced" />
+# Hook
 Hooks are similar to [events](/events), but where every listener registered with [on](/events#on) always runs unconditionally, Hook callbacks can **return a value**, and the first one that does stops the propagation, so other Hook callbacks never react as one already answered the query.
 
 Callbacks can have a **priority**, controlling which one gets asked first. **Watchers** can be registered to always run to completion, even after another callback already answered.
